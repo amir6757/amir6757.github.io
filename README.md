@@ -37,22 +37,31 @@ MP3 | 320kbps | کیفیت عالی
     <a href="BLOK3-git -musicdel.ir.mp3" download>دانلود آهنگ</a>
   </div>
 
-  <!-- آهنگ ۳ -->
-  <div class="BLOK3-napıyosun mesela -musicdel.ir.mp3">
-    <h2>آهنگ ۳: BLOK3-napıyosun mesela </h2>
-              <p style="font-size:20px; color:gray;">
-MP3 | 320kbps | کیفیت عالی
-</p>
+<!-- آهنگ ۳ -->
+<div class="BLOK3-napıyosun">
+    <h2>آهنگ ۳: BLOK3-napıyosun mesela</h2>
+    <p style="font-size:20px; color:gray;">MP3 | 320kbps | کیفیت عالی</p>
+    
     <audio controls>
-      <source src="BLOK3-napıyosun mesela -musicdel.ir.mp3" type="audio/mpeg">
-      مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
+        <source src="BLOK3-napıyosun mesela -musicdel.ir.mp3" type="audio/mpeg">
+        مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
     </audio>
+    
     <br>
-    <a href="BLOK3-napıyosun mesela -musicdel.ir.mp3" download>دانلود آهنگ</a>
+    
+    <!-- دکمه دانلود -->
+    <a href="BLOK3-napıyosun mesela -musicdel.ir.mp3" download
+       style="display:inline-block; margin-bottom:30px; padding:10px 20px; background-color:#4CAF50; color:white; text-decoration:none; border-radius:5px;">
+        دانلود آهنگ
     </a>
+    
+    <!-- فاصله عمودی بین دکمه و تبلیغ -->
+    <div style="height:40px;"></div>
+    
+    <!-- تبلیغ AADS -->
+    <div id="frame" style="width:320px; margin:auto; z-index:99998; height:auto;">
+        <iframe data-aa='2420954' src='//ad.a-ads.com/2420954/?size=320x100'
+                style='border:0; padding:0; width:320px; height:100px; overflow:hidden; display:block; margin:auto;'>
+        </iframe>
     </div>
-            
-<div id="frame" style="width: 320px;margin: auto;z-index: 99998;height: auto">
-          <iframe data-aa='2420954' src='//ad.a-ads.com/2420954/?size=320x100'
-                            style='border:0; padding:0; width:320px; height:100px; overflow:hidden;display: block;margin: auto'></iframe>
-        </div>
+</div>
