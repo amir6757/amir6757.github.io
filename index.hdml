@@ -11,7 +11,10 @@
 
   <!-- آهنگ ۱ -->
   <div class="BLOK3-KUSURA BAKMA -musicdel.ir.mp3">
-    <h2>آهنگ ۱: BLOK3-KUSURA BAKMA -musicdel.ir.mp3</h2>
+    <h2>آهنگ ۱: BLOK3-KUSURA BAKMA </h2>
+            <p style="font-size:20px; color:gray;">
+MP3 | 320kbps | کیفیت عالی
+</p>
     <audio controls>
       <source src="BLOK3-KUSURA BAKMA -musicdel.ir.mp3" type="audio/mpeg">
       مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
@@ -22,7 +25,10 @@
 
   <!-- آهنگ ۲ -->
   <div class="BLOK3-git -musicdel.ir.mp3">
-    <h2>آهنگ ۲: BLOK3-git -musicdel.ir.mp3</h2>
+    <h2>آهنگ ۲: BLOK3-git </h2>
+              <p style="font-size:20px; color:gray;">
+MP3 | 320kbps | کیفیت عالی
+</p>
     <audio controls>
       <source src="BLOK3-git -musicdel.ir.mp3" type="audio/mpeg">
       مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
@@ -33,19 +39,18 @@
 
   <!-- آهنگ ۳ -->
   <div class="BLOK3-napıyosun mesela -musicdel.ir.mp3">
-    <h2>آهنگ ۳: BLOK3-napıyosun mesela -musicdel.ir.mp3</h2>
+    <h2>آهنگ ۳: BLOK3-napıyosun mesela </h2>
+              <p style="font-size:20px; color:gray;">
+MP3 | 320kbps | کیفیت عالی
+</p>
     <audio controls>
       <source src="BLOK3-napıyosun mesela -musicdel.ir.mp3" type="audio/mpeg">
       مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
     </audio>
     <br>
     <a href="BLOK3-napıyosun mesela -musicdel.ir.mp3" download>دانلود آهنگ</a>
-  </div>
-
-</body>
-</html>
-
-
+  </div>    
+  
 <div id="frame" style="width: 320px;margin: auto;z-index: 99998;height: auto">
           <iframe data-aa='2420954' src='//ad.a-ads.com/2420954/?size=320x100'
                             style='border:0; padding:0; width:320px; height:100px; overflow:hidden;display: block;margin: auto'></iframe>
