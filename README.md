@@ -49,8 +49,8 @@ MP3 | 320kbps | کیفیت عالی
     </audio>
     <br>
     <a href="BLOK3-napıyosun mesela -musicdel.ir.mp3" download>دانلود آهنگ</a>
-  style="display:inline-block; margin-bottom:30px; padding:10px 20px; background-color:#4CAF50; color:white; text-decoration:none; border-radius:5px;"> دانلود آهنگ </a> </div>
-  
+  margin-bottom:40px;
+            
 <div id="frame" style="width: 320px;margin: auto;z-index: 99998;height: auto">
           <iframe data-aa='2420954' src='//ad.a-ads.com/2420954/?size=320x100'
                             style='border:0; padding:0; width:320px; height:100px; overflow:hidden;display: block;margin: auto'></iframe>
