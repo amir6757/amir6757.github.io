@@ -7,13 +7,13 @@
 
   <!-- آهنگ ۱ -->
   <div class="song">
-    <h2>آهنگ ۱: mockingbird (2).mp3 </h2>
+    <h2>آهنگ ۱: </h2>
     <audio controls>
-      <source src="song1.mp3" type="audio/mpeg">
+      <source src="mockingbird.mp3" type="audio/mpeg">
       مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
     </audio>
     <br>
-    <a href=""mockingbird.mp3>دانلود آهنگ</a>
+    <a href="mockingbird.mp3"download>دانلود آهنگ</a>
   </div>
 
   <!-- آهنگ ۲ -->
