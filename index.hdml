@@ -1,3 +1,8 @@
+<div id="frame" style="width: 120px;margin: auto;z-index: 99998;height: auto">
+          <iframe data-aa='2420951' src='//ad.a-ads.com/2420951/?size=120x60'
+                            style='border:0; padding:0; width:120px; height:60px; overflow:hidden;display: block;margin: auto'></iframe>
+        </div>
+
 <div id="frame" style="width: 728px;margin: auto;z-index: 99998;height: auto">
           <iframe data-aa='2420937' src='//ad.a-ads.com/2420937/?size=728x90'
                             style='border:0; padding:0; width:728px; height:90px; overflow:hidden;display: block;margin: auto'></iframe>
