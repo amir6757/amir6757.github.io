@@ -6,8 +6,8 @@
   </p>
 
   <!-- آهنگ ۱ -->
-  <div class="song">
-    <h2>آهنگ ۱: mockingbird.mp3</h2>
+  <mokingbrid="song">
+    <h2>آهنگ ۱:
     <audio controls>
       <source src="song1.mp3" type="audio/mpeg">
       مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
