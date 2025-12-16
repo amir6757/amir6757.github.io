@@ -28,14 +28,14 @@
   </div>
 
   <!-- آهنگ ۳ -->
-  <div class="song">
-    <h2>آهنگ ۳: Sample Music 3</h2>
+  <div class="BLOK3-napıyosun mesela -musicdel.ir.mp3">
+    <h2>آهنگ ۳: BLOK3-napıyosun mesela -musicdel.ir.mp3</h2>
     <audio controls>
-      <source src="song3.mp3" type="audio/mpeg">
+      <source src="BLOK3-napıyosun mesela -musicdel.ir.mp3" type="audio/mpeg">
       مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
     </audio>
     <br>
-    <a href="song3.mp3" download>دانلود آهنگ</a>
+    <a href="BLOK3-napıyosun mesela -musicdel.ir.mp3" download>دانلود آهنگ</a>
   </div>
 
 </body>
