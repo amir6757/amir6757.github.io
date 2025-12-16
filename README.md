@@ -84,13 +84,16 @@
 
   <!-- آهنگ ۳ -->
   <div class="song">
-    <h2>آهنگ ۳: Sample Music 3</h2>
+    <h2>آهنگ ۳: amir6757.github.io
+/BLOK3-git -musicdel.ir.mp3</h2>
     <audio controls>
-      <source src="song3.mp3" type="audio/mpeg">
+      <source src="amir6757.github.io
+/BLOK3-git -musicdel.ir.mp3" type="audio/mpeg">
       مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
     </audio>
     <br>
-    <a href="song3.mp3" download>دانلود آهنگ</a>
+    <a href="amir6757.github.io
+/BLOK3-git -musicdel.ir.mp3" download>دانلود آهنگ</a>
   </div>
 
 </body>
