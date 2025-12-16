@@ -56,15 +56,21 @@
   </p>
 
   <!-- آهنگ ۱ -->
-  <div class="song">
-    <h2>آهنگ ۱: mockingbird.mp3</h2>
-    <audio controls>
-      <source src="mockingbird.mp3" type="audio/mpeg">
-      مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
-    </audio>
-    <br>
-    <a href="mockingbird.mp3" download>دانلود آهنگ</a>
-  </div>
+
+<div class="song">
+  <h2>🎵 Mockingbird</h2>
+
+  <audio controls>
+    <source src="mockingbird.mp3" type="audio/mpeg">
+    مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
+  </audio>
+
+  <br>
+
+  <a href="mockingbird.mp3" download>
+    ⬇️ دانلود آهنگ
+  </a>
+</div>
 
   <!-- آهنگ ۲ -->
  
