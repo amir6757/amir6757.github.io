@@ -6,10 +6,10 @@
   </p>
 
   <!-- آهنگ ۱ -->
-  <mockingbird (2).mp3="song">
-    <h2>آهنگ ۱:mockingbird (2).mp3
+  <="song">
+    <h2>آهنگ ۱:
     <audio controls>
-      <source src="song1.mp3" type="audio/mpeg">
+      <source src="mockingbird.mp3" type="audio/mpeg">
       مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
     </audio>
     <br>
