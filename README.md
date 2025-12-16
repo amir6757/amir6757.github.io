@@ -12,7 +12,7 @@
   <!-- آهنگ ۱ -->
   <div class="BLOK3-KUSURA BAKMA -musicdel.ir.mp3">
     <h2>آهنگ ۱: BLOK3-KUSURA BAKMA </h2>
-            <p style="font-size:12px; color:gray;">
+            <p style="font-size:20px; color:gray;">
 MP3 | 320kbps | کیفیت عالی
 </p>
     <audio controls>
