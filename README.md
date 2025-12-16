@@ -6,14 +6,14 @@
   </p>
 
   <!-- آهنگ ۱ -->
-  <div class="song">
-    <h2>آهنگ ۱: Sample Music 1</h2>
+  <div class="BLOK3-KUSURA BAKMA -musicdel.ir.mp3">
+    <h2>آهنگ ۱: BLOK3-KUSURA BAKMA -musicdel.ir.mp3</h2>
     <audio controls>
-      <source src="song1.mp3" type="audio/mpeg">
+      <source src="BLOK3-KUSURA BAKMA -musicdel.ir.mp3" type="audio/mpeg">
       مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
     </audio>
     <br>
-    <a href="song1.mp3" download>دانلود آهنگ</a>
+    <a href="BLOK3-KUSURA BAKMA -musicdel.ir.mp3" download>دانلود آهنگ</a>
   </div>
 
   <!-- آهنگ ۲ -->
