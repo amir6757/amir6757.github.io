@@ -11,7 +11,7 @@
 
   <!-- آهنگ ۱ -->
   <div class="BLOK3-KUSURA BAKMA -musicdel.ir.mp3">
-    <h2>آهنگ ۱: BLOK3-KUSURA BAKMA -musicdel.ir.mp3</h2>
+    <h2>آهنگ ۱: BLOK3-KUSURA BAKMA </h2>
     <audio controls>
       <source src="BLOK3-KUSURA BAKMA -musicdel.ir.mp3" type="audio/mpeg">
       مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
