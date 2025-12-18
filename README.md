@@ -22,31 +22,3 @@ MP3 | 320kbps | کیفیت عالی
     <br>
     <a href="BLOK3-KUSURA BAKMA -musicdel.ir.mp3" download>دانلود آهنگ</a>
   </div>
-
-  <!-- آهنگ ۲ -->
-  <div class="BLOK3-git -musicdel.ir.mp3">
-    <h2>آهنگ ۲: BLOK3-git </h2>
-              <p style="font-size:20px; color:gray;">
-MP3 | 320kbps | کیفیت عالی
-</p>
-    <audio controls>
-      <source src="BLOK3-git -musicdel.ir.mp3" type="audio/mpeg">
-      مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
-    </audio>
-    <br>
-    <a href="BLOK3-git -musicdel.ir.mp3" download>دانلود آهنگ</a>
-  </div>
-
-<!-- آهنگ ۳ -->
-  <div class="BLOK3-napıyosun mesela -musicdel.ir.mp3">
-    <h2>آهنگ ۳: BLOK3-napıyosun mesela </h2>
-              <p style="font-size:20px; color:gray;">
-MP3 | 320kbps | کیفیت عالی
-</p>
-    <audio controls>
-      <source src="BLOK3-napıyosun mesela -musicdel.ir.mp3" type="audio/mpeg">
-      مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
-    </audio>
-    <br>
-    <a href="BLOK3-napıyosun mesela -musicdel.ir.mp3" download>دانلود آهنگ</a>
-  </div>
