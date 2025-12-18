@@ -1,8 +1,8 @@
-<div id="frame" style="width: 320px;margin: auto;z-index: 99998;height: auto">
-          <iframe data-aa='2420956' src='//ad.a-ads.com/2420956/?size=320x100'
-                            style='border:0; padding:0; width:320px; height:100px; overflow:hidden;display: block;margin: auto'></iframe>
-        </div>
 
+<div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;">
+          <iframe data-aa='2421151' src='//acceptable.a-ads.com/2421151/?size=Adaptive'
+                            style='border:0; padding:0; width:70%; height:auto; overflow:hidden;display: block;margin: auto'></iframe>
+        </div>
 
   <h1>سلام! من Amir هستم 🎵</h1>
   <p class="intro">
