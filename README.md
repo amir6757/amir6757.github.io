@@ -9,7 +9,7 @@
     خوش آمدید به سایت موزیک من، جایی که می‌توانید آهنگ‌ها را گوش بدهید و دانلود کنید!
   </p>
 
-  <!-- آهنگ ۱ -->
+  <!-- آهنگ -->
   <div class="BLOK3-KUSURA BAKMA -musicdel.ir.mp3">
     <h2>آهنگ ۱: BLOK3-KUSURA BAKMA </h2>
             <p style="font-size:20px; color:gray;">
