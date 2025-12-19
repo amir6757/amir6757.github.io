@@ -2,64 +2,98 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
+  <title>دانلود آهنگ blok3.git | کیفیت عالی</title>
+
+  <!-- سئو -->
+  <meta name="description" content="دانلود آهنگ blok3.git با کیفیت عالی MP3 320 + پخش آنلاین">
+  <meta name="keywords" content="دانلود آهنگ blok3.git، دانلود موزیک، MP3">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>amir6757</title>
+
   <style>
     body {
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
       margin: 0;
-      color: #333;
+      font-family: sans-serif;
+      background: #ffffff;
+      color: #222;
     }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 15px;
+    }
+
     h1 {
-      margin-bottom: 20px;
+      font-size: 22px;
       text-align: center;
-      color: #fff;
-      text-shadow: 1px 1px 5px #000;
-    }
-    .player {
-      background: rgba(255, 255, 255, 0.8);
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      width: 90%;
-      max-width: 400px;
-      text-align: center;
-    }
-    audio {
-      width: 100%;
       margin-bottom: 10px;
     }
-    .download-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #6a11cb;
-      background: linear-gradient(90deg, #6a11cb, #2575fc);
-      color: #fff;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      transition: 0.3s;
+
+    .info {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 15px;
     }
-    .download-btn:hover {
-      transform: scale(1.05);
+
+    audio {
+      width: 100%;
+      margin: 15px 0;
+    }
+
+    .download {
+      display: block;
+      text-align: center;
+      background: #7b5cff;
+      color: white;
+      padding: 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .download:hover {
+      opacity: 0.9;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      margin-top: 30px;
     }
   </style>
 </head>
+
 <body>
-  <h1>amir6757</h1>
-  <div class="player">
+
+  <div class="container">
+
+    <!-- اسم آهنگ -->
+    <h1>دانلود آهنگ blok3.git</h1>
+
+    <!-- توضیح -->
+    <div class="info">
+      MP3 | 320kbps | پخش آنلاین + دانلود مستقیم
+    </div>
+
+    <!-- پلیر -->
     <audio controls>
-      <source src="blok3-git.mp3" type="audio/mpeg">
-      مرورگر شما از پخش موسیقی پشتیبانی نمی‌کند.
+      <source src="blok3.mp3" type="audio/mpeg">
+      مرورگر شما از پخش موزیک پشتیبانی نمی‌کند
     </audio>
-    <br>
-    <a class="download-btn" href="blok3-git.mp3" download>دانلود آهنگ</a>
+
+    <!-- دانلود -->
+    <a class="download" href="blok3.mp3" download>
+      دانلود آهنگ
+    </a>
+
+    <div class="footer">
+      © دانلود آهنگ blok3.git
+    </div>
+
   </div>
+
 </body>
 </html>
