@@ -7,134 +7,117 @@
 
 <style>
 body{
-  margin:0;
-  font-family:sans-serif;
-  background:#ffffff;
-  color:#000000;
+  margin:0;
+  font-family:sans-serif;
+  background:#ffffff;
+  color:#000000;
 }
 
 header{
-  text-align:center;
-  padding:20px;
-  border-bottom:1px solid #ddd;
+  text-align:center;
+  padding:20px;
+  border-bottom:1px solid #ddd;
 }
 
 header h1{
-  margin:0;
-  font-size:26px;
+  margin:0;
+  font-size:26px;
 }
 
 header p{
-  margin-top:5px;
-  font-size:14px;
+  margin-top:5px;
+  font-size:14px;
 }
 
 .box{
-  margin:15px;
-  padding:15px;
-  border-radius:12px;
-  box-shadow:0 2px 8px rgba(0,0,0,0.1);
-  text-align:center;
+  margin:15px;
+  padding:15px;
+  border-radius:12px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  text-align:center;
 }
 
 audio{
-  width:100%;
-  margin:15px 0;
+  width:100%;
+  margin:15px 0;
 }
 
-/* دکمه متن آهنگ */
 .btn-lyrics{
-  background:#800080;
-  color:#fff;
-  border:none;
-  padding:12px 20px;
-  border-radius:8px;
-  font-weight:bold;
-  cursor:pointer;
-  margin:5px 0;
-  width:100%;
-  display:block;
+  background:#800080; /* بنفش پررنگ */
+  color:#fff;
+  border:none;
+  padding:12px 20px;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+  margin:5px;
 }
 
-/* دکمه دانلود */
 .btn-download{
-  background:#0047ff;
-  color:#fff;
-  padding:12px 20px;
-  border-radius:8px;
-  font-weight:bold;
-  text-decoration:none;
-  display:block;
-  margin:5px 0;
-  width:100%;
+  background:#0047ff; /* آبی پررنگ */
+  color:#fff;
+  padding:12px 20px;
+  border-radius:8px;
+  font-weight:bold;
+  text-decoration:none;
+  display:inline-block;
+  margin:5px;
 }
 
-/* متن آهنگ */
 .lyrics{
-  display:none;
-  background:#0047ff;
-  color:#ffffff;
-  padding:15px;
-  margin-top:10px;
-  border-radius:10px;
-  text-align:justify;
-  white-space:pre-line;
-  max-height:300px;
-  overflow-y:auto;
-}
-  /* اندازه اسم آهنگ و اسم خواننده */
-.song-name,
-.artist-name{
-  font-size:14px;
-  font-weight:normal;
-  margin:4px 0;
+  display:none;
+  background:#0047ff; /* آبی پررنگ */
+  color:#ffffff;
+  padding:15px;
+  margin-top:10px;
+  border-radius:10px;
+  text-align:justify;
+  white-space:pre-line;
+  max-height:300px;
+  overflow-y:auto;
 }
 
 footer{
-  text-align:center;
-  font-size:12px;
-  color:#555;
-  margin:25px 0;
+  text-align:center;
+  font-size:12px;
+  color:#555;
+  margin:25px 0;
 }
 </style>
 
 <script>
 function toggleLyrics(){
-  var l = document.getElementById("lyrics");
-  l.style.display = (l.style.display === "none") ? "block" : "none";
+  var l = document.getElementById("lyrics");
+  l.style.display = (l.style.display === "none") ? "block" : "none";
 }
 </script>
-</head>
 
+</head>
 <body>
 
 <header>
-  <h1>Amir6757</h1>
-  <p>دانلود آهنگ‌های با کیفیت 320 MP3</p>
+  <h1>Amir6757</h1>
+  <p>دانلود آهنگ‌های با کیفیت 320 MP3</p>
 </header>
 
 <div class="box">
+  <h2>اسم اهنگ : git</h2>
+  <h2>اسم خواننده : Blok</h2>
 
-  <div class="song-name">اسم اهنگ : git</div>
-  <div class="artist-name">اسم خواننده : Blok3</div>
+  <!-- پلیر -->
+  <audio controls>
+    <source src="blok3-git" type="audio/mpeg">
+    مرورگر شما پشتیبانی نمی‌کند
+  </audio>
 
-  <audio controls>
-    <source src="blok3.git" type="audio/mpeg">
-    مرورگر شما پشتیبانی نمی‌کند
-  </audio>
+  <!-- دکمه‌ها -->
+  <button class="btn-lyrics" onclick="toggleLyrics()">متن آهنگ</a>
+  <a href="blok3-git" download class="btn-download">دانلود آهنگ</a>
 
-  <a href="blok3.git" download class="btn-download">دانلود آهنگ</butoon>
- <button class="btn-lyrics" onclick="toggleLyrics()">متن آهنگ</button>
-    
-  <div class="lyrics" id="lyrics">
-GitGit, peşimi bırak
-Senin aşkın bana bi’ tuzak
-Git, bi’ kez olsun kendine yakışanı yap
-Fotoğrafımızı sakla (Git)
+  <!-- متن آهنگ -->
+  <div class="lyrics" id="lyrics">
+GitGit, peşimi bırak  
+Senin aşkın bana bi’ tuzak  
+Git, bi’ kez olsun kendine yakışanı yap  
+Fotoğrafımızı sakla(Git)  
 Beni
-  </div>
-
-</div>
-
-</body>
-</html>
