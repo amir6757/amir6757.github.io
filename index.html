@@ -1,119 +1,121 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8">
-  <title>Amir6757 | دانلود آهنگ با کیفیت 320</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background: #ffffff; /* کل صفحه سفید */
-      color: #000000; /* نوشته‌ها سیاه */
-    }
-    .header {
-      background: #ffffff; /* هدر سفید */
-      color: #000000; /* نوشته هدر سیاه */
-      text-align: center;
-      padding: 20px 10px;
-      border-bottom: 1px solid #ccc; /* خط جداکننده */
-    }
-    .header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
-    .header p {
-      margin: 5px 0 0;
-      font-size: 14px;
-    }
-    .album {
-      background: #ffffff;
-      margin: 15px 10px;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .album img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-    .album h2 {
-      margin: 10px 0 5px;
-      font-size: 18px;
-    }
-    .album p {
-      margin: 0 0 10px;
-      font-size: 14px;
-    }
-    .lyrics-btn, .download-btn {
-      display: inline-block;
-      margin: 5px;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      color: #ffffff; /* متن دکمه سفید */
-      font-weight: bold;
-      cursor: pointer;
-      background-color: #0056b3; /* آبی پررنگ */
-      border: 2px solid #004080; /* قاب تیره برای برجستگی */
-      transition: 0.2s;
-    }
-    .lyrics-btn:hover, .download-btn:hover {
-      background-color: #004080; /* تیره‌تر هنگام هاور */
-    }
-    .lyrics-section {
-      display: none;
-      background: #ffffff; /* پس‌زمینه متن آهنگ سفید */
-      padding: 15px;
-      margin: 10px;
-      border-radius: 8px;
-      white-space: pre-line;
-      text-align: justify;
-      color: #000000; /* متن سیاه */
-      border: 1px solid #ccc;
-    }
-    .footer {
-      text-align: center;
-      font-size: 12px;
-      color: #000000; /* متن سیاه */
-      margin: 20px 0;
-      border-top: 1px solid #ccc;
-      padding-top: 10px;
-    }
-    audio {
-      width: 100%;
-      margin: 15px 0;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Amir6757 | دانلود آهنگ blok3.git</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family:sans-serif;
+  background:#ffffff;
+  color:#000000;
+}
+
+header{
+  text-align:center;
+  padding:20px;
+  border-bottom:1px solid #ddd;
+}
+
+header h1{
+  margin:0;
+  font-size:26px;
+}
+
+header p{
+  margin-top:5px;
+  font-size:14px;
+}
+
+.box{
+  margin:15px;
+  padding:15px;
+  border-radius:12px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  text-align:center;
+}
+
+audio{
+  width:100%;
+  margin:15px 0;
+}
+
+.btn-lyrics{
+  background:#800080; /* بنفش پررنگ */
+  color:#fff;
+  border:none;
+  padding:12px 20px;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+  margin:5px;
+}
+
+.btn-download{
+  background:#0047ff; /* آبی پررنگ */
+  color:#fff;
+  padding:12px 20px;
+  border-radius:8px;
+  font-weight:bold;
+  text-decoration:none;
+  display:inline-block;
+  margin:5px;
+}
+
+.lyrics{
+  display:none;
+  background:#0047ff; /* آبی پررنگ */
+  color:#ffffff;
+  padding:15px;
+  margin-top:10px;
+  border-radius:10px;
+  text-align:justify;
+  white-space:pre-line;
+  max-height:300px;
+  overflow-y:auto;
+}
+
+footer{
+  text-align:center;
+  font-size:12px;
+  color:#555;
+  margin:25px 0;
+}
+</style>
+
+<script>
+function toggleLyrics(){
+  var l = document.getElementById("lyrics");
+  l.style.display = (l.style.display === "none") ? "block" : "none";
+}
+</script>
+
 </head>
 <body>
 
-  <!-- بالای صفحه: اسم سایت + توضیح کوتاه -->
-  <div class="header">
-    <h1>Amir6757</h1>
-    <p>دانلود آهنگ‌های با کیفیت 320 MP3</p>
-  </div>
+<header>
+  <h1>Amir6757</h1>
+  <p>دانلود آهنگ‌های با کیفیت 320 MP3</p>
+</header>
 
-  <!-- آلبوم آهنگ -->
-  <div class="album">
-    <img src="amir6757.jpg" alt="عکس خواننده">
-    <h2>blok3.git</h2>
-    <p>خواننده: Amir6757</p>
+<div class="box">
+  <h2>blok3.git</h2>
+  <p>خواننده: Blok</p>
 
-    <!-- پلیر -->
-    <audio id="player" controls>
-      <source src="blok3.git" type="audio/mpeg">
-      مرورگر شما از پخش موزیک پشتیبانی نمی‌کند
-    </audio>
+  <!-- پلیر -->
+  <audio controls>
+    <source src="blok3.git" type="audio/mpeg">
+    مرورگر شما پشتیبانی نمی‌کند
+  </audio>
 
-    <!-- دکمه متن آهنگ -->
-    <div class="lyrics-btn" onclick="toggleLyrics()">مشاهده متن آهنگ</div>
+  <!-- دکمه‌ها -->
+  <button class="btn-lyrics" onclick="toggleLyrics()">متن آهنگ</button>
+  <a href="blok3.git" download class="btn-download">دانلود آهنگ</a>
 
-    <!-- متن آهنگ -->
-    <div class="lyrics-section" id="lyrics">
+  <!-- متن آهنگ -->
+  <div class="lyrics" id="lyrics">
 GitGit, peşimi bırak  
 Senin aşkın bana bi’ tuzak  
 Git, bi’ kez olsun kendine yakışanı yap  
