@@ -2,7 +2,7 @@
 <html lang="fa">
 <head>
 <meta charset="UTF-8">
-<title>دانلود آهنگ‌های کردی، ترکی و …</title>
+<title>دانلود آهنگ‌ های جدید کردی، ترکی  شاد و غمگین</title>
 <style>
 body{
   font-family: Arial, sans-serif;
@@ -24,27 +24,26 @@ body{
 }
 
 .site-header p{
-  font-size:18px;         /* کوچک و مشکی */
+  font-size:18px;         /* توضیح کوچک و مشکی */
   color:#000;
   margin:10px 0 0;
 }
 
-/* کانتینر کارت‌ها */
-.music-list{
-  display:grid;
-  grid-template-columns: repeat(4, 1fr); /* ۴ کارت در هر ردیف */
-  gap:8px; /* فاصله خیلی کم و یکسان */
+/* کانتینر کارت‌ها سطر به سطر سمت راست */
+.music-list-column{
+  display:flex;
+  flex-direction:column; /* سطر به سطر */
+  align-items:flex-end;  /* سمت راست بچینه */
+  gap:8px;               /* فاصله کم بین کارت‌ها */
   padding:20px;
-  justify-items:center;
 }
 
 /* کارت‌ها */
 .music-card{
-  border: 3px solid #800080; /* حاشیه بنفش کلاسیک */
-  border-radius: 15px;        /* گوشه گرد */
+  border:3px solid #800080; /* حاشیه بنفش کلاسیک */
+  border-radius:15px;       /* گوشه گرد */
   background:white;
-  width:100%;
-  max-width:200px;            /* مربعی بودن کارت */
+  width:150px;              /* مربعی */
   display:flex;
   flex-direction:column;
   overflow:hidden;
@@ -59,83 +58,62 @@ body{
 /* تصویر کارت */
 .music-card img{
   width:100%;
-  aspect-ratio:1/1; 
-  object-fit:cover;           /* تصویر کامل دیده شود */
+  aspect-ratio:1/1;
+  object-fit:cover;          /* تصویر کامل دیده شود */
   border-radius:10px 10px 0 0;
 }
-
-/* اسم آهنگ و خواننده */
+  /* اسم آهنگ و خواننده */
 .music-card h3{
-  margin:5px 0 2px;
-  text-align:center;
+  margin:5px 0 2px;
+  text-align:center;
 }
 
 .music-card p{
-  margin:0 0 5px;
-  text-align:center;
+  margin:0 0 5px;
+  text-align:center;
 }
 
 /* فوتر سایت */
 .site-footer{
-  text-align:center;
-  padding:20px 0;
-  font-size:14px;
-  color:#000;
-  border-top:1px solid #ccc;
+  text-align:center;
+  padding:20px 0;
+  font-size:14px;
+  color:#000;
+  border-top:1px solid #ccc;
 }
 </style>
 </head>
 <body>
 
-  <!-- هدر سایت -->
-  <div class="site-header">
-    <h1>Amir 1657</h1>
-    <p>دانلود آهنگ‌های کردی، ترکی و …</p>
-  </div>
+  <!-- هدر سایت -->
+  <div class="site-header">
+    <h1>Amir6757</h1>
+    <p>دانلود آهنگ‌ های کردی، ترکی شاد و غمگین</p>
+  </div>
 
-  <!-- کارت‌ها -->
-  <div class="music-list">
+  <!-- کارت‌ها سطر به سطر سمت راست -->
+  <div class="music-list-column">
 
-    <!-- ردیف اول -->
-    <a class="music-card" href="song1.html">
-      <img src="cover1.jpg" alt="کاور آهنگ">
-      <h3>اسم آهنگ</h3>
-      <p>نام خواننده</p>
-    </a>
-    <a class="music-card" href="song2.html">
-      <img src="cover2.jpg" alt="کاور آهنگ">
-      <h3>اسم آهنگ</h3>
-      <p>نام خواننده</p>
-    </a>
-    <a class="music-card" href="song3.html">
+    <a class="music-card" href="song1.html">
+      <img src="cover1.jpg" alt="کاور آهنگ">
+      <h3>اسم آهنگ</h3>
+      <p>نام خواننده</p>
+    </a>
+
+    <a class="music-card" href="blok3-git.html">
+      <img src="cover.jpg" alt="کاور آهنگ">
+      <h3>git</h3>
+      <p>blok3</p>
+    </a>
+
+    <a class="music-card" href="song3.html">
       <img src="cover3.jpg" alt="کاور آهنگ">
       <h3>اسم آهنگ</h3>
       <p>نام خواننده</p>
     </a>
+
     <a class="music-card" href="song4.html">
       <img src="cover4.jpg" alt="کاور آهنگ">
-      <h3>اسم آهنگ</h3>
-      <p>نام خواننده</p>
-    </a>
-
-    <!-- ردیف دوم -->
-    <a class="music-card" href="song5.html">
-      <img src="cover5.jpg" alt="کاور آهنگ">
-      <h3>اسم آهنگ</h3>
-      <p>نام خواننده</p>
-    </a>
-    <a class="music-card" href="song6.html">
-      <img src="cover6.jpg" alt="کاور آهنگ">
-      <h3>اسم آهنگ</h3>
-      <p>نام خواننده</p>
-    </a>
-    <a class="music-card" href="song7.html">
-      <img src="cover7.jpg" alt="کاور آهنگ">
-      <h3>اسم آهنگ</h3>
-      <p>نام خواننده</p>
-    </a>
-    <a class="music-card" href="song8.html">
-      <img src="cover8.jpg" alt="کاور آهنگ">
       <h3>اسم آهنگ</h3>
       <p>نام خواننده</p>
     </a>
