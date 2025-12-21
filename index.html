@@ -108,9 +108,26 @@ body{
 
 <div class="music-list">
 
+</style>
+<style>
+body{
+  margin:0;
+  font-family:tahoma;
+  background:#ffffff;
+}
+
+/* کانتینر اصلی */
+.music-list{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr); /* ۴ تا در یک سطر */
+  gap:20px;
+  padding:20px;
+}
+
+/* کارت آهنگ */
 .music-card{
   background:#ffffff;
-  border:3px solid #7a00ff; /* حاشیه بنفش */
+  border:3px solid #7a00ff; /* آبی */
   border-radius:20px;
   text-align:center;
   text-decoration:none;
@@ -118,10 +135,10 @@ body{
   padding:10px;
 }
 
-/* عکس کارت آهنگ */
+/* عکس کاور */
 .music-card img{
-  width:100%;         /* عکس همیشه به اندازه کارت */
-  height:220px;       /* ارتفاع ثابت */
+  width:100%;
+  height:220px;
   object-fit:cover;
   border-radius:15px;
 }
@@ -129,15 +146,34 @@ body{
 /* اسم آهنگ */
 .music-card h3{
   margin:10px 0 5px;
-  font-size:16px;     /* اندازه متن */
+  font-size:16px;
 }
 
-/* خواننده */
+/* اسم خواننده */
 .music-card p{
   margin:0;
   color:#444;
-  font-size:14px;     /* اندازه متن */
+  font-size:14px;
 }
+
+/* موبایل: دوتا دوتا */
+@media(max-width:900px){
+  .music-list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="music-list">
+
+  <a class="music-card" href="blok3-git.html">
+    <img src="cover.jpg">
+    <h3>git</h3>
+    <p>blok3</p>
+  </a>
   
   <!-- ردیف دوم -->
   <a class="music-card" href="song5.html"><h3>اسم اهنگ</h3><p>نام خواننده</p></a>
@@ -145,9 +181,26 @@ body{
   <a class="music-card" href="song5.html"><h3>اسم اهنگ</h3><p>نام خواننده</p></a>
 <a class="music-card" href="song5.html"><h3>اسم اهنگ</h3><p>نام خواننده</p></a>
 
-  .music-card{
+</style>
+<style>
+body{
+  margin:0;
+  font-family:tahoma;
   background:#ffffff;
-  border:3px solid #7a00ff; /* حاشیه بنفش */
+}
+
+/* کانتینر اصلی */
+.music-list{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr); /* ۴ تا در یک سطر */
+  gap:20px;
+  padding:20px;
+}
+
+/* کارت آهنگ */
+.music-card{
+  background:#ffffff;
+  border:3px solid #7a00ff; /* آبی */
   border-radius:20px;
   text-align:center;
   text-decoration:none;
@@ -155,10 +208,10 @@ body{
   padding:10px;
 }
 
-/* عکس کارت آهنگ */
+/* عکس کاور */
 .music-card img{
-  width:100%;         /* عکس همیشه به اندازه کارت */
-  height:220px;       /* ارتفاع ثابت */
+  width:100%;
+  height:220px;
   object-fit:cover;
   border-radius:15px;
 }
@@ -166,15 +219,34 @@ body{
 /* اسم آهنگ */
 .music-card h3{
   margin:10px 0 5px;
-  font-size:16px;     /* اندازه متن */
+  font-size:16px;
 }
 
-/* خواننده */
+/* اسم خواننده */
 .music-card p{
   margin:0;
   color:#444;
-  font-size:14px;     /* اندازه متن */
+  font-size:14px;
 }
+
+/* موبایل: دوتا دوتا */
+@media(max-width:900px){
+  .music-list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="music-list">
+
+  <a class="music-card" href="blok3-git.html">
+    <img src="cover.jpg">
+    <h3>git</h3>
+    <p>blok3</p>
+  </a>
   
   <!-- ردیف سوم -->
   <a class="music-card" href="song5.html"><h3>اسم اهنگ</h3><p>نام خواننده</p></a>
