@@ -3,151 +3,165 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>امیر شستا پنجاه و هفت</title>
-
+<title>امیر شست و هفت</title>
 <style>
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  margin: 0;
-  padding: 20px;
-}
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    direction: rtl;
+  }
 
-/* ردیف کارت‌ها */
-.music-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px; /* فاصله بین کارت‌ها */
-  justify-content: flex-start;
-}
+  /* بخش هدر سایت */
+  header {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #ffffff;
+  }
 
-/* کارت‌ها */
-.music-card {
-  width: 23%;             /* چهار کارت در یک ردیف */
-  border-radius: 15px;    /* گوشه‌ها گرد */
-  overflow: hidden;
-  text-align: center;
-  background-color: #f5f5f5;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-}
+  header h1 {
+    color: #007BFF; /* آبی */
+    font-size: 28px;
+    margin: 0;
+  }
 
-/* تصاویر کارت‌ها */
-.music-card img {
-  width: 100%;
-  height: 150px;          /* کارت کوتاه‌تر و مربعی */
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
-}
+  header p {
+    color: #333;
+    font-size: 16px;
+    margin: 5px 0 0 0;
+  }
 
-/* اسم آهنگ و نام خواننده */
-.music-card h3,
-.music-card p {
-  margin: 5px 0;          /* فاصله مناسب متن */
-  color: #000;
-}
+  /* بخش کارت‌ها */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    padding: 15px;
+  }
 
-/* حذف خطوط آبی */
-.music-card h3::before,
-.music-card h3::after,
-.music-card p::before,
-.music-card p::after {
-  content: none;
-}
+  .card {
+    background-color: #a020f0; /* بنافش پررنگ */
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+  }
 
-/* عنوان سایت */
-h1 {
-  color: #0000cc;          /* آبی پررنگ */
-  font-size: 57px;
-  text-align: center;
-  margin-bottom: 10px;
-}
+  .card:hover {
+    transform: scale(1.05);
+  }
 
-/* توضیحات دانلود آهنگ‌ها */
-p.description {
-  color: #000;
-  text-align: center;
-  margin-bottom: 30px;
-}
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .card .info {
+    padding: 10px;
+    background-color: #a020f0; /* بنافش پررنگ */
+  }
+  .card .info h3 {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .card .info p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  /* لینک کل کارت */
+  .card a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* فوتر */
+  footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+
+  /* واکنش‌گرا موبایل */
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 24px;
+    }
+    header p {
+      font-size: 14px;
+    }
+    .card .info h3 {
+      font-size: 14px;
+    }
+    .card .info p {
+      font-size: 12px;
+    }
+  }
 </style>
 </head>
 <body>
 
-<h1>امیر شستا پنجاه و هفت</h1>
-<p class="description">دانلود آهنگ‌های زدید، غمگین، شاد، ترکی و کردی</p>
+<header>
+  <h1>امیر شست و هفت، پنگه هفت</h1>
+  <p>برای دانلود آهنگ های ترکی، کردی، خندین و شاد روی لینک‌ها کلیک کنید</p>
+</header>
 
-<div class="music-list">
+<main class="grid">
+  <!-- کارت 1 -->
+  <div class="card">
+    <a href="https://example.com/download1">
+      <img src="cover1.jpg" alt="کاور آهنگ 1">
+      <div class="info">
+        <h3>اسم آهنگ 1</h3>
+        <p>خواننده 1</p>
+      </div>
+    </a>
+  </div>
 
-  <!-- ردیف اول -->
-  <a class="music-card" href="song1.html">
-    <img src="cover1.jpg" alt="کاور آهنگ">
-    <h3>اسم آهنگ</h3>
-    <p>نام خواننده</p>
-  </a>
-  <a class="music-card" href="song2.html">
-    <img src="cover2.jpg" alt="کاور آهنگ">
-    <h3>اسم آهنگ</h3>
-    <p>نام خواننده</p>
-  </a>
-  <a class="music-card" href="song3.html">
-    <img src="cover3.jpg" alt="کاور آهنگ">
-    <h3>اسم آهنگ</h3>
-    <p>نام خواننده</p>
-  </a>
-  <a class="music-card" href="song4.html">
-    <img src="cover4.jpg" alt="کاور آهنگ">
-    <h3>اسم آهنگ</h3>
-    <p>نام خواننده</p>
-  </a>
+  <!-- کارت 2 -->
+  <div class="card">
+    <a href="https://example.com/download2">
+      <img src="cover2.jpg" alt="کاور آهنگ 2">
+      <div class="info">
+        <h3>اسم آهنگ 2</h3>
+        <p>خواننده 2</p>
+      </div>
+    </a>
+  </div>
 
-  <!-- ردیف دوم -->
-  <a class="music-card" href="song5.html">
-    <img src="cover5.jpg" alt="کاور آهنگ">
-    <h3>اسم آهنگ</h3>
-    <p>نام خواننده</p>
-  </a>
-  <a class="music-card" href="song6.html">
-    <img src="cover6.jpg" alt="کاور آهنگ">
-    <h3>اسم آهنگ</h3>
-    <p>نام خواننده</p>
-  </a>
-  <a class="music-card" href="song7.html">
-    <img src="cover7.jpg" alt="کاور آهنگ">
-    <h3>اسم آهنگ</h3>
-    <p>نام خواننده</p>
-  </a>
-  <a class="music-card" href="song8.html">
-    <img src="cover8.jpg" alt="کاور آهنگ">
-    <h3>اسم آهنگ</h3>
-    <p>نام خواننده</p>
-  </a>
-  <!-- ردیف سوم -->
-  <a class="music-card" href="song9.html">
-    <img src="cover9.jpg" alt="کاور آهنگ">
-    <h3>اسم آهنگ</h3>
-    <p>نام خواننده</p>
-  </a>
-  <a class="music-card" href="song10.html">
-    <img src="cover10.jpg" alt="کاور آهنگ">
-    <h3>اسم آهنگ</h3>
-    <p>نام خواننده</p>
-  </a>
-  <a class="music-card" href="song11.html">
-    <img src="cover11.jpg" alt="کاور آهنگ">
-    <h3>اسم آهنگ</h3>
-    <p>نام خواننده</p>
-  </a>
-  <a class="music-card" href="song12.html">
-    <img src="cover12.jpg" alt="کاور آهنگ">
-    <h3>اسم آهنگ</h3>
-    <p>نام خواننده</p>
-  </a>
+  <!-- کارت 3 -->
+  <div class="card">
+    <a href="https://example.com/download3">
+      <img src="cover3.jpg" alt="کاور آهنگ 3">
+      <div class="info">
+        <h3>اسم آهنگ 3</h3>
+        <p>خواننده 3</p>
+      </div>
+    </a>
+  </div>
 
-</div>
+  <!-- کارت 4 -->
+  <div class="card">
+    <a href="https://example.com/download4">
+      <img src="cover4.jpg" alt="کاور آهنگ 4">
+      <div class="info">
+        <h3>اسم آهنگ 4</h3>
+        <p>خواننده 4</p>
+      </div>
+    </a>
+  </div>
 
-<p style="text-align:center; color:#000; margin-top:40px;">تمامی حقوق این سایت محفوظ است.</p>
+</main>
+
+<footer>
+  تمامی حقوق این سایت محفوظ است
+</footer>
 
 </body>
 </html>
