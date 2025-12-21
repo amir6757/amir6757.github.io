@@ -2,93 +2,99 @@
 <html lang="fa">
 <head>
 <meta charset="UTF-8">
-<title>Amir6757 | سایت موزیک</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سایت موزیک</title>
+
 <style>
 body{
   margin:0;
-  font-family:sans-serif;
+  font-family:tahoma;
   background:#ffffff;
-  color:#000000;
+}
+
+/* لیست آهنگ‌ها */
+.music-list{
+  display:flex;
+  gap:20px;
+  padding:20px;
+  overflow-x:auto;
+}
+
+/* کارت آهنگ */
+.music-card{
+  min-width:230px;
+  background:#ffffff;
+  border:3px solid #005eff; /* آبی */
+  border-radius:20px;
   text-align:center;
-}
-
-header{
-  padding:40px 20px;
-  background:#f0f0f0;
-  border-bottom:2px solid #ddd;
-}
-
-header h1{
-  margin:0;
-  font-size:40px; 
-  color:#0047ff;   /* آبی پررنگ */
-}
-
-header p{
-  margin-top:20px;
-  font-size:20px; 
-  line-height:1.6;
-  color:#333333;
-}
-
-ul{
-  list-style:none;
-  padding:0;
-  margin-top:40px;
-}
-
-ul li{
-  margin:20px 0;
-}
-
-ul li a{
   text-decoration:none;
-  font-size:22px;
-  color:#ffffff;             
-  font-weight:bold;
-  padding:15px 30px;         
-  background:#800080;        
-  border:2px solid #800080;  
-  border-radius:8px;
-  transition:0.3s;
-  display:inline-block;
+  color:#000;
+  padding:10px;
 }
 
-ul li a:hover{
-  background:#4b004b;        
-  color:#fff;
+/* عکس کاور (خودت می‌ذاری) */
+.music-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:15px;
 }
 
-footer{
-  margin:50px 0;
-  font-size:14px;
-  color:#555;
+/* اسم آهنگ */
+.music-card h3{
+  margin:10px 0 5px;
 }
 
-.cc-text{
-  font-size:12px;
-  color:#555;
-  margin-top:10px;
+/* خواننده */
+.music-card p{
+  margin:0;
+  color:#444;
+}
+
+/* اسکرول پایین */
+.scroll-bar{
+  width:100%;
+  height:10px;
+  background:#0066ff; /* آبی */
+  margin-top:15px;
+  position:relative;
+}
+
+/* دکمه اسکرول */
+.scroll-dot{
+  width:30px;
+  height:30px;
+  background:#7a00ff; /* بنفش پررنگ */
+  border-radius:50%;
+  position:absolute;
+  top:-10px;
+  left:20px;
 }
 </style>
 </head>
+
 <body>
 
-<header>
-  <h1>Amir6757</h1>
-  <p>به سایت ما خوش آمدید! برای گوش دادن و دانلود آهنگ‌ های ترکی، کردی، شاد و غمگین روی لینک‌ ها کلیک کنید</p>
-</header>
+<div class="music-list">
 
-<ul>
-  <li><a href="blok3-git.html">اهنگ ۱ blok3-git</a></li>
-  <!-- لینک آهنگ‌ های دیگر را اینجا اضافه کنید -->
-</ul>
+  <!-- آهنگ 1 -->
+  <a class="music-card" href="song1.html">
+    <img src="cover1.jpg">
+    <h3>شب یلدا</h3>
+    <p>روزبه نعمت‌الهی</p>
+  </a>
 
-<footer>
-تمامی حقوق این سایت محفوظ است
-</p>
-</footer>
+  <!-- آهنگ 2 -->
+  <a class="music-card" href="song2.html">
+    <img src="cover2.jpg">
+    <h3>ماه من</h3>
+    <p>سالار عقیلی</p>
+  </a>
+
+</div>
+
+<div class="scroll-bar">
+  <div class="scroll-dot"></div>
+</div>
 
 </body>
 </html>
