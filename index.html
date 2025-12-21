@@ -4,160 +4,148 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>امیر شست و هفت</title>
+
 <style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    direction: rtl;
+body{
+  margin:0;
+  font-family:tahoma, Arial;
+  background:#f6f6f6;
+  direction:rtl;
+}
+
+/* هدر */
+header{
+  background:#fff;
+  text-align:center;
+  padding:20px 10px;
+}
+
+header h1{
+  color:#007bff;
+  font-size:26px;
+  margin:0;
+}
+
+header p{
+  margin-top:8px;
+  font-size:14px;
+  color:#333;
+}
+
+/* گرید کارت‌ها */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr); /* چهار تا کنار هم */
+  gap:12px;
+  padding:12px;
+}
+
+/* کارت */
+.card{
+  background:#fff;
+  border:2px solid #a020f0; /* بنفش فقط دور */
+  border-radius:8px;
+  overflow:hidden;
+  text-align:center;
+}
+
+/* لینک */
+.card a{
+  text-decoration:none;
+  color:#000;
+  display:block;
+}
+
+/* کاور */
+.card img{
+  width:100%;
+  aspect-ratio:1/1; /* مربع */
+  object-fit:cover;
+}
+
+/* متن‌ها */
+.info{
+  padding:8px 5px;
+}
+
+.info .song{
+  font-size:15px;   /* اسم آهنگ بزرگ */
+  font-weight:bold;
+  margin:4px 0;
+}
+
+.info .artist{
+  font-size:12px;   /* اسم خواننده کوچیک‌تر */
+  color:#555;
+  margin:0;
+}
+
+/* موبایل */
+@media(max-width:600px){
+  .grid{
+    grid-template-columns:repeat(2, 1fr); /* موبایل کوچیک */
   }
+}
 
-  /* بخش هدر سایت */
-  header {
-    text-align: center;
-    padding: 20px 10px;
-    background-color: #ffffff;
-  }
-
-  header h1 {
-    color: #007BFF; /* آبی */
-    font-size: 28px;
-    margin: 0;
-  }
-
-  header p {
-    color: #333;
-    font-size: 16px;
-    margin: 5px 0 0 0;
-  }
-
-  /* بخش کارت‌ها */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 15px;
-    padding: 15px;
-  }
-
-  .card {
-    background-color: #a020f0; /* بنافش پررنگ */
-    color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.2s;
-  }
-
-  .card:hover {
-    transform: scale(1.05);
-  }
-
-  .card img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .card .info {
-    padding: 10px;
-    background-color: #a020f0; /* بنافش پررنگ */
-  }
-  .card .info h3 {
-    margin: 5px 0;
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-  .card .info p {
-    margin: 0;
-    font-size: 14px;
-  }
-
-  /* لینک کل کارت */
-  .card a {
-    color: inherit;
-    text-decoration: none;
-    display: block;
-  }
-
-  /* فوتر */
-  footer {
-    text-align: center;
-    padding: 15px;
-    font-size: 14px;
-    color: #555;
-  }
-
-  /* واکنش‌گرا موبایل */
-  @media (max-width: 480px) {
-    header h1 {
-      font-size: 24px;
-    }
-    header p {
-      font-size: 14px;
-    }
-    .card .info h3 {
-      font-size: 14px;
-    }
-    .card .info p {
-      font-size: 12px;
-    }
-  }
+footer{
+  text-align:center;
+  padding:15px;
+  font-size:13px;
+  color:#555;
+}
 </style>
 </head>
+
 <body>
 
 <header>
-  <h1>امیر شست و هفت، پنگه هفت</h1>
-  <p>برای دانلود آهنگ های ترکی، کردی، خندین و شاد روی لینک‌ها کلیک کنید</p>
+  <h1>امیر شست و هفت، پنگه هفت</h1>
+  <p>برای دانلود آهنگ‌های ترکی، کردی، خندین و شاد روی لینک‌ها کلیک کنید</p>
 </header>
 
-<main class="grid">
-  <!-- کارت 1 -->
-  <div class="card">
-    <a href="https://example.com/download1">
-      <img src="cover1.jpg" alt="کاور آهنگ 1">
-      <div class="info">
-        <h3>اسم آهنگ 1</h3>
-        <p>خواننده 1</p>
+<div class="grid">
+
+  <div class="card">
+    <a href="#">
+      <img src="cover1.jpg">
+      <div class="info">
+        <div class="song">اسم آهنگ</div>
+        <div class="artist">اسم خواننده</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="#">
+      <img src="cover2.jpg">
+      <div class="info">
+        <div class="song">اسم آهنگ</div>
+        <div class="artist">اسم خواننده</div>
       </div>
     </a>
   </div>
 
-  <!-- کارت 2 -->
   <div class="card">
-    <a href="https://example.com/download2">
-      <img src="cover2.jpg" alt="کاور آهنگ 2">
+    <a href="#">
+      <img src="cover3.jpg">
       <div class="info">
-        <h3>اسم آهنگ 2</h3>
-        <p>خواننده 2</p>
+        <div class="song">اسم آهنگ</div>
+        <div class="artist">اسم خواننده</div>
       </div>
     </a>
   </div>
 
-  <!-- کارت 3 -->
   <div class="card">
-    <a href="https://example.com/download3">
-      <img src="cover3.jpg" alt="کاور آهنگ 3">
+    <a href="#">
+      <img src="cover4.jpg">
       <div class="info">
-        <h3>اسم آهنگ 3</h3>
-        <p>خواننده 3</p>
+        <div class="song">اسم آهنگ</div>
+        <div class="artist">اسم خواننده</div>
       </div>
     </a>
   </div>
 
-  <!-- کارت 4 -->
-  <div class="card">
-    <a href="https://example.com/download4">
-      <img src="cover4.jpg" alt="کاور آهنگ 4">
-      <div class="info">
-        <h3>اسم آهنگ 4</h3>
-        <p>خواننده 4</p>
-      </div>
-    </a>
-  </div>
-
-</main>
+</div>
 
 <footer>
   تمامی حقوق این سایت محفوظ است
