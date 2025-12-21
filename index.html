@@ -48,35 +48,38 @@ header p{
   gap:12px;
 }
 
-/* کارت */
+  /* کارت */
 .card{
   background:#fff;
-  border:2px solid #800080; /* فقط قاب بنفش */
+  border:2px solid #a020f0; /* فقط قاب بنفش */
   border-radius:10px;
   text-align:center;
   padding-bottom:10px;
+  height:250px; /* 👈 همه کارت‌ها هم ارتفاع */
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
 }
 
-/* لینک */
-.card a{
-  text-decoration:none;
-  color:#000;
-  display:block;
-}
-
-/* تصویر کاور (فقط گوشه‌ها گرد) */
+/* تصویر کاور */
 .card img{
-  width:90%;
+  width:70%;
   aspect-ratio:1/1;
   object-fit:cover;
-  border-radius:12px;   /* 👈 فقط گرد شدن گوشه‌ها */
+  border-radius:12px; /* گوشه‌ها گرد */
   margin:10px auto 5px;
   display:block;
+  flex-shrink:0; /* 👈 جلوی کوچک شدن تصویر */
 }
 
-/* متن‌ها */
+/* متن */
 .info{
   padding:5px 6px;
+  flex-grow:1; /* 👈 متن همیشه فضای مساوی می‌گیره */
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
 }
 
 .song{
