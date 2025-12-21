@@ -32,18 +32,25 @@ header p{
   color:#333;
 }
 
-/* گرید کارت‌ها */
-.grid{
+/* دو ستون */
+.container{
   display:grid;
-  grid-template-columns:repeat(4, 1fr); /* چهار تا کنار هم */
+  grid-template-columns:1fr 1fr; /* راست و چپ */
   gap:12px;
   padding:12px;
+}
+
+/* ستون */
+.column{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
 }
 
 /* کارت */
 .card{
   background:#fff;
-  border:2px solid #a020f0; /* بنفش فقط دور */
+  border:2px solid #a020f0;
   border-radius:8px;
   overflow:hidden;
   text-align:center;
@@ -59,39 +66,35 @@ header p{
 /* کاور */
 .card img{
   width:100%;
-  aspect-ratio:1/1; /* مربع */
+  aspect-ratio:1/1;
   object-fit:cover;
 }
 
-/* متن‌ها */
+/* متن */
 .info{
-  padding:8px 5px;
+  padding:8px 6px;
 }
 
-.info .song{
-  font-size:15px;   /* اسم آهنگ بزرگ */
+.song{
+  font-size:16px; /* بزرگ */
   font-weight:bold;
   margin:4px 0;
 }
 
-.info .artist{
-  font-size:12px;   /* اسم خواننده کوچیک‌تر */
+.artist{
+  font-size:12px; /* کوچیک‌تر */
   color:#555;
-  margin:0;
 }
 
-/* موبایل */
-@media(max-width:600px){
-  .grid{
-    grid-template-columns:repeat(2, 1fr); /* موبایل کوچیک */
-  }
+/* موبایل خیلی کوچیک */
+@media(max-width:480px){
+  .song{font-size:14px;}
 }
-
-footer{
-  text-align:center;
-  padding:15px;
-  font-size:13px;
-  color:#555;
+  footer{
+  text-align:center;
+  padding:15px;
+  font-size:13px;
+  color:#555;
 }
 </style>
 </head>
@@ -99,50 +102,26 @@ footer{
 <body>
 
 <header>
-  <h1>امیر شست و هفت، پنگه هفت</h1>
-  <p>برای دانلود آهنگ‌های ترکی، کردی، خندین و شاد روی لینک‌ها کلیک کنید</p>
+  <h1>امیر شست و هفت، پنگه هفت</h1>
+  <p>برای دانلود آهنگ‌های ترکی، کردی، خندین و شاد روی لینک‌ها کلیک کنید</p>
 </header>
 
-<div class="grid">
+<div class="container">
 
-  <div class="card">
-    <a href="#">
-      <img src="cover.jpg">
-      <div class="info">
-        <div class="song">اسم آهنگ</div>
-        <div class="artist">اسم خواننده</div>
-      </div>
-    </a>
-  </div>
-
-  <div class="card">
-    <a href="#">
-      <img src="cover2.jpg">
-      <div class="info">
-        <div class="song">اسم آهنگ</div>
-        <div class="artist">اسم خواننده</div>
-      </div>
-    </a>
+  <!-- ستون راست -->
+  <div class="column">
+    <div class="card"><a href="#"><img src="cover1.jpg"><div class="info"><div class="song">اسم آهنگ</div><div class="artist">اسم خواننده</div></div></a></div>
+    <div class="card"><a href="#"><img src="cover2.jpg"><div class="info"><div class="song">اسم آهنگ</div><div class="artist">اسم خواننده</div></div></a></div>
+    <div class="card"><a href="#"><img src="cover3.jpg"><div class="info"><div class="song">اسم آهنگ</div><div class="artist">اسم خواننده</div></div></a></div>
+    <div class="card"><a href="#"><img src="cover4.jpg"><div class="info"><div class="song">اسم آهنگ</div><div class="artist">اسم خواننده</div></div></a></div>
   </div>
 
-  <div class="card">
-    <a href="#">
-      <img src="cover3.jpg">
-      <div class="info">
-        <div class="song">اسم آهنگ</div>
-        <div class="artist">اسم خواننده</div>
-      </div>
-    </a>
-  </div>
-
-  <div class="card">
-    <a href="#">
-      <img src="cover4.jpg">
-      <div class="info">
-        <div class="song">اسم آهنگ</div>
-        <div class="artist">اسم خواننده</div>
-      </div>
-    </a>
+  <!-- ستون چپ -->
+  <div class="column">
+    <div class="card"><a href="#"><img src="cover5.jpg"><div class="info"><div class="song">اسم آهنگ</div><div class="artist">اسم خواننده</div></div></a></div>
+    <div class="card"><a href="#"><img src="cover6.jpg"><div class="info"><div class="song">اسم آهنگ</div><div class="artist">اسم خواننده</div></div></a></div>
+    <div class="card"><a href="#"><img src="cover7.jpg"><div class="info"><div class="song">اسم آهنگ</div><div class="artist">اسم خواننده</div></div></a></div>
+    <div class="card"><a href="#"><img src="cover8.jpg"><div class="info"><div class="song">اسم آهنگ</div><div class="artist">اسم خواننده</div></div></a></div>
   </div>
 
 </div>
