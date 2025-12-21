@@ -11,17 +11,16 @@ body{
   background:#ffffff;
 }
 
-/* لیست آهنگ‌ها */
+/* کانتینر اصلی */
 .music-list{
-  display:flex;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr); /* ۴ تا در یک سطر */
   gap:20px;
   padding:20px;
-  overflow-x:auto;
 }
 
 /* کارت آهنگ */
 .music-card{
-  min-width:230px;
   background:#ffffff;
   border:3px solid #005eff; /* آبی */
   border-radius:20px;
@@ -31,7 +30,7 @@ body{
   padding:10px;
 }
 
-/* عکس کاور (خودت می‌ذاری) */
+/* عکس کاور */
 .music-card img{
   width:100%;
   height:220px;
@@ -42,32 +41,21 @@ body{
 /* اسم آهنگ */
 .music-card h3{
   margin:10px 0 5px;
+  font-size:16px;
 }
 
-/* خواننده */
+/* اسم خواننده */
 .music-card p{
   margin:0;
   color:#444;
+  font-size:14px;
 }
 
-/* اسکرول پایین */
-.scroll-bar{
-  width:100%;
-  height:10px;
-  background:#0066ff; /* آبی */
-  margin-top:15px;
-  position:relative;
-}
-
-/* دکمه اسکرول */
-.scroll-dot{
-  width:30px;
-  height:30px;
-  background:#7a00ff; /* بنفش پررنگ */
-  border-radius:50%;
-  position:absolute;
-  top:-10px;
-  left:20px;
+/* موبایل: دوتا دوتا */
+@media(max-width:900px){
+  .music-list{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 </style>
 </head>
@@ -76,24 +64,30 @@ body{
 
 <div class="music-list">
 
-  <!-- آهنگ 1 -->
   <a class="music-card" href="song1.html">
     <img src="cover1.jpg">
     <h3>شب یلدا</h3>
     <p>روزبه نعمت‌الهی</p>
   </a>
 
-  <!-- آهنگ 2 -->
   <a class="music-card" href="song2.html">
     <img src="cover2.jpg">
     <h3>ماه من</h3>
     <p>سالار عقیلی</p>
   </a>
 
-</div>
+  <a class="music-card" href="song3.html">
+    <img src="cover3.jpg">
+    <h3>آهنگ سوم</h3>
+    <p>نام خواننده</p>
+  </a>
 
-<div class="scroll-bar">
-  <div class="scroll-dot"></div>
+  <a class="music-card" href="song4.html">
+    <img src="cover4.jpg">
+    <h3>آهنگ چهارم</h3>
+    <p>نام خواننده</p>
+  </a>
+
 </div>
 
 </body>
