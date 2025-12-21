@@ -18,37 +18,36 @@ body{
 }
 
 .site-header h1{
-  font-size:60px;   /* بزرگ و آبی */
-  color:#005eff;    /* آبی پررنگ */
+  font-size:60px;         /* اندازه بزرگ */
+  color:#005eff;          /* آبی پررنگ */
   margin:0;
-  font-family: inherit;
 }
 
 .site-header p{
-  font-size:18px;   /* کوچک و مشکی */
+  font-size:18px;         /* کوچک و مشکی */
   color:#000;
   margin:10px 0 0;
 }
 
 /* کانتینر کارت‌ها */
 .music-list{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap:15px;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr); /* ۴ کارت در هر ردیف */
+  gap:8px; /* فاصله خیلی کم و یکسان */
   padding:20px;
   justify-items:center;
 }
 
 /* کارت‌ها */
 .music-card{
-  border: 3px solid #7a00ff; /* حاشیه بنفش پررنگ */
-  border-radius: 15px;        /* گوشه‌های گرد */
+  border: 3px solid #800080; /* حاشیه بنفش کلاسیک */
+  border-radius: 15px;        /* گوشه گرد */
   background:white;
+  width:100%;
+  max-width:200px;            /* مربعی بودن کارت */
   display:flex;
   flex-direction:column;
   overflow:hidden;
-  width:100%;
-  max-width:200px;
   box-shadow:0 4px 6px rgba(0,0,0,0.1);
   transition:transform 0.3s;
 }
@@ -61,23 +60,19 @@ body{
 .music-card img{
   width:100%;
   aspect-ratio:1/1; 
-  object-fit:cover; 
+  object-fit:cover;           /* تصویر کامل دیده شود */
   border-radius:10px 10px 0 0;
 }
 
-/* اسم آهنگ */
+/* اسم آهنگ و خواننده */
 .music-card h3{
-  font-size:16px;
   margin:5px 0 2px;
   text-align:center;
 }
 
-/* نام خواننده */
 .music-card p{
-  font-size:14px;
   margin:0 0 5px;
   text-align:center;
-  color:#000;
 }
 
 /* فوتر سایت */
@@ -96,23 +91,23 @@ body{
   <div class="site-header">
     <h1>Amir 1657</h1>
     <p>دانلود آهنگ‌های کردی، ترکی و …</p>
-  </div>
+  </div>
 
-  <!-- کارت‌ها -->
-  <div class="music-list">
+  <!-- کارت‌ها -->
+  <div class="music-list">
 
-    <!-- ردیف اول -->
-    <a class="music-card" href="song1.html">
-      <img src="cover1.jpg" alt="کاور آهنگ">
-      <h3>اسم آهنگ</h3>
-      <p>نام خواننده</p>
-    </a>
-    <a class="music-card" href="song2.html">
-      <img src="cover2.jpg" alt="کاور آهنگ">
-      <h3>اسم آهنگ</h3>
-      <p>نام خواننده</p>
-    </a>
-    <a class="music-card" href="song3.html">
+    <!-- ردیف اول -->
+    <a class="music-card" href="song1.html">
+      <img src="cover1.jpg" alt="کاور آهنگ">
+      <h3>اسم آهنگ</h3>
+      <p>نام خواننده</p>
+    </a>
+    <a class="music-card" href="song2.html">
+      <img src="cover2.jpg" alt="کاور آهنگ">
+      <h3>اسم آهنگ</h3>
+      <p>نام خواننده</p>
+    </a>
+    <a class="music-card" href="song3.html">
       <img src="cover3.jpg" alt="کاور آهنگ">
       <h3>اسم آهنگ</h3>
       <p>نام خواننده</p>
