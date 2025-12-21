@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>امیر شست و هفت</title>
+<title>برای دانلود اهنگ غمگین شاد کردی و ترکی روی لینک ها کلیک کنید</title>
 
 <style>
 body{
@@ -32,16 +32,22 @@ header p{
   color:#333;
 }
 
-/* دو ستون */
+/* کانتینر اصلی */
 .container{
   display:grid;
-  grid-template-columns:1fr 1fr; /* راست و چپ */
+  grid-template-columns:1fr 1fr;
   gap:12px;
   padding:12px;
 }
 
-/* ستون */
-.column{
+/* ستون راست و چپ */
+.right-col{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.left-col{
   display:flex;
   flex-direction:column;
   gap:12px;
@@ -51,9 +57,9 @@ header p{
 .card{
   background:#fff;
   border:2px solid #a020f0;
-  border-radius:8px;
-  overflow:hidden;
+  border-radius:10px;
   text-align:center;
+  padding-bottom:10px;
 }
 
 /* لینک */
@@ -63,38 +69,43 @@ header p{
   display:block;
 }
 
-/* کاور */
+/* تصویر کاور (دایره‌ای) */
 .card img{
-  width:100%;
+  width:70%;
   aspect-ratio:1/1;
   object-fit:cover;
+  border-radius:50%;
+  margin:10px auto 5px;
+  display:block;
 }
 
 /* متن */
 .info{
-  padding:8px 6px;
+  padding:5px 6px;
 }
 
 .song{
-  font-size:16px; /* بزرگ */
+  font-size:16px;
   font-weight:bold;
   margin:4px 0;
 }
 
 .artist{
-  font-size:12px; /* کوچیک‌تر */
+  font-size:12px;
   color:#555;
 }
 
-/* موبایل خیلی کوچیک */
+/* موبایل */
 @media(max-width:480px){
   .song{font-size:14px;}
+  .card img{width:80%;}
 }
-  footer{
-  text-align:center;
-  padding:15px;
-  font-size:13px;
-  color:#555;
+
+footer{
+  text-align:center;
+  padding:15px;
+  font-size:13px;
+  color:#555;
 }
 </style>
 </head>
@@ -102,22 +113,21 @@ header p{
 <body>
 
 <header>
-  <h1>امیر شست و هفت، پنگه هفت</h1>
-  <p>برای دانلود آهنگ‌های ترکی، کردی، خندین و شاد روی لینک‌ها کلیک کنید</p>
+  <h1>Amir6757</h1>
+  <p>برای دانلود اهنگ غمگین شاد کردی و ترکی روی لینک ها کلیک کنید</p>
 </header>
 
 <div class="container">
-
-  <!-- ستون راست -->
-  <div class="column">
-    <div class="card"><a href="#"><img src="cover1.jpg"><div class="info"><div class="song">اسم آهنگ</div><div class="artist">اسم خواننده</div></div></a></div>
+  <!-- ستون راست (۴ کارت) -->
+  <div class="right-col">
+    <div class="card"><a href="blok3-git.html"><img src="cover.jpg"><div class="info"><div class="song">git</div><div class="artist">blok3</div></div></a></div>
     <div class="card"><a href="#"><img src="cover2.jpg"><div class="info"><div class="song">اسم آهنگ</div><div class="artist">اسم خواننده</div></div></a></div>
     <div class="card"><a href="#"><img src="cover3.jpg"><div class="info"><div class="song">اسم آهنگ</div><div class="artist">اسم خواننده</div></div></a></div>
     <div class="card"><a href="#"><img src="cover4.jpg"><div class="info"><div class="song">اسم آهنگ</div><div class="artist">اسم خواننده</div></div></a></div>
   </div>
 
-  <!-- ستون چپ -->
-  <div class="column">
+  <!-- ستون چپ (۴ کارت) -->
+  <div class="left-col">
     <div class="card"><a href="#"><img src="cover5.jpg"><div class="info"><div class="song">اسم آهنگ</div><div class="artist">اسم خواننده</div></div></a></div>
     <div class="card"><a href="#"><img src="cover6.jpg"><div class="info"><div class="song">اسم آهنگ</div><div class="artist">اسم خواننده</div></div></a></div>
     <div class="card"><a href="#"><img src="cover7.jpg"><div class="info"><div class="song">اسم آهنگ</div><div class="artist">اسم خواننده</div></div></a></div>
@@ -126,7 +136,7 @@ header p{
 
 </div>
 
-<footer>
+<footer>3
   تمامی حقوق این سایت محفوظ است
 </footer>
 
