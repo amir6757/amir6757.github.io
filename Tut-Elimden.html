@@ -1,1 +1,185 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>دانلود آهنگ های جدید | Amir6757</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style>
+body{
+  margin:0;
+  font-family:tahoma, sans-serif;
+  background:#ffffff;
+  color:#000;
+}
+
+h1{
+  text-align:center;
+  color:#0047ff;
+  margin-top:20px;
+  font-size:32px;
+}
+
+.subtitle{
+  text-align:center;
+  font-size:15px;
+  margin-bottom:25px;
+}
+
+/* کارت آهنگ */
+.song-box{
+  max-width:360px;
+  margin:20px auto;
+  border:3px solid #800080;
+  border-radius:14px;
+  padding:12px;
+  box-sizing:border-box;
+}
+
+.cover{
+  width:100%;
+  aspect-ratio:1/1;
+  border-radius:12px;
+  overflow:hidden;
+  margin-bottom:10px;
+}
+
+.cover img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.song-info{
+  text-align:center;
+  font-size:14px;
+  margin-bottom:10px;
+}
+
+audio{
+  width:100%;
+  margin:10px 0;
+}
+
+.buttons{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.btn-download{
+  background:#0047ff;
+  color:#fff;
+  padding:12px;
+  border-radius:8px;
+  text-decoration:none;
+  text-align:center;
+  font-weight:bold;
+}
+
+.btn-lyrics{
+  background:#800080;
+  color:#fff;
+  border:none;
+  padding:12px;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.lyrics{
+  display:none;
+  background:#0047ff;
+  color:#fff;
+  padding:12px;
+  border-radius:10px;
+  font-size:13px;
+  white-space:pre-line;
+  margin-top:10px;
+}
+
+footer{
+  text-align:center;
+  font-size:12px;
+  color:#555;
+  margin:30px 0;
+}
+</style>
+
+<script>
+function toggleLyrics(id){
+  var x = document.getElementById(id);
+  x.style.display = (x.style.display === "block") ? "none" : "block";
+}
+</script>
+</head>
+
+<body>
+
+<h1>Amir6757</h1>
+<p class="subtitle">دانلود آهنگ‌های جدید غمگین، شاد، ترکی و کردی</p>
+
+<!-- 🔽 هر آهنگ فقط این بخش را کپی کن 🔽 -->
+<div class="song-box">
+
+  <div class="cover">
+    <img src="cover1.jpg" alt="کاور آهنگ">
+    </div>
+
+  <div class="song-info">
+    اسم آهنگ : git<br>
+    نام خواننده : Blok3
+  </div>
+
+  <audio controls>
+    <source src="blok3-git.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="buttons">
+    <a href="blok3-git.mp3" download class="btn-download">دانلود آهنگ</a>
+    <button class="btn-lyrics" onclick="toggleLyrics('ly1')">متن آهنگ</button>
+  </div>
+
+  <div class="lyrics" id="ly1">
+اینجا متن آهنگ
+  </div>
+
+</div>
+<!-- 🔼 پایان آهنگ اول 🔼 -->
+
+
+<!-- ⬇️ آهنگ دوم (کپی کن و فقط اسم‌ها و فایل‌ها را عوض کن) -->
+<div class="song-box">
+
+  <div class="cover">
+    <img src="cover2.jpg">
+  </div>
+
+  <div class="song-info">
+    اسم آهنگ : مثال<br>
+    نام خواننده : Example
+  </div>
+
+  <audio controls>
+    <source src="example.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="buttons">
+    <a href="example.mp3" download class="btn-download">دانلود آهنگ</a>
+    <button class="btn-lyrics" onclick="toggleLyrics('ly2')">متن آهنگ</button>
+  </div>
+
+  <div class="lyrics" id="ly2">
+متن آهنگ دوم
+  </div>
+
+</div>
+<!-- ⬆️ پایان آهنگ دوم -->
+
+
+<footer>
+تمامی حقوق این سایت محفوظ است
+</footer>
+
+</body>
+</html>
