@@ -1,234 +1,205 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8">
-  <title>دانلود اهنگ git از blok3 با کیفیت 320 mp3</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amir6757 - دانلود آهنگ های جدید</title>
+<style>
+body {
+    margin:0;
+    font-family:sans-serif;
+    background:#ffffff;
+    color:#000;
+}
+
+/* Header */
+header {
+    text-align:center;
+    padding:20px;
+}
+header h1 {
+    color:#0047ff;
+    margin:0;
+    font-size:36px;
+}
+header p {
+    margin-top:5px;
+    font-size:16px;
+}
+
+/* Music Grid */
+.music-list {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:15px;
+    margin:20px;
+}
+
+/* Music Card */
+.music-card {
+    background:#fff;
+    border:3px solid #800080;
+    border-radius:15px;
+    padding:10px;
+    box-sizing:border-box;
+    text-align:center;
+}
+
+.music-card .cover {
+    width:200px;
+    height:200px;
+    margin:0 auto 10px;
+    overflow:hidden;
+    border-radius:10px;
+}
+
+.music-card .cover img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.music-card .title {
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.music-card .artist {
+    font-size:14px;
+    color:#555;
+    margin-bottom:10px;
+}
+
+/* Buttons */
+.btn-download {
+    display:block;
+    background:#0047ff;
+    color:#fff;
+    padding:10px;
+    border-radius:8px;
+    text-decoration:none;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+  .btn-lyrics {
+    display:block;
+    background:#800080;
+    color:#fff;
+    border:none;
+    padding:10px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-bottom:5px;
+}
+
+.lyrics {
+    display:none;
+    background:#0047ff;
+    color:#fff;
+    padding:10px;
+    border-radius:10px;
+    margin-top:10px;
+    white-space:pre-line;
+    text-align:justify;
+    overflow-y:auto;
+}
+
+/* Ads */
+.ads {
+    margin:20px auto;
+    padding:20px;
+    border:2px dashed #ccc;
+    text-align:center;
+    border-radius:10px;
+    color:#777;
+    font-size:14px;
+}
+
+/* Footer */
+footer {
+    text-align:center;
+    font-size:12px;
+    color:#555;
+    margin:30px 0;
+}
+.footer-buttons {
+    margin-top:10px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+.footer-buttons a {
+    padding:8px 15px;
+    border-radius:8px;
+    color:#fff;
+    text-decoration:none;
+    font-size:13px;
+}
+.footer-buttons .contact {
+    background:#0047ff;
+}
+.footer-buttons .ads-page {
+    background:#800080;
+}
+</style>
+<script>
+function toggleLyrics(id){
+    var l = document.getElementById(id);
+    l.style.display = (l.style.display === "none" || l.style.display === "") ? "block" : "none";
+}
+</script>
 </head>
-
 <body>
+  <header>
+    <h1>Amir6757</h1>
+    <p>دانلود آهنگ‌های جدید غمگین، شاد، ترکی و کردی</p>
+</header>
 
-  <!-- اسم سایت -->
-  <h1 style="color:#0047ff; text-align:center;">
-    Amir6757
-  </h1>
+<div class="music-list">
+    <!-- کارت آهنگ نمونه -->
+    <div class="music-card">
+        <div class="cover">
+            <img src="cover1.jpg" alt="کاور آهنگ">
+        </div>
+        <div class="title">اسم آهنگ</div>
+        <div class="artist">نام خواننده</div>
+        <a href="song1.mp3" download class="btn-download">دانلود آهنگ</a>
+        <button class="btn-lyrics" onclick="toggleLyrics('lyrics1')">متن آهنگ</button>
+        <div class="lyrics" id="lyrics1">
+متن آهنگ اینجا قرار می‌گیرد
+        </div>
+    </div>
 
-  <!-- متن زیر اسم سایت -->
-  <p style="text-align:center; font-size:16px;">
-    دانلود آهنگ‌ های جدید غمگین، شاد، ترکی و کردی
-  </p>
+    <!-- کارت دوم -->
+    <div class="music-card">
+        <div class="cover">
+            <img src="cover2.jpg" alt="کاور آهنگ">
+        </div>
+        <div class="title">اسم آهنگ</div>
+        <div class="artist">نام خواننده</div>
+        <a href="song2.mp3" download class="btn-download">دانلود آهنگ</a>
+        <button class="btn-lyrics" onclick="toggleLyrics('lyrics2')">متن آهنگ</button>
+        <div class="lyrics" id="lyrics2">
+متن آهنگ اینجا قرار می‌گیرد
+        </div>
+    </div>
+
+    <!-- کارت سوم و چهارم هم به همین روش اضافه می‌کنید -->
+</div>
+
+<div class="ads">
+    اینجا تبلیغ قرار می‌گیرد
+</div>
+
+<footer>
+    <p>تمامی حقوق این سایت محفوظ است</p>
+    <div class="footer-buttons">
+        <a href="contact.html" class="contact">تماس با ما</a>
+        <a href="ads.html" class="ads-page">تبلیغات</a>
+    </div>
+</footer>
 
 </body>
 </html>
-
-<meta name="viewport"
-  content="width=device-width,
-  initial-scale=1.0">
-
-  </body>
-<style>
-body{
-  margin:0;
-  font-family:sans-serif;
-  background:#ffffff;
-  color:#000000;
-}
-
-header{
-  text-align:center;
-  padding:20px;
-  border-bottom:1px solid #ddd;
-}
-
-header h1{
-  margin:0;
-  font-size:26px;
-}
-
-header p{
-  margin-top:5px;
-  font-size:14px;
-}
-
-.box{
-  margin:15px;
-  padding:15px;
-  border-radius:12px;
-  box-shadow:0 2px 8px rgba(0,0,0,0.1);
-  text-align:center;
-}
-<!- کاور -->
-.cover{
-  width:260px;
-  height:260px;
-  margin:-10px auto 20px;
-  overflow:hidden;
-}
-
-.cover img{
-  width:100%;
-  height:100%;
-  object-fit:contain;
-  object-position:center;
-  display:block;
-}
-}
-.play-title{
-  font-weight:bold;
-  margin-bottom:8px;
-}
-
-audio{
-  width:100%;
-  margin:10px 0 20px;
-}
-
-.buttons{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-
-.btn-download{
-  background:#0047ff;
-  color:#fff;
-  padding:12px;
-  border-radius:8px;
-  font-weight:bold;
-  text-decoration:none;
-}
-
-.btn-lyrics{
-  background:#800080;
-  color:#fff;
-  border:none;
-  padding:12px;
-  border-radius:8px;
-  font-weight:bold;
-  cursor:pointer;
-}
-
-.lyrics{
-  display:none;
-  background:#0047ff;
-  color:#ffffff;
-  padding:15px;
-  margin-top:15px;
-  border-radius:15px;
-  text-align:justify;
-  white-space:pre-line;
-  overflow-y:auto;
-}
-  /* تبلیغ */
-.ads{
-  margin:20px;
-  padding:20px;
-  border:2px dashed #ccc;
-  text-align:center;
-  border-radius:10px;
-  color:#777;
-  font-size:14px;
-}
-
-footer{
-  text-align:center;
-  font-size:12px;
-  color:#555;
-  margin:25px 0;
-}
-</style>
-
-<script>
-function toggleLyrics(){
-  var l = document.getElementById("lyrics");
-  l.style.display = (l.style.display === "none" || l.style.display === "") ? "block" : "none";
-}
-</script>
-
-</head>
-<body>
-
-<div class="box">
-
-<div style="
-  width:260px;
-  margin:28px auto 10px;
-  background:#ffffff;
-  border:3px solid #800080;
-  padding:10px;
-  box-sizing:border-box;
-">
-  دانلود آهنگ ترکی blok3-git  
-  <br>
-  با کیفیت 320 MP3
-</div>
-  
-  <!-- تصویر کاور -->
-  <div class="cover">
-    <img src="cover.jpg" alt="کاور آهنگ">
-  </div>
-
-  <p>اسم اهنگ : git</p>
-  <p>اسم خواننده : Blok3</p>
-
-  <!-- جای تبلیغ -->
-<div class="ads">
-<div id="frame" style="width: 320px;margin: auto;z-index: 99998;height: auto">
-          <iframe data-aa='2421750' src='//ad.a-ads.com/2421750/?size=320x100&background_color=00ff07&title_color=ff0000&title_hover_color=ff0000&text_color=0500ff&link_color=aa00ff&link_hover_color=de00ff'
-                            style='border:0; padding:0; width:320px; height:100px; overflow:hidden;display: block;margin: auto'></iframe>
-        </div>
-  <audio controls>
-    <source src="blok3-git.mp3" type="audio/mpeg">
-    مرورگر شما پشتیبانی نمی‌کند
-  </audio>
-  
-  <div class="buttons">
-    <a href="blok3-git.mp3" download class="btn-download">دانلود آهنگ</a>
-    <button class="btn-lyrics" onclick="toggleLyrics()">متن آهنگ</button>
-  </div>
-
-  <div class="lyrics" id="lyrics">
-    Git
-Git, peşimi bırak
-Senin aşkın bana bi’ tuzak
-Git, bi’ kez olsun kendine yakışanı yap
-Fotoğrafımızı sakla
-(Git) Beni soran olursa
-Ona de, “Benim için kendinden vazgeçen adam”
-Git, peşimi bırak
-Senin aşkın bana bi’ tuzak
-Git, bi’ kez olsun kendine yakışanı yap
-Fotoğrafımızı sakla
-(Git) Beni soran olursa
-Ona de, “Benim için kendinden vazgeçen adam”
-O kadar insan varken, lan, bana ne diye
-(Git) Geldin de karıştırdın kafamı yine
-(Git) Geceleri düşünürdüm, kuşkulanırdım
-(Git) “Hevesi kaçar da benden gider mi?” diye
-Madem bozacaktın neden düzelttin beni?
-Artık yoruldu bu beden, vicdansız seni
-Kafamın içinde, “Neden, neden, neden, neden?”
-Neden bıraktın beni? (Git)
-Neden bıraktın beni? (Git)
-Neden bıraktın beni? (Git)
-Neden bıraktın beni?
-Neden, neden, neden bıraktın beni?
-Git (git)
-Git, peşimi bırak
-Senin aşkın bana bi’ tuzak
-Git, bi’ kez olsun kendine yakışanı yap
-Fotoğrafımızı sakla
-(Git) Beni soran olursa
-Ona de, “Benim için kendinden vazgeçen adam”
-Git, peşimi bırak
-Senin aşkın bana bi’ tuzak
-Git, bi’ kez olsun kendine yakışanı yap
-Fotoğrafımızı sakla
-(Git) Beni soran olursa
-  </div>
-
-</div>
-
-  <p style="text-align:center; font-size:12px; color:#555; margin-top:30px;">
-  تمامی حقوق این سایت محفوظ است
-</p>
