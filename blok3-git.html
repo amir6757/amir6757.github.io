@@ -3,201 +3,166 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amir6757 - دانلود آهنگ های جدید</title>
+<title>Amir6757 - دانلود آهنگ</title>
 <style>
-body {
-    margin:0;
-    font-family:sans-serif;
-    background:#ffffff;
-    color:#000;
-}
-
-/* Header */
-header {
-    text-align:center;
-    padding:20px;
-}
-header h1 {
-    color:#0047ff;
-    margin:0;
-    font-size:36px;
-}
-header p {
-    margin-top:5px;
-    font-size:16px;
-}
-
-/* Music Grid */
-.music-list {
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
-    gap:15px;
-    margin:20px;
-}
-
-/* Music Card */
-.music-card {
-    background:#fff;
-    border:3px solid #800080;
-    border-radius:15px;
-    padding:10px;
-    box-sizing:border-box;
-    text-align:center;
-}
-
-.music-card .cover {
-    width:200px;
-    height:200px;
-    margin:0 auto 10px;
-    overflow:hidden;
-    border-radius:10px;
-}
-
-.music-card .cover img {
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-}
-
-.music-card .title {
-    font-weight:bold;
-    margin-bottom:5px;
-}
-
-.music-card .artist {
-    font-size:14px;
-    color:#555;
-    margin-bottom:10px;
-}
-
-/* Buttons */
-.btn-download {
-    display:block;
-    background:#0047ff;
-    color:#fff;
-    padding:10px;
-    border-radius:8px;
-    text-decoration:none;
-    margin-bottom:5px;
-    font-weight:bold;
-}
-  .btn-lyrics {
-    display:block;
-    background:#800080;
-    color:#fff;
-    border:none;
-    padding:10px;
-    border-radius:8px;
-    font-weight:bold;
-    cursor:pointer;
-    margin-bottom:5px;
-}
-
-.lyrics {
-    display:none;
-    background:#0047ff;
-    color:#fff;
-    padding:10px;
-    border-radius:10px;
-    margin-top:10px;
-    white-space:pre-line;
-    text-align:justify;
-    overflow-y:auto;
-}
-
-/* Ads */
-.ads {
-    margin:20px auto;
-    padding:20px;
-    border:2px dashed #ccc;
-    text-align:center;
-    border-radius:10px;
-    color:#777;
-    font-size:14px;
-}
-
-/* Footer */
-footer {
-    text-align:center;
-    font-size:12px;
-    color:#555;
-    margin:30px 0;
-}
-.footer-buttons {
-    margin-top:10px;
-    display:flex;
-    justify-content:center;
-    gap:20px;
-}
-.footer-buttons a {
-    padding:8px 15px;
-    border-radius:8px;
-    color:#fff;
-    text-decoration:none;
-    font-size:13px;
-}
-.footer-buttons .contact {
-    background:#0047ff;
-}
-.footer-buttons .ads-page {
-    background:#800080;
-}
+    body {
+        margin: 0;
+        font-family: sans-serif;
+        background: #ffffff;
+        color: #000000;
+        text-align: center;
+    }
+    header {
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 50px;
+        color: #0047ff;
+    }
+    header p {
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    .music-box {
+        margin: 20px auto;
+        padding: 15px;
+        max-width: 350px;
+        border: 3px solid #800080;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        background: #ffffff;
+        }
+    .cover {
+        width: 260px;
+        height: 260px;
+        margin: 0 auto 15px;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+    .cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .play-title {
+        font-weight: bold;
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+    audio {
+        width: 100%;
+        margin: 10px 0 20px;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    .btn-download, .btn-lyrics {
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+    }
+    .btn-download { background: #0047ff; }
+    .btn-lyrics { background: #800080; }
+    .lyrics {
+        display: none;
+        background: #0047ff;
+        color: #fff;
+        padding: 15px;
+        border-radius: 12px;
+        text-align: justify;
+        white-space: pre-line;
+        overflow-y: auto;
+        max-height: 250px;
+        margin-bottom: 15px;
+    }
+    .ads {
+        margin: 20px auto;
+        padding: 20px;
+        border: 2px dashed #ccc;
+        text-align: center;
+        border-radius: 10px;
+        color: #777;
+        font-size: 14px;
+        max-width: 350px;
+    }
+    footer {
+        margin-top: 25px;
+        font-size: 12px;
+        color: #555;
+    }
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+        max-width: 400px;
+        margin: 5px auto 0 auto;
+        padding: 0 10px;
+    }
+    .footer-links a {
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 8px;
+        color: #fff;
+        font-weight: bold;
+        }
+    .footer-links a.ads-link { background: #800080; }
+    .footer-links a.contact-link { background: #0047ff; }
 </style>
 <script>
-function toggleLyrics(id){
-    var l = document.getElementById(id);
-    l.style.display = (l.style.display === "none" || l.style.display === "") ? "block" : "none";
+function toggleLyrics() {
+    var l = document.getElementById("lyrics");
+    l.style.display = (l.style.display === "none" || l.style.display === "") ? "block" : "none";
 }
 </script>
 </head>
 <body>
-  <header>
+
+<header>
     <h1>Amir6757</h1>
     <p>دانلود آهنگ‌های جدید غمگین، شاد، ترکی و کردی</p>
 </header>
 
-<div class="music-list">
-    <!-- کارت آهنگ نمونه -->
-    <div class="music-card">
-        <div class="cover">
-            <img src="cover1.jpg" alt="کاور آهنگ">
-        </div>
-        <div class="title">اسم آهنگ</div>
-        <div class="artist">نام خواننده</div>
-        <a href="song1.mp3" download class="btn-download">دانلود آهنگ</a>
-        <button class="btn-lyrics" onclick="toggleLyrics('lyrics1')">متن آهنگ</button>
-        <div class="lyrics" id="lyrics1">
-متن آهنگ اینجا قرار می‌گیرد
-        </div>
+<div class="music-box">
+    <div class="cover">
+        <img src="cover.jpg" alt="کاور آهنگ">
+    </div>
+    <div class="play-title">اسم آهنگ: [نام آهنگ]</div>
+    <div>خواننده: [نام خواننده]</div>
+
+    <audio controls>
+        <source src="[فایل آهنگ].mp3" type="audio/mpeg">
+        مرورگر شما پشتیبانی نمی‌کند
+    </audio>
+
+    <div class="buttons">
+        <a href="[فایل آهنگ].mp3" download class="btn-download">دانلود آهنگ</a>
+        <button class="btn-lyrics" onclick="toggleLyrics()">متن آهنگ</button>
     </div>
 
-    <!-- کارت دوم -->
-    <div class="music-card">
-        <div class="cover">
-            <img src="cover2.jpg" alt="کاور آهنگ">
-        </div>
-        <div class="title">اسم آهنگ</div>
-        <div class="artist">نام خواننده</div>
-        <a href="song2.mp3" download class="btn-download">دانلود آهنگ</a>
-        <button class="btn-lyrics" onclick="toggleLyrics('lyrics2')">متن آهنگ</button>
-        <div class="lyrics" id="lyrics2">
-متن آهنگ اینجا قرار می‌گیرد
-        </div>
+    <div class="lyrics" id="lyrics">
+        متن آهنگ اینجا قرار می‌گیرد...
     </div>
 
-    <!-- کارت سوم و چهارم هم به همین روش اضافه می‌کنید -->
-</div>
-
-<div class="ads">
-    اینجا تبلیغ قرار می‌گیرد
+    <div class="ads">
+        <!-- تبلیغ شما -->
+        <iframe data-aa='2421613' src='//ad.a-ads.com/2421613/?size=320x100' style='border:0; width:100%; height:100px;'></iframe>
+    </div>
 </div>
 
 <footer>
-    <p>تمامی حقوق این سایت محفوظ است</p>
-    <div class="footer-buttons">
-        <a href="contact.html" class="contact">تماس با ما</a>
-        <a href="ads.html" class="ads-page">تبلیغات</a>
+    <div>تمامی حقوق این سایت محفوظ است</div>
+    <div class="footer-links">
+        <a href="ads.html" class="ads-link">تبلیغات</a>
+        <a href="contact.html" class="contact-link">تماس با ما</a>
     </div>
 </footer>
 
