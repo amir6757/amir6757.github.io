@@ -3,166 +3,142 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Musickhas - دانلود و پخش آهنگ‌های ترکی، خارجی و فارسی</title>
-<meta name="description" content="Musickhas - دانلود و پخش آهنگ‌های ترکی، خارجی و فارسی، با پخش آنلاین و امکان دانلود برای گوشی.">
+
+<title>MusicBlue | دانلود آهنگ ترکی و کردی</title>
+
+<meta name="description" content="دانلود آهنگ ترکی و کردی با کیفیت عالی | MusicBlue">
+
 <style>
-    body {
-        margin: 0;
-        font-family: Tahoma, Arial, sans-serif;
-        background-color: #e0f0ff; /* زمینه آبی روشن */
-        direction: rtl;
-    }
-    header {
-        background-color: #0056b3; /* آبی تیره */
-        color: white;
-        text-align: center;
-        padding: 20px;
-        font-size: 2em;
-        font-weight: bold;
-    }
-    header p {
-        font-size: 0.9em;
-        margin-top: 5px;
-        color: #ffd700; /* طلایی برای شعار */
-    }
-    .songs {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px;
-        gap: 20px;
-    }
-    .song {
-        background-color: #fff;
-        border: 2px solid #ff4d4d; /* گرمز */
-        border-radius: 10px;
-        width: 200px;
-        text-align: center;
-        padding: 10px;
-        transition: transform 0.2s;
-    }
-    .song:hover {
-        transform: scale(1.05);
-    }
-    .song img {
-        width: 100%;
-        border-radius: 10px;
-    }
-    .song-name, .artist-name {
-        color: #000;
-        margin: 5px 0;
-        font-size: 0.9em;
-    }
-    .download-btn {
-        background-color: #ff4d4d; /* گرمز */
-        color: white;
-        border: none;
-        padding: 5px 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 5px;
-        transition: background-color 0.2s;
-    }
-    .download-btn:hover {
-        background-color: #cc0000;
-    }
-    .player {
-        background-color: #0056b3; /* آبی */
-        color: white;
-        padding: 15px;
-        text-align: center;
-    }
-    .ads {
-        background-color: #ffcccc; /* گرمز روشن */
-        text-align: center;
-        padding: 10px;
-        margin: 10px auto;
-        width: 90%;
-        border-radius: 5px;
-    }
-    .social {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        padding: 15px;
-    }
-    .social a {
-        text-decoration: none;
-        color: white;
-        background-color: #0056b3;
-        padding: 10px 15px;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background-color 0.2s;
-    }
-    .social a:hover {
-        background-color: #003366;
-    }
-    footer {
-        background-color: #0056b3; /* آبی */
-        color: white;
-        text-align: center;
-        padding: 15px;
-        position: relative;
-      }
-    .footer-text {
-        margin-bottom: 10px;
-        font-size: 1em;
-    }
-    .footer-links {
-        display: flex;
-        justify-content: space-between;
-        font-size: 0.9em;
-        padding: 0 20px;
-    }
-    .footer-links a {
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-        transition: color 0.2s;
-    }
-    .footer-links a:hover {
-        color: #ffd700; /* طلایی برای هاور */
-    }
+body{
+  margin:0;
+  font-family:tahoma, Arial;
+  background:#f5f8ff;
+  direction:rtl;
+}
+
+/* هدر */
+header{
+  background:#0057ff;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+header h1{
+  margin:0;
+  font-size:24px;
+}
+header a{
+  color:white;
+  text-decoration:none;
+}
+header p{
+  margin-top:8px;
+  font-size:14px;
+  color:#ffdddd;
+}
+
+/* کانتینر */
+.container{
+  padding:15px;
+}
+      /* کارت آهنگ */
+.song-card{
+  background:white;
+  border-radius:12px;
+  padding:15px;
+  text-align:center;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* کاور */
+.song-card img{
+  width:100%;
+  max-width:300px;
+  border-radius:10px;
+}
+
+/* متن */
+.song-title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+.artist{
+  font-size:14px;
+  color:#666;
+}
+
+/* دکمه دانلود */
+.download{
+  display:block;
+  margin:15px auto;
+  padding:12px;
+  background:#ff2d2d;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+  width:80%;
+}
+
+/* تبلیغ */
+.ad{
+  margin:20px 0;
+  text-align:center;
+      /* فوتر */
+footer{
+  background:#0057ff;
+  color:white;
+  text-align:center;
+  padding:12px;
+  font-size:14px;
+}
+footer a{
+  color:#ffdddd;
+  text-decoration:none;
+  margin:0 10px;
+}
 </style>
 </head>
+
 <body>
 
 <header>
-    Musickhas
-    <p>بهترین آهنگ‌های شاد و غمگین برای شما</p>
+  <h1><a href="index.html">MusicBlue</a></h1>
+
+  <p>
+    <a href="genre.html">دانلود آهنگ ترکی و کردی</a>
+  </p>
 </header>
 
-<div class="songs">
-    <div class="song">
-        <img src="IMAGE1_URL" alt="آهنگ 1">
-        <div class="song-name">اسم آهنگ 1</div>
-        <div class="artist-name">اسم خواننده 1</div>
-        <button class="download-btn">دانلود برای گوشی</button>
-    </div>
-    <div class="song">
-        <img src="IMAGE2_URL"
-          alt="آهنگ 2">
-        <div class="song-name">اسم آهنگ 2</div>
-        <div class="artist-name">اسم خواننده 2</div>
-        <button class="download-btn">دانلود برای گوشی</button>
-    </div>
-    <div class="song">
-        <img src="IMAGE3_URL" alt="آهنگ 3">
-        <div class="song-name">اسم آهنگ 3</div>
-        <div class="artist-name">اسم خواننده 3</div>
-        <button class="download-btn">دانلود برای گوشی</button>
-    </div>
+<div class="container">
+
+  <!-- کارت آهنگ -->
+  <div class="song-card">
+
+    <img src="cover.jpg" alt="کاور آهنگ">
+
+    <div class="song-title">اسم آهنگ</div>
+    <div class="artist">اسم خواننده</div>
+
+    <a class="download" href="song.mp3" download>
+      دانلود آهنگ
+    </a>
+
+  </div>
+
+  <!-- جای تبلیغ -->
+  <div class="ad">
+    <!-- کد تبلیغ اینجا -->
+    تبلیغ
+  </div>
+
 </div>
-alt="آهنگ 2">
-        <div class="song-name">اسم آهنگ 2</div>
-        <div class="artist-name">اسم خواننده 2</div>
-        <button class="download-btn">دانلود برای گوشی</button>
-    </div>
-    <div class="song">
-        <img src="IMAGE3_URL" alt="آهنگ 3">
-        <div class="song-name">اسم آهنگ 3</div>
-        <div class="artist-name">اسم خواننده 3</div>
-        <button class="download-btn">دانلود برای گوشی</button>
-    </div>
-    </div>
+
+<footer>
+  <a href="contact.html">تماس با ما</a> |
+  <a href="ads.html">تبلیغات</a>
+</footer>
+
+</body>
+</html>
