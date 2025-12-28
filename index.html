@@ -3,142 +3,208 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>MusicBlue | دانلود آهنگ ترکی و کردی</title>
-
-<meta name="description" content="دانلود آهنگ ترکی و کردی با کیفیت عالی | MusicBlue">
-
+<title>سایت موزیک دل</title>
 <style>
-body{
-  margin:0;
-  font-family:tahoma, Arial;
-  background:#f5f8ff;
-  direction:rtl;
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: #ffffff;
+    direction: rtl;
 }
 
 /* هدر */
-header{
-  background:#0057ff;
-  color:white;
-  text-align:center;
-  padding:15px;
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
-header h1{
-  margin:0;
-  font-size:24px;
+header h1 {
+    margin: 0;
+    font-size: 24px;
 }
-header a{
-  color:white;
-  text-decoration:none;
-}
-header p{
-  margin-top:8px;
-  font-size:14px;
-  color:#ffdddd;
+header p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
 }
 
-/* کانتینر */
-.container{
-  padding:15px;
+/* کانتینر اصلی */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 10px;
 }
-      /* کارت آهنگ */
-.song-card{
-  background:white;
-  border-radius:12px;
-  padding:15px;
-  text-align:center;
-  box-shadow:0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* کاور */
-.song-card img{
-  width:100%;
-  max-width:300px;
-  border-radius:10px;
+  /* کارت آهنگ */
+.card {
+    background-color: #f6f6f6;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-/* متن */
-.song-title{
-  font-size:18px;
-  font-weight:bold;
-  margin-top:10px;
-}
-.artist{
-  font-size:14px;
-  color:#666;
+/* کاور آهنگ */
+.cover img {
+    width: 85%;
+    aspect-ratio: 1/1;
+    border-radius: 12px;
+    margin-bottom: 10px;
 }
 
-/* دکمه دانلود */
-.download{
-  display:block;
-  margin:15px auto;
-  padding:12px;
-  background:#ff2d2d;
-  color:white;
-  text-decoration:none;
-  border-radius:8px;
-  font-weight:bold;
-  width:80%;
+/* اسم آهنگ و خواننده */
+.song-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin: 5px 0;
+}
+.artist-name {
+    font-size: 14px;
+    color: #000000;
+    margin: 0;
 }
 
-/* تبلیغ */
-.ad{
-  margin:20px 0;
-  text-align:center;
-      /* فوتر */
-footer{
-  background:#0057ff;
-  color:white;
-  text-align:center;
-  padding:12px;
-  font-size:14px;
+/* دکمه ها */
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
 }
-footer a{
-  color:#ffdddd;
-  text-decoration:none;
-  margin:0 10px;
+
+/* دانلود آهنگ */
+.download-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+/* متن آهنگ */
+.lyrics-btn {
+    background-color: #ff0000;
+    color: white;
+}
+
+/* متن آهنگ نمایش پنهان */
+.lyrics {
+    display: none;
+    background-color: #e0f0ff;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: right;
+}
+  /* پخش کننده آهنگ */
+audio {
+    width: 90%;
+    margin: 10px 0;
+}
+
+/* دکمه شبکه اجتماعی */
+.social-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.telegram { background-color: #0088cc; }
+.rubika { background-color: #ff0000; }
+.youtube { background-color: #ff0000; }
+
+/* تبلیغات */
+.advertise {
+    width: 100%;
+    height: 100px;
+    background-color: #cccccc;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* پاورقی */
+footer {
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 5px;
+}
+
+/* واکنش‌گرایی */
+@media(max-width: 480px){
+    .cover img {
+        width: 95%;
+    }
 }
 </style>
 </head>
-
 <body>
-
-<header>
-  <h1><a href="index.html">MusicBlue</a></h1>
-
-  <p>
-    <a href="genre.html">دانلود آهنگ ترکی و کردی</a>
-  </p>
+  <header>
+    <h1>موزیک دل</h1>
+    <p>دانلود آهنگ‌های ترکی و کردی</p>
 </header>
 
 <div class="container">
+    <div class="card">
+        <div class="cover">
+            <img src="cover1.jpg" alt="کاور آهنگ">
+        </div>
+        <div class="song-name">دانلود آهنگ با کیفیت 320</div>
+        <div class="artist-name">خواننده نمونه</div>
 
-  <!-- کارت آهنگ -->
-  <div class="song-card">
+        <audio controls>
+            <source src="song1.mp3" type="audio/mpeg">
+            مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
+        </audio>
 
-    <img src="cover.jpg" alt="کاور آهنگ">
+        <div>
+            <button class="download-btn">دانلود آهنگ</button>
+            <button class="lyrics-btn" onclick="toggleLyrics()">متن آهنگ</button>
+        </div>
 
-    <div class="song-title">اسم آهنگ</div>
-    <div class="artist">اسم خواننده</div>
+        <div class="lyrics" id="lyrics">
+            اینجا متن آهنگ به صورت مستطیل آبی نمایش داده می‌شود.
+        </div>
 
-    <a class="download" href="song.mp3" download>
-      دانلود آهنگ
-    </a>
+        <div style="margin-top: 10px;">
+            <a href="#" class="social-btn telegram">تلگرام</a>
+            <a href="#" class="social-btn rubika">روبیکا</a>
+            <a href="#" class="social-btn youtube">یوتیوب</a>
+        </div>
+    </div>
 
-  </div>
-
-  <!-- جای تبلیغ -->
-  <div class="ad">
-    <!-- کد تبلیغ اینجا -->
-    تبلیغ
-  </div>
-
+    <div class="advertise">جای تبلیغات بنری</div>
 </div>
 
 <footer>
-  <a href="contact.html">تماس با ما</a> |
-  <a href="ads.html">تبلیغات</a>
+    <div><a href="#">تماس با ما</a></div>
+    <div><a href="#">تبلیغات</a></div>
 </footer>
+
+<script>
+function toggleLyrics() {
+    var x = document.getElementById("lyrics");
+    if (x.style.display === "none" || x.style.display === "") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
 
 </body>
 </html>
