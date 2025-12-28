@@ -1,204 +1,190 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>دانلود آهنگ</title>
+<title>سایت دانلود آهنگ</title>
 
 <style>
 body{
-  margin:0;
-  font-family:tahoma;
-  background:#f5f5f5;
-  direction:rtl;
+    margin:0;
+    font-family:tahoma;
+    background:#f5f5f5;
+    text-align:center;
 }
 
 /* هدر */
-header{
-  background:#fff;
-  text-align:center;
-  padding:12px;
+.header{
+    padding:20px;
 }
-header a{
-  text-decoration:none;
-  color:#1976d2;
+.header a{
+    text-decoration:none;
 }
-header h1{
-  margin:0;
-  font-size:26px;
+.site-name{
+    font-size:32px;
+    color:#007bff;
+    font-weight:bold;
 }
-header p{
-  margin:5px 0 0;
-  font-size:14px;
-  color:#333;
+.small-link{
+    font-size:14px;
+    color:black;
+    display:block;
+    margin-top:5px;
 }
-
-/* بدنه */
-.container{
-  max-width:420px;
-  margin:auto;
-  background:#fff;
-  padding:10px;
+.subtitle{
+    font-size:13px;
+    margin-top:5px;
+    color:#444;
 }
 
-/* متن کیفیت */
-.quality{
-  font-size:13px;
-  color:#000;
-  margin:10px 0;
+/* اسلایدر */
+.slider{
+    display:flex;
+    overflow-x:auto;
+    gap:15px;
+    padding:20px;
+}
+.slider::-webkit-scrollbar{
+    height:8px;
+}
+.slider::-webkit-scrollbar-thumb{
+    background:#ccc;
+    border-radius:5px;
+}
+.slider a img{
+    width:220px;
+    height:220px;
+    border-radius:15px;
+    object-fit:cover;
 }
 
-/* کاور */
-.cover img{
-  width:100%;
-  border-radius:10px;
+/* بنر تبلیغات */
+.banner{
+    margin:20px;
+    background:#ddd;
+    padding:30px;
+    border-radius:10px;
 }
 
-/* اسم آهنگ */
-.song-info{
-  text-align:center;
-  margin:8px 0;
+/* بخش آهنگ‌ها */
+.music-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
 }
-.song-info .song{
-  font-size:14px;
-  color:#000;
+.music-card{
+    width:220px;
+    background:white;
+    border-radius:15px;
+    padding:10px;
 }
-.song-info .artist{
-  font-size:14px;
-  color:#000;
+.music-card img{
+    width:100%;
+    border-radius:10px;
 }
-  /* پلیر */
-audio{
-  width:100%;
-  margin:10px 0;
-}
-
-/* دکمه‌ها */
-.btn{
-  display:block;
-  width:100%;
-  padding:12px;
-  margin:6px 0;
-  text-align:center;
-  text-decoration:none;
-  font-size:16px;
-  border-radius:4px;
-  color:#fff;
-}
-.download{background:#1976d2;}
-.lyric-btn{background:#d32f2f;}
-
-/* متن آهنگ */
-.lyrics{
-  display:none;
-  background:#1976d2;
-  color:#fff;
-  padding:10px;
-  margin-top:8px;
-  border-radius:4px;
-  font-size:14px;
+.music-card audio{
+    width:100%;
+    margin-top:10px;
 }
 
-/* تبلیغ */
-.ad{
-  background:#ddd;
-  height:90px;
-  margin:15px 0;
-  text-align:center;
-  line-height:90px;
-  color:#000;
+/* لیست آهنگ‌ها */
+.song-list{
+    text-align:right;
+    margin:20px;
+    background:white;
+    padding:15px;
+    border-radius:10px;
 }
-
-/* شبکه اجتماعی */
-.social a{
-  display:block;
-  padding:10px;
-  margin:6px 0;
-  color:#fff;
-  text-decoration:none;
-  border-radius:4px;
-  text-align:center;
+.song-list a{
+    display:block;
+    padding:8px;
+    color:#000;
+    text-decoration:none;
+    border-bottom:1px solid #eee;
 }
-.telegram{background:#0088cc;}
-.robika{background:#f57c00;}
-.youtube{background:#d32f2f;}
-
-/* فوتر */
+.song-list a:hover{
+    background:#f0f0f0;
+}
+  /* فوتر */
 footer{
-  background:#fff;
-  margin-top:15px;
-  padding:10px;
-  font-size:13px;
+    background:#222;
+    color:white;
+    padding:15px;
+    font-size:13px;
 }
-.footer-line{
-  height:3px;
-  background:red;
-  margin:6px 0;
-  }
-.footer-links{
-  display:flex;
-  justify-content:space-between;
+footer a{
+    color:#00aaff;
+    margin:0 10px;
+    text-decoration:none;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <a href="index.html"><h1>نام سایت</h1></a>
-  <a href="category.html"><p>دانلود آهنگ ترکی و کردی</p></a>
-</header>
-
-<div class="container">
-
-  <div class="quality">دانلود آهنگ با کیفیت 320 و MP3</div>
-
-  <div class="cover">
-    <img src="cover.jpg" alt="کاور آهنگ">
-  </div>
-
-  <div class="song-info">
-    <div class="song">نام آهنگ</div>
-    <div class="artist">نام خواننده</div>
-  </div>
-
-  <audio controls>
-    <source src="song.mp3" type="audio/mpeg">
-  </audio>
-
-  <a href="song.mp3" class="btn download">دانلود آهنگ</a>
-
-  <a href="#" class="btn lyric-btn" onclick="toggleLyrics()">متن آهنگ</a>
-
-  <div class="lyrics" id="lyrics">
-    اینجا متن آهنگ قرار می‌گیرد...
-  </div>
-
-  <div class="ad">تبلیغات</div>
-
-  <div class="social">
-    <a href="#" class="telegram">عضویت در تلگرام</a>
-    <a href="#" class="robika">عضویت در روبیکا</a>
-    <a href="#" class="youtube">YouTube</a>
-  </div>
-
+<!-- هدر -->
+<div class="header">
+    <a href="page1.html" class="site-name">اسم سایت</a>
+    <a href="page2.html" class="small-link">دانلود آهنگ</a>
+    <div class="subtitle">دانلود آهنگ های جدید</div>
 </div>
 
-<footer>
-  <div style="text-align:center;">این سایت محفوظ است</div>
-  <div class="footer-line"></div>
-  <div class="footer-links">
-    <a href="ads.html">تبلیغات</a>
-    <a href="contact.html">تماس با ما</a>
-  </div>
-</footer>
+<!-- اسلایدر تصاویر -->
+<div class="slider">
+    <a href="#"><img src="image1.jpg"></a>
+    <a href="#"><img src="image2.jpg"></a>
+    <a href="#"><img src="image3.jpg"></a>
+    <a href="#"><img src="image4.jpg"></a>
+    <a href="#"><img src="image5.jpg"></a>
+    <a href="#"><img src="image6.jpg"></a>
+</div>
 
-<script>
-function toggleLyrics(){
-  const l=document.getElementById("lyrics");
-  l.style.display = l.style.display==="block" ? "none" : "block";
-}
-</script>
+<!-- بنر تبلیغاتی -->
+<div class="banner">
+    جای بنر تبلیغاتی
+</div>
+
+<!-- بخش آهنگ‌ها -->
+<div class="music-section">
+    <a href="#" class="music-card">
+        <img src="song1.jpg">
+        <audio controls>
+            <source src="song1.mp3">
+        </audio>
+    </a>
+
+    <a href="#" class="music-card">
+        <img src="song2.jpg">
+        <audio controls>
+            <source src="song2.mp3">
+        </audio>
+    </a>
+
+    <a href="#" class="music-card">
+        <img src="song3.jpg">
+        <audio controls>
+            <source src="song3.mp3">
+        </audio>
+    </a>
+</div>
+
+<!-- لیست آهنگ‌ها -->
+<div class="song-list">
+    <a href="#">اسم آهنگ – اسم خواننده</a>
+    <a href="#">اسم آهنگ – اسم خواننده</a>
+    <a href="#">اسم آهنگ – اسم خواننده</a>
+    <a href="#">اسم آهنگ – اسم خواننده</a>
+</div>
+
+<!-- فوتر -->
+<footer>
+    این سایت محفوظ است  
+    <br><br>
+    <a href="contact.html">تماس با ما</a>
+    |
+    <a href="ads.html">تبلیغات</a>
+</footer>
 
 </body>
 </html>
