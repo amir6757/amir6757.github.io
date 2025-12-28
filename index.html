@@ -3,206 +3,184 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>سایت موزیک دل</title>
+<title>سایت موزیک فارسی</title>
 <style>
-body {
-    margin: 0;
-    font-family: Tahoma, Arial, sans-serif;
-    background-color: #ffffff;
-    direction: rtl;
+body{
+  margin:0;
+  font-family:tahoma, Arial;
+  background:#f0f0f0;
+  direction:rtl;
 }
-
 /* هدر */
-header {
-    background-color: #007bff;
-    color: white;
-    text-align: center;
-    padding: 15px;
+header{
+  background:#fff;
+  text-align:center;
+  padding:15px 10px;
 }
-header h1 {
-    margin: 0;
-    font-size: 24px;
+header h1{
+  color:#007bff;
+  font-size:28px;
+  margin:0;
 }
-header p {
-    margin: 5px 0 0 0;
-    font-size: 14px;
+header p{
+  margin-top:6px;
+  font-size:14px;
+  color:#333;
 }
-
-/* کانتینر اصلی */
-.container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 0 10px;
+/* کارت آهنگ */
+.card{
+  background:#fff;
+  border-radius:10px;
+  text-align:center;
+  margin:15px auto;
+  max-width:400px;
+  padding:10px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.2);
 }
-  /* کارت آهنگ */
-.card {
-    background-color: #f6f6f6;
-    border: 2px solid #ff0000;
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 20px;
+    /* تصویر کاور */
+.card img{
+  width:95%;
+  border-radius:12px;
+  display:block;
+  margin:10px auto;
 }
-
-/* کاور آهنگ */
-.cover img {
-    width: 85%;
-    aspect-ratio: 1/1;
-    border-radius: 12px;
-    margin-bottom: 10px;
+/* نام آهنگ و خواننده */
+.song{
+  font-size:16px;
+  font-weight:bold;
+  color:#000;
+  margin:5px 0 0 0;
 }
-
-/* اسم آهنگ و خواننده */
-.song-name {
-    font-size: 16px;
-    font-weight: bold;
-    color: #000000;
-    margin: 5px 0;
+.artist{
+  font-size:14px;
+  color:#000;
+  margin:0 0 10px 0;
 }
-.artist-name {
-    font-size: 14px;
-    color: #000000;
-    margin: 0;
+/* دکمه‌ها */
+.btn-download{
+  display:inline-block;
+  background:#007bff;
+  color:#fff;
+  padding:10px 20px;
+  margin:5px;
+  border-radius:5px;
+  text-decoration:none;
+  font-weight:bold;
 }
-
-/* دکمه ها */
-button {
-    cursor: pointer;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    font-weight: bold;
-    border: none;
+.btn-text{
+  display:inline-block;
+  background:#ff0000;
+  color:#fff;
+  padding:10px 20px;
+  margin:5px;
+  border-radius:5px;
+  text-decoration:none;
+  font-weight:bold;
 }
-
-/* دانلود آهنگ */
-.download-btn {
-    background-color: #007bff;
-    color: white;
+/* متن آهنگ مخفی */
+.lyrics{
+  display:none;
+  margin:10px 0;
+  padding:10px;
+  background:#007bff;
+  color:#fff;
+  border-radius:5px;
+  font-size:14px;
 }
-
-/* متن آهنگ */
-.lyrics-btn {
-    background-color: #ff0000;
-    color: white;
-}
-
-/* متن آهنگ نمایش پنهان */
-.lyrics {
-    display: none;
-    background-color: #e0f0ff;
-    padding: 10px;
-    margin-top: 10px;
-    text-align: right;
-}
-  /* پخش کننده آهنگ */
-audio {
-    width: 90%;
-    margin: 10px 0;
-}
-
 /* دکمه شبکه اجتماعی */
-.social-btn {
-    display: inline-block;
-    padding: 8px 15px;
-    margin: 5px;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+.social-btn{
+  display:inline-block;
+  padding:8px 12px;
+  margin:5px;
+  border-radius:5px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
 }
-.telegram { background-color: #0088cc; }
-.rubika { background-color: #ff0000; }
-.youtube { background-color: #ff0000; }
-
-/* تبلیغات */
-.advertise {
-    width: 100%;
-    height: 100px;
-    background-color: #cccccc;
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
+.telegram{background:#0088cc;}
+.robika{background:#f28500;}
+.youtube{background:#ff0000;}
+/* Footer خط پایینی */
+footer{
+  margin-top:20px;
+  background:#fff;
+  padding:10px 0;
+  text-align:center;
+  position:relative;
 }
-
-/* پاورقی */
-footer {
-    background-color: #f6f6f6;
-    text-align: center;
-    padding: 15px;
-    font-size: 12px;
-    color: #555;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.footer-line{
+  height:3px;
+  background:#ff00ff;
+  margin:5px 0 10px 0;
 }
-footer a {
-    color: #007bff;
-    text-decoration: none;
-    margin: 5px;
+.footer-text{
+  font-size:12px;
+  color:#333;
+  margin-bottom:5px;
 }
-
-/* واکنش‌گرایی */
-@media(max-width: 480px){
-    .cover img {
-        width: 95%;
-    }
+.footer-links{
+  display:flex;
+  justify-content:space-between;
+  max-width:400px;
+  margin:0 auto;
+  font-size:14px;
+}
+.ad-banner{
+  width:95%;
+  height:100px;
+  background:#ccc;
+  margin:15px auto;
+  text-align:center;
+  line-height:100px;
+  color:#000;
+  font-weight:bold;
 }
 </style>
 </head>
 <body>
-  <header>
-    <h1>موزیک دل</h1>
-    <p>دانلود آهنگ‌های ترکی و کردی</p>
+
+<header>
+  <h1>سایت موزیک من</h1>
+  <p>دانلود آهنگ‌های ترکی و کردی</p>
 </header>
+<div class="card">
+  <a href="#"><img src="cover1.jpg" alt="کاور آهنگ"></a>
+  <div class="song">دانلود آهنگ با کیفیت 320</div>
+  <div class="artist">خواننده نمونه</div>
+  <a href="#" class="btn-download">دانلود آهنگ</a>
+  <a href="#" class="btn-text" onclick="toggleLyrics()">متن آهنگ</a>
+  <div class="lyrics" id="lyrics">
+    متن آهنگ به صورت مستطیلی و آبی ظاهر می‌شود.
+  </div>
+</div>
 
-<div class="container">
-    <div class="card">
-        <div class="cover">
-            <img src="cover1.jpg" alt="کاور آهنگ">
-        </div>
-        <div class="song-name">دانلود آهنگ با کیفیت 320</div>
-        <div class="artist-name">خواننده نمونه</div>
+<div class="ad-banner">
+  تبلیغات برنری اینجا
+</div>
 
-        <audio controls>
-            <source src="song1.mp3" type="audio/mpeg">
-            مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
-        </audio>
-
-        <div>
-            <button class="download-btn">دانلود آهنگ</button>
-            <button class="lyrics-btn" onclick="toggleLyrics()">متن آهنگ</button>
-        </div>
-
-        <div class="lyrics" id="lyrics">
-            اینجا متن آهنگ به صورت مستطیل آبی نمایش داده می‌شود.
-        </div>
-
-        <div style="margin-top: 10px;">
-            <a href="#" class="social-btn telegram">تلگرام</a>
-            <a href="#" class="social-btn rubika">روبیکا</a>
-            <a href="#" class="social-btn youtube">یوتیوب</a>
-        </div>
-    </div>
-
-    <div class="advertise">جای تبلیغات بنری</div>
+<div style="text-align:center; margin:15px 0;">
+  <a href="#" class="social-btn telegram">تلگرام</a>
+  <a href="#" class="social-btn robika">روبیکا</a>
+  <a href="#" class="social-btn youtube">یوتیوب</a>
 </div>
 
 <footer>
+  <div class="footer-text">این کانال محفوظ است</div>
+  <div class="footer-line"></div>
+  <div class="footer-links">
     <div><a href="#">تماس با ما</a></div>
     <div><a href="#">تبلیغات</a></div>
+  </div>
 </footer>
 
 <script>
-function toggleLyrics() {
-    var x = document.getElementById("lyrics");
-    if (x.style.display === "none" || x.style.display === "") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+function toggleLyrics(){
+  const lyrics = document.getElementById('lyrics');
+  if(lyrics.style.display === 'block'){
+    lyrics.style.display = 'none';
+  }else{
+    lyrics.style.display = 'block';
+  }
 }
 </script>
 
