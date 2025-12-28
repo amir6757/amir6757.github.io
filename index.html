@@ -2,185 +2,201 @@
 <html lang="fa">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>سایت موزیک فارسی</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دانلود آهنگ</title>
+
 <style>
 body{
   margin:0;
-  font-family:tahoma, Arial;
-  background:#f0f0f0;
+  font-family:tahoma;
+  background:#f5f5f5;
   direction:rtl;
 }
+
 /* هدر */
 header{
   background:#fff;
   text-align:center;
-  padding:15px 10px;
+  padding:12px;
+}
+header a{
+  text-decoration:none;
+  color:#1976d2;
 }
 header h1{
-  color:#007bff;
-  font-size:28px;
   margin:0;
+  font-size:26px;
 }
 header p{
-  margin-top:6px;
+  margin:5px 0 0;
   font-size:14px;
   color:#333;
 }
-/* کارت آهنگ */
-.card{
+
+/* بدنه */
+.container{
+  max-width:420px;
+  margin:auto;
   background:#fff;
-  border-radius:10px;
-  text-align:center;
-  margin:15px auto;
-  max-width:400px;
   padding:10px;
-  box-shadow:0 2px 8px rgba(0,0,0,0.2);
 }
-    /* تصویر کاور */
-.card img{
-  width:95%;
-  border-radius:12px;
-  display:block;
-  margin:10px auto;
+
+/* متن کیفیت */
+.quality{
+  font-size:13px;
+  color:#000;
+  margin:10px 0;
 }
-/* نام آهنگ و خواننده */
-.song{
-  font-size:16px;
-  font-weight:bold;
-  color:#000;
-  margin:5px 0 0 0;
+
+/* کاور */
+.cover img{
+  width:100%;
+  border-radius:10px;
 }
-.artist{
-  font-size:14px;
-  color:#000;
-  margin:0 0 10px 0;
+
+/* اسم آهنگ */
+.song-info{
+  text-align:center;
+  margin:8px 0;
 }
+.song-info .song{
+  font-size:14px;
+  color:#000;
+}
+.song-info .artist{
+  font-size:14px;
+  color:#000;
+}
+  /* پلیر */
+audio{
+  width:100%;
+  margin:10px 0;
+}
+
 /* دکمه‌ها */
-.btn-download{
-  display:inline-block;
-  background:#007bff;
-  color:#fff;
-  padding:10px 20px;
-  margin:5px;
-  border-radius:5px;
+.btn{
+  display:block;
+  width:100%;
+  padding:12px;
+  margin:6px 0;
+  text-align:center;
   text-decoration:none;
-  font-weight:bold;
-}
-.btn-text{
-  display:inline-block;
-  background:#ff0000;
+  font-size:16px;
+  border-radius:4px;
   color:#fff;
-  padding:10px 20px;
-  margin:5px;
-  border-radius:5px;
-  text-decoration:none;
-  font-weight:bold;
 }
-/* متن آهنگ مخفی */
+.download{background:#1976d2;}
+.lyric-btn{background:#d32f2f;}
+
+/* متن آهنگ */
 .lyrics{
   display:none;
-  margin:10px 0;
-  padding:10px;
-  background:#007bff;
+  background:#1976d2;
   color:#fff;
-  border-radius:5px;
+  padding:10px;
+  margin-top:8px;
+  border-radius:4px;
   font-size:14px;
 }
-/* دکمه شبکه اجتماعی */
-.social-btn{
-  display:inline-block;
-  padding:8px 12px;
-  margin:5px;
-  border-radius:5px;
+
+/* تبلیغ */
+.ad{
+  background:#ddd;
+  height:90px;
+  margin:15px 0;
+  text-align:center;
+  line-height:90px;
+  color:#000;
+}
+
+/* شبکه اجتماعی */
+.social a{
+  display:block;
+  padding:10px;
+  margin:6px 0;
   color:#fff;
   text-decoration:none;
-  font-weight:bold;
+  border-radius:4px;
+  text-align:center;
 }
 .telegram{background:#0088cc;}
-.robika{background:#f28500;}
-.youtube{background:#ff0000;}
-/* Footer خط پایینی */
+.robika{background:#f57c00;}
+.youtube{background:#d32f2f;}
+
+/* فوتر */
 footer{
-  margin-top:20px;
   background:#fff;
-  padding:10px 0;
-  text-align:center;
-  position:relative;
+  margin-top:15px;
+  padding:10px;
+  font-size:13px;
 }
 .footer-line{
   height:3px;
-  background:#ff00ff;
-  margin:5px 0 10px 0;
-}
-.footer-text{
-  font-size:12px;
-  color:#333;
-  margin-bottom:5px;
-}
+  background:red;
+  margin:6px 0;
+  }
 .footer-links{
-  display:flex;
-  justify-content:space-between;
-  max-width:400px;
-  margin:0 auto;
-  font-size:14px;
-}
-.ad-banner{
-  width:95%;
-  height:100px;
-  background:#ccc;
-  margin:15px auto;
-  text-align:center;
-  line-height:100px;
-  color:#000;
-  font-weight:bold;
+  display:flex;
+  justify-content:space-between;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-  <h1>سایت موزیک من</h1>
-  <p>دانلود آهنگ‌های ترکی و کردی</p>
+  <a href="index.html"><h1>نام سایت</h1></a>
+  <a href="category.html"><p>دانلود آهنگ ترکی و کردی</p></a>
 </header>
-<div class="card">
-  <a href="#"><img src="cover1.jpg" alt="کاور آهنگ"></a>
-  <div class="song">دانلود آهنگ با کیفیت 320</div>
-  <div class="artist">خواننده نمونه</div>
-  <a href="#" class="btn-download">دانلود آهنگ</a>
-  <a href="#" class="btn-text" onclick="toggleLyrics()">متن آهنگ</a>
-  <div class="lyrics" id="lyrics">
-    متن آهنگ به صورت مستطیلی و آبی ظاهر می‌شود.
+
+<div class="container">
+
+  <div class="quality">دانلود آهنگ با کیفیت 320 و MP3</div>
+
+  <div class="cover">
+    <img src="cover.jpg" alt="کاور آهنگ">
   </div>
-</div>
 
-<div class="ad-banner">
-  تبلیغات برنری اینجا
-</div>
+  <div class="song-info">
+    <div class="song">نام آهنگ</div>
+    <div class="artist">نام خواننده</div>
+  </div>
 
-<div style="text-align:center; margin:15px 0;">
-  <a href="#" class="social-btn telegram">تلگرام</a>
-  <a href="#" class="social-btn robika">روبیکا</a>
-  <a href="#" class="social-btn youtube">یوتیوب</a>
+  <audio controls>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+
+  <a href="song.mp3" class="btn download">دانلود آهنگ</a>
+
+  <a href="#" class="btn lyric-btn" onclick="toggleLyrics()">متن آهنگ</a>
+
+  <div class="lyrics" id="lyrics">
+    اینجا متن آهنگ قرار می‌گیرد...
+  </div>
+
+  <div class="ad">تبلیغات</div>
+
+  <div class="social">
+    <a href="#" class="telegram">عضویت در تلگرام</a>
+    <a href="#" class="robika">عضویت در روبیکا</a>
+    <a href="#" class="youtube">YouTube</a>
+  </div>
+
 </div>
 
 <footer>
-  <div class="footer-text">این کانال محفوظ است</div>
+  <div style="text-align:center;">این سایت محفوظ است</div>
   <div class="footer-line"></div>
   <div class="footer-links">
-    <div><a href="#">تماس با ما</a></div>
-    <div><a href="#">تبلیغات</a></div>
+    <a href="ads.html">تبلیغات</a>
+    <a href="contact.html">تماس با ما</a>
   </div>
 </footer>
 
 <script>
 function toggleLyrics(){
-  const lyrics = document.getElementById('lyrics');
-  if(lyrics.style.display === 'block'){
-    lyrics.style.display = 'none';
-  }else{
-    lyrics.style.display = 'block';
-  }
+  const l=document.getElementById("lyrics");
+  l.style.display = l.style.display==="block" ? "none" : "block";
 }
 </script>
 
