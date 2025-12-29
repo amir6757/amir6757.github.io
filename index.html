@@ -1,200 +1,165 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>موزیکدل</title>
+<title>MusicKhas</title>
+
 <style>
 body{
-    margin:0;
-    font-family:tahoma;
-    background:#f2f2f2;
-    color:#333;
+  margin:0;
+  font-family:tahoma;
+  direction:rtl;
+  background:#f4f4f4;
 }
-
-/* ===== هدر ===== */
-.header{
-    background:#fff;
-    text-align:center;
-    padding:20px 10px;
+header{
+  text-align:center;
+  padding:20px;
 }
-
-.site-name{
-    font-size:22px;
-    font-weight:bold;
+header h1{
+  color:red;
 }
-
-.site-desc{
-    font-size:13px;
-    color:#777;
-    margin-top:6px;
+.menu a{
+  margin:10px;
+  text-decoration:none;
+  color:#555;
+  font-size:18px;
 }
-
-/* ===== دسته‌بندی گرد ===== */
-.categories{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:12px;
-    margin:15px 0;
+.container{
+  max-width:900px;
+  margin:auto;
 }
-
-.categories a{
-    display:inline-block;
-    padding:10px 16px;
-    border-radius:50px;
-    background:#007BFF;
-    color:#fff;
-    text-decoration:none;
-    font-size:14px;
-    transition:0.2s;
+.song-card{
+  background:#000;
+  color:#fff;
+  border-radius:15px;
+  padding:15px;
+  margin:20px auto;
+  width:300px;
+  text-align:center;
+  cursor:pointer;
 }
-
-.categories a:hover{
-    background:#0056b3;
+.song-card img{
+  width:100%;
+  border-radius:10px;
 }
-
-/* ===== اسلایدر عمودی ===== */
-.slider{
-    display:flex;
-    flex-direction:column;
-    overflow-y:auto;
-    height:calc(100vh - 180px);
-    padding:10px;
-    gap:20px;
-    scroll-snap-type: y mandatory;
+audio{
+  width:100%;
+  margin-top:10px;
 }
-
-.slider::-webkit-scrollbar{width:0;}
-
-.slide{
-    background:#fff;
-    border-radius:18px;
-    scroll-snap-align:start;
-    box-shadow:0 2px 8px rgba(0,0,0,0.12);
-    text-decoration:none;
-    color:#333;
-    min-height:350px;
-    display:flex;
-    flex-direction:column;
+.page{
+  display:none;
 }
-
-.slide img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-    border-radius:18px 18px 0 0;
-}
-
-.slide .content{
-    padding:12px;
-    flex:1;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-}
-
-.slide h3{
-    font-size:16px;
-    margin:0 0 8px;
-}
-
-.slide audio{
-    width:100%;
-    outline:none;
-}
-    /* ===== فوتر ===== */
 footer{
-    text-align:center;
-    font-size:11px;
-    color:#777;
-    padding:15px;
-    margin-top:10px;
+  text-align:center;
+  padding:20px;
+}
+footer a{
+  margin:10px;
+  color:#0077ff;
+  text-decoration:none;
+}
+.artist-list a{
+  display:inline-block;
+  margin:8px;
+  color:#333;
+  text-decoration:none;
 }
 </style>
+
+<script>
+function showPage(id){
+  let pages=document.querySelectorAll('.page');
+  pages.forEach(p=>p.style.display='none');
+  document.getElementById(id).style.display='block';
+}
+</script>
+
 </head>
 <body>
 
-<!-- هدر -->
-<div class="header">
-    <div class="site-name">موزیکدل ❤️</div>
-    <div class="site-desc">دانلود جدیدترین آهنگ‌های ایرانی</div>
+<header>
+  <h1>MUSICKHAS</h1>
+  <div class="menu">
+    <a onclick="showPage('category')">ترکی</a>
+    <a onclick="showPage('category')">شاد</a>
+    <a onclick="showPage('category')">فانک</a>
+    <a onclick="showPage('category')">غمگین</a>
+  </div>
+</header>
+
+<div class="container">
+
+<!-- صفحه اصلی -->
+<div id="home" class="page" style="display:block">
+  <div class="song-card" onclick="showPage('song')">
+    <img src="https://via.placeholder.com/300x300">
+    <h3>عرفان پند</h3>
+    <p>عکس یادگاری</p>
+    <audio controls>
+      <source src="">
+    </audio>
+  </div>
 </div>
 
-<!-- دسته‌بندی گرد -->
-<div class="categories">
-    <a href="shad.html">شاد</a>
-    <a href="ghamgin.html">غمگین</a>
-    <a href="torki.html">ترکی</a>
-    <a href="kordi.html">کردی</a>
-    <a href="remix.html">ریمیکس</a>
+<!-- دسته بندی -->
+<div id="category" class="page">
+  <h2>آهنگ‌ها</h2>
+  <div class="song-card" onclick="showPage('song')">
+    <img src="https://via.placeholder.com/300x300">
+    <h3>عرفان پند</h3>
+    <p>عکس یادگاری</p>
+  </div>
 </div>
 
-<!-- اسلایدر عمودی -->
-<div class="slider">
-    <a href="song1.html" class="slide">
-        <img src="https://via.placeholder.com/600x400">
-        <div class="content">
-            <h3>یادگاری – عرفان پند</h3>
-            <audio controls>
-                <source src="song1.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-    </a>
+<!-- صفحه آهنگ -->
+<div id="song" class="page">
+  <div class="song-card">
+    <img src="https://via.placeholder.com/300x300">
+    <h2>عرفان پند</h2>
+    <h3>عکس یادگاری</h3>
+    <audio controls autoplay>
+      <source src="">
+    </audio>
+    <p>
+      خواننده:
+      <a onclick="showPage('artist')">عرفان پند</a>
+    </p>
+  </div>
+</div>
 
-    <a href="song2.html" class="slide">
-        <img src="https://via.placeholder.com/600x400">
-        <div class="content">
-            <h3>یا چی (زنده) – مسیح و آرش</h3>
-            <audio controls>
-                <source src="song2.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-    </a>
+<!-- صفحه خواننده -->
+<div id="artist" class="page">
+  <h2>عرفان پند</h2>
+  <ul>
+    <li><a onclick="showPage('song')">آهنگ 1</a></li>
+    <li><a onclick="showPage('song')">آهنگ 2</a></li>
+  </ul>
+</div>
 
-    <a href="song3.html" class="slide">
-        <img src="https://via.placeholder.com/600x400">
-        <div class="content">
-            <h3>دلبر – رضا بهرام</h3>
-            <audio controls>
-                <source src="song3.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-    </a>
+<!-- تماس -->
+<div id="contact" class="page">
+  <h2>تماس با ما</h2>
+  <p>info@musickhas.ir</p>
+</div>
 
-    <a href="song4.html" class="slide">
-        <img src="https://via.placeholder.com/600x400">
-        <div class="content">
-            <h3>نگم برات – امیرعباس گلاب</h3>
-            <audio controls>
-                <source src="song4.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-    </a>
+<!-- تبلیغات -->
+<div id="ads" class="page">
+  <h2>تبلیغات</h2>
+  <p>برای تبلیغات با ما تماس بگیرید</p>
+</div>
 
-    <a href="song5.html" class="slide">
-        <img src="https://via.placeholder.com/600x400">
-        <div class="content">
-            <h3>عاشقانه – شادمهر</h3>
-            <audio controls>
-                <source src="song5.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-    </a>
+<!-- کانال ها -->
+<div id="channels" class="page">
+  <h2>کانال‌ها</h2>
+  <p>تلگرام | اینستاگرام</p>
+</div>
 
-    <a href="song6.html" class="slide">
-        <img src="https://via.placeholder.com/600x400">
-        <div class="content">
-            <h3>غمگین – محسن یگانه</h3>
-            <audio controls>
-                <source src="song6.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-    </a>
 </div>
 
 <footer>
-    این کانال محفوظ است
+  <a onclick="showPage('contact')">تماس با ما</a>
+  <a onclick="showPage('ads')">تبلیغات</a>
+  <a onclick="showPage('channels')">کانال‌ها</a>
 </footer>
 
 </body>
