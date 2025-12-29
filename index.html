@@ -1,189 +1,118 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
 <meta charset="UTF-8">
-<title>سایت دانلود آهنگ</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>هنرمندان - اسم سایت شما</title>
 <style>
-body{
-    margin:0;
-    font-family:tahoma;
-    background:#f5f5f5;
-    text-align:center;
-}
+  body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+  }
 
-/* هدر */
-.header{
-    padding:20px;
-}
-.header a{
-    text-decoration:none;
-}
-.site-name{
-    font-size:32px;
-    color:#007bff;
-    font-weight:bold;
-}
-.small-link{
-    font-size:14px;
-    color:black;
-    display:block;
-    margin-top:5px;
-}
-.subtitle{
-    font-size:13px;
-    margin-top:5px;
-    color:#444;
-}
+  /* هدر و منو */
+  header {
+    background-color: #003366; /* آبی تیره */
+    color: #00f; /* اسم سایت آبی */
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
 
-/* اسلایدر */
-.slider{
-    display:flex;
-    overflow-x:auto;
-    gap:15px;
-    padding:20px;
-}
-.slider::-webkit-scrollbar{
-    height:8px;
-}
-.slider::-webkit-scrollbar-thumb{
-    background:#ccc;
-    border-radius:5px;
-}
-.slider a img{
-    width:220px;
-    height:220px;
-    border-radius:15px;
-    object-fit:cover;
-}
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #cc0000; /* قرمز */
+    padding: 10px 0;
+  }
 
-/* بنر تبلیغات */
-.banner{
-    margin:20px;
-    background:#ddd;
-    padding:30px;
-    border-radius:10px;
-}
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-/* بخش آهنگ‌ها */
-.music-section{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-    padding:20px;
-}
-.music-card{
-    width:220px;
-    background:white;
-    border-radius:15px;
-    padding:10px;
-}
-.music-card img{
-    width:100%;
-    border-radius:10px;
-}
-.music-card audio{
-    width:100%;
-    margin-top:10px;
-}
+  /* بخش هنرمندان */
+  .artist-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+  }
 
-/* لیست آهنگ‌ها */
-.song-list{
-    text-align:right;
-    margin:20px;
-    background:white;
-    padding:15px;
-    border-radius:10px;
-}
-.song-list a{
-    display:block;
-    padding:8px;
-    color:#000;
-    text-decoration:none;
-    border-bottom:1px solid #eee;
-}
-.song-list a:hover{
-    background:#f0f0f0;
-}
-  /* فوتر */
-footer{
-    background:#222;
-    color:white;
-    padding:15px;
-    font-size:13px;
-}
-footer a{
-    color:#00aaff;
-    margin:0 10px;
-    text-decoration:none;
-}
+  .artist-item {
+    width: 120px;
+    text-align: center;
+    border: 1px solid #003366;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+
+  .artist-item:hover {
+    transform: scale(1.05);
+  }
+
+  .artist-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-bottom: 1px solid #003366;
+      }
+
+  .artist-item p {
+    margin: 5px 0;
+    color: #000;
+  }
+
+  /* فوتر */
+  footer {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 15px;
+    color: #000;
+    font-size: 14px;
+    margin-top: 20px;
+  }
 </style>
 </head>
-
 <body>
 
-<!-- هدر -->
-<div class="header">
-    <a href="page1.html" class="site-name">اسم سایت</a>
-    <a href="page2.html" class="small-link">دانلود آهنگ</a>
-    <div class="subtitle">دانلود آهنگ های جدید</div>
+<header>اسم سایت شما</header>
+
+<nav>
+  <a href="#">صفحه اصلی</a>
+  <a href="#">تبلیغات</a>
+  <a href="#">تماس با ما</a>
+  <a href="#">هنرمندان</a>
+</nav>
+
+<div class="artist-list">
+  <div class="artist-item">
+    <img src="artist1.jpg" alt="هنرمند 1">
+    <p>خواننده 1</p>
+  </div>
+  <div class="artist-item">
+    <img src="artist2.jpg" alt="هنرمند 2">
+    <p>خواننده 2</p>
+  </div>
+  <div class="artist-item">
+    <img src="artist3.jpg" alt="هنرمند 3">
+    <p>خواننده 3</p>
+  </div>
+  <div class="artist-item">
+    <img src="artist4.jpg" alt="هنرمند 4">
+    <p>خواننده 4</p>
+  </div>
 </div>
 
-<!-- اسلایدر تصاویر -->
-<div class="slider">
-    <a href="#"><img src="caver.jpg"></a>
-    <a href="#"><img src="image2.jpg"></a>
-    <a href="#"><img src="image3.jpg"></a>
-    <a href="#"><img src="image4.jpg"></a>
-    <a href="#"><img src="image5.jpg"></a>
-    <a href="#"><img src="image6.jpg"></a>
-</div>
-
-<!-- بنر تبلیغاتی -->
-<div class="banner">
-    جای بنر تبلیغاتی
-</div>
-
-<!-- بخش آهنگ‌ها -->
-<div class="music-section">
-    <a href="#" class="music-card">
-        <img src="song1.jpg">
-        <audio controls>
-            <source src="song1.mp3">
-        </audio>
-    </a>
-
-    <a href="#" class="music-card">
-        <img src="song2.jpg">
-        <audio controls>
-            <source src="song2.mp3">
-        </audio>
-    </a>
-
-    <a href="#" class="music-card">
-        <img src="song3.jpg">
-        <audio controls>
-            <source src="song3.mp3">
-        </audio>
-    </a>
-</div>
-
-<!-- لیست آهنگ‌ها -->
-<div class="song-list">
-    <a href="blok3-git.html">اسم آهنگ – اسم خواننده</a>
-    <a href="#">اسم آهنگ – اسم خواننده</a>
-    <a href="#">اسم آهنگ – اسم خواننده</a>
-    <a href="#">اسم آهنگ – اسم خواننده</a>
-</div>
-
-<!-- فوتر -->
 <footer>
-    این سایت محفوظ است  
-    <br><br>
-    <a href="contact.html">تماس با ما</a>
-    |
-    <a href="ads.html">تبلیغات</a>
+  کلیه حقوق این سایت محفوظ می‌باشد
 </footer>
 
 </body>
