@@ -1,1 +1,201 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>موزیکدل</title>
 
+<style>
+body{
+    margin:0;
+    font-family:tahoma;
+    background:#f2f2f2;
+    color:#333;
+}
+
+/* ===== هدر ===== */
+.header{
+    background:#fff;
+    text-align:center;
+    padding:20px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.site-name{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.site-desc{
+    font-size:13px;
+    color:#777;
+    margin-top:6px;
+}
+
+/* ===== منو دسته‌بندی ===== */
+.menu{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:10px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#fff;
+    background:#007BFF;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:14px;
+    transition:0.2s;
+}
+
+.menu a:hover{
+    background:#0056b3;
+}
+
+/* ===== اسلایدر افقی ===== */
+.slider{
+    display:flex;
+    overflow-x:auto;
+    gap:16px;
+    padding:15px;
+    scroll-snap-type:x mandatory;
+}
+.slider::-webkit-scrollbar{display:none;}
+
+.slide{
+    min-width:85%;
+    background:#fff;
+    border-radius:18px;
+    scroll-snap-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.12);
+    text-decoration:none;
+    color:#333;
+    flex-shrink:0;
+}
+
+/* کارت عمودی */
+.slide img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:18px 18px 0 0;
+}
+
+.slide .content{
+    padding:12px;
+}
+
+.slide h3{
+    font-size:16px;
+    margin:0 0 8px;
+  }
+
+.slide audio{
+    width:100%;
+    outline:none;
+}
+
+/* ===== فوتر ===== */
+footer{
+    text-align:center;
+    font-size:11px;
+    color:#777;
+    padding:15px;
+    margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- هدر -->
+<div class="header">
+    <div class="site-name">موزیکدل ❤️</div>
+    <div class="site-desc">دانلود جدیدترین آهنگ‌های ایرانی</div>
+
+    <!-- منو دسته‌بندی -->
+    <div class="menu">
+        <a href="shad.html">شاد</a>
+        <a href="ghamgin.html">غمگین</a>
+        <a href="torki.html">ترکی</a>
+        <a href="kordi.html">کردی</a>
+        <a href="remix.html">ریمیکس</a>
+    </div>
+</div>
+
+<!-- اسلایدر کارت‌ها -->
+<div class="slider">
+
+    <a href="song1.html" class="slide">
+        <img src="https://via.placeholder.com/600x400">
+        <div class="content">
+            <h3>یادگاری – عرفان پند</h3>
+            <audio controls>
+                <source src="song1.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </a>
+
+    <a href="song2.html" class="slide">
+        <img src="https://via.placeholder.com/600x400">
+        <div class="content">
+            <h3>یا چی (زنده) – مسیح و آرش</h3>
+            <audio controls>
+                <source src="song2.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </a>
+
+    <a href="song3.html" class="slide">
+        <img src="https://via.placeholder.com/600x400">
+        <div class="content">
+            <h3>دلبر – رضا بهرام</h3>
+            <audio controls>
+                <source src="song3.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </a>
+
+    <a href="song4.html" class="slide">
+        <img src="https://via.placeholder.com/600x400">
+        <div class="content">
+            <h3>نگم برات – امیرعباس گلاب</h3>
+            <audio controls>
+                <source src="song4.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </a>
+
+    <a href="song5.html" class="slide">
+        <img src="https://via.placeholder.com/600x400">
+        <div class="content">
+            <h3>عاشقانه – شادمهر</h3>
+            <audio controls>
+                <source src="song5.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </a>
+
+    <a href="song6.html" class="slide">
+        <img src="https://via.placeholder.com/600x400">
+        <div class="content">
+            <h3>غمگین – محسن یگانه</h3>
+            <audio controls>
+                <source src="song6.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </a>
+
+</div>
+
+<footer>
+    این کانال محفوظ است
+</footer>
+
+</body>
+</html>
