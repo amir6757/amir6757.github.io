@@ -3,112 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>هنرمندان - اسم سایت شما</title>
+<title>اسم سایت شما</title>
+
 <style>
-  body {
-    font-family: Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    color: #000;
-  }
+body{
+  font-family:Tahoma, sans-serif;
+  margin:0;
+  background:#fff;
+  color:#000;
+}
 
-  /* هدر و منو */
-  header {
-    background-color: #003366; /* آبی تیره */
-    color: #00f; /* اسم سایت آبی */
-    padding: 15px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-  }
+/* هدر */
+header{
+  background:#1e90ff; /* آبی ساده */
+  color:#1e90ff;       /* اسم سایت آبی */
+  text-align:center;
+  padding:15px;
+  font-size:24px;
+  font-weight:bold;
+}
 
-  nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #cc0000; /* قرمز */
-    padding: 10px 0;
-  }
+/* منو */
+nav{
+  display:flex;
+  justify-content:space-around;
+  background:#ff3333; /* قرمز ساده */
+  padding:10px 0;
+}
+nav a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
 
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
+/* محتوا */
+.container{
+  padding:20px;
+}
 
-  /* بخش هنرمندان */
-  .artist-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px;
-  }
+/* تیترها */
+h2{
+  color:#1e90ff; /* آبی ساده */
+  margin-bottom:10px;
+}
 
-  .artist-item {
-    width: 120px;
-    text-align: center;
-    border: 1px solid #003366;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s;
-  }
+/* آهنگ‌ها */
+.song{
+  padding:10px;
+  border-bottom:1px solid #1e90ff;
+}
+.song a{
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+}
+.song a:hover{
+  color:#ff3333;
+}
 
-  .artist-item:hover {
-    transform: scale(1.05);
-  }
-
-  .artist-item img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-bottom: 1px solid #003366;
-    }
-
-  .artist-item p {
-    margin: 5px 0;
-    color: #000;
-  }
-
-  /* فوتر */
-  footer {
-    text-align: center;
-    background-color: #f2f2f2;
-    padding: 15px;
-    color: #000;
-    font-size: 14px;
-    margin-top: 20px;
-  }
+/* هنرمندان */
+.artists a{
+  display:block;
+  padding:10px;
+  border-bottom:1px solid #1e90ff;
+  color:#1e90ff;
+  text-decoration:none;
+  font-size:18px;
+}
+.artists a:hover{
+  background:#f5faff;
+  color:#ff3333;
+}
+  /* فوتر (حقوق سایت) */
+footer{
+  background:#f5f5f5;
+  text-align:center;
+  padding:8px;
+  font-size:12px; /* کوچک */
+  color:#1e90ff;  /* آبی */
+}
 </style>
 </head>
+
 <body>
 
 <header>اسم سایت شما</header>
 
 <nav>
-  <a href="#">صفحه اصلی</a>
-  <a href="#">تبلیغات</a>
-  <a href="#">تماس با ما</a>
-  <a href="#">هنرمندان</a>
+  <a href="index.html">صفحه اصلی</a>
+  <a href="ads.html">تبلیغات</a>
+  <a href="contact.html">تماس با ما</a>
+  <a href="artists.html">هنرمندان</a>
 </nav>
 
-<div class="artist-list">
-  <div class="artist-item">
-    <img src="artist1.jpg" alt="هنرمند 1">
-    <p>خواننده 1</p>
+<div class="container">
+
+  <h2>آهنگ‌های جدید</h2>
+
+  <div class="song">
+    <a href="song1.html">نام آهنگ ۱</a>
   </div>
-  <div class="artist-item">
-    <img src="artist2.jpg" alt="هنرمند 2">
-    <p>خواننده 2</p>
+  <div class="song">
+    <a href="song2.html">نام آهنگ ۲</a>
   </div>
-  <div class="artist-item">
-    <img src="artist3.jpg" alt="هنرمند 3">
-    <p>خواننده 3</p>
+
+  <h2>هنرمندان</h2>
+
+  <div class="artists">
+    <a href="artist-ali.html">علی</a>
+    <a href="artist-reza.html">رضا</a>
+    <a href="artist-sara.html">سارا</a>
+    <a href="artist-mahdi.html">مهدی</a>
   </div>
-  <div class="artist-item">
-    <img src="artist4.jpg" alt="هنرمند 4">
-    <p>خواننده 4</p>
-  </div>
+
 </div>
 
 <footer>
