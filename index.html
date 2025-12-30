@@ -21,17 +21,17 @@ header{
 }
 
 header h1{
-    margin:0 0 10px;
+    margin:0 0 12px;
     color:red;
     font-size:24px;
 }
 
-/* دسته‌بندی */
+/* دسته‌بندی – یک ردیف */
 .categories{
     display:flex;
     justify-content:center;
     gap:10px;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
 }
 
 .categories a{
@@ -42,67 +42,112 @@ header h1{
     text-decoration:none;
     border:1px solid #ddd;
     font-size:13px;
+    white-space:nowrap;
 }
-
-/* بخش‌ها */
+    /* بخش */
 .section{
-    padding:20px 15px;
+    padding:20px 15px;
 }
 
 .section-title{
-    text-align:center;
-    font-size:18px;
-    margin-bottom:20px;
-    border-bottom:1px solid #ccc;
-    padding-bottom:8px;
+    text-align:center;
+    font-size:18px;
+    margin-bottom:20px;
+    border-bottom:1px solid #ccc;
+    padding-bottom:8px;
 }
 
-/* کارت‌ها */
+/* کارت‌ها: ۴ چپ + ۴ راست */
 .cards{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:15px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
 }
 
 .card{
-    background:#fafafa;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:20px;
-    text-align:center;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
 }
 
 .card a{
-    text-decoration:none;
-    color:#000;
-    display:block;
+    text-decoration:none;
+    color:#000;
+    display:block;
 }
 
-.card:hover{
-    background:#f0f0f0;
+/* کاور آهنگ */
+.card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
 }
-    /* فوتر */
+
+/* متن کارت */
+.card .info{
+    padding:10px;
+    text-align:center;
+}
+
+.card .song-name{
+    font-size:14px;
+    font-weight:bold;
+}
+
+.card .artist{
+    font-size:12px;
+    color:#555;
+    margin-top:4px;
+}
+
+/* هنرمندان */
+.artists{
+    margin-top:25px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap:15px;
+}
+
+.artist-card{
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:10px;
+    text-align:center;
+    padding:12px;
+}
+
+.artist-card a{
+    text-decoration:none;
+    color:#000;
+    font-size:14px;
+    display:block;
+}
+
+.artist-card:hover{
+    background:#f0f0f0;
+}
+
+/* فوتر */
 footer{
     background:#eee;
     text-align:center;
-    padding:12px;
-    font-size:12px;
-    color:#555;
+    padding:8px;
+    font-size:11px;
+    color:#666;
 }
-
-/* منوی پایین */
+    /* منوی پایین */
 .bottom-menu{
     text-align:center;
-    padding:12px;
+    padding:10px;
     background:#f7f7f7;
-    border-top:1px solid #ddd;
 }
 
 .bottom-menu a{
     color:red;
     text-decoration:none;
-    margin:0 10px;
-    font-size:14px;
+    margin:0 8px;
+    font-size:13px;
 }
 </style>
 </head>
@@ -111,11 +156,12 @@ footer{
 
 <header>
     <h1>🎵 سایت موزیک من</h1>
+
     <div class="categories">
         <a href="#">ریمیکس</a>
+        <a href="#">شاد</a>
         <a href="#">کردی</a>
         <a href="#">ترکی</a>
-        <a href="#">غمگین</a>
     </div>
 </header>
 
@@ -123,14 +169,99 @@ footer{
     <h2 class="section-title">جدیدترین آهنگ‌ها</h2>
 
     <div class="cards">
-        <div class="card"><a href="songs/song1.html">آهنگ ۱</a></div>
-        <div class="card"><a href="songs/song2.html">آهنگ ۲</a></div>
-        <div class="card"><a href="songs/song3.html">آهنگ ۳</a></div>
-        <div class="card"><a href="songs/song4.html">آهنگ ۴</a></div>
-        <div class="card"><a href="songs/song5.html">آهنگ ۵</a></div>
-        <div class="card"><a href="songs/song6.html">آهنگ ۶</a></div>
-        <div class="card"><a href="songs/song7.html">آهنگ ۷</a></div>
-        <div class="card"><a href="songs/song8.html">آهنگ ۸</a></div>
+
+        <!-- کارت‌های سمت چپ -->
+        <div class="card">
+            <a href="#">
+                <img src="cover1.jpg" alt="آهنگ ۱">
+                <div class="info">
+                    <div class="song-name">اسم آهنگ ۱</div>
+                    <div class="artist">نام خواننده ۱</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="cover2.jpg" alt="آهنگ ۲">
+                <div class="info">
+                    <div class="song-name">اسم آهنگ ۲</div>
+                    <div class="artist">نام خواننده ۲</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="cover3.jpg" alt="آهنگ ۳">
+                <div class="info">
+                    <div class="song-name">اسم آهنگ ۳</div>
+                    <div class="artist">نام خواننده ۳</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="cover4.jpg" alt="آهنگ ۴">
+                <div class="info">
+                    <div class="song-name">اسم آهنگ ۴</div>
+                    <div class="artist">نام خواننده ۴</div>
+                </div>
+            </a>
+        </div>
+
+        <!-- کارت‌های سمت راست -->
+        <div class="card">
+            <a href="#">
+                <img src="cover5.jpg" alt="آهنگ ۵">
+                <div class="info">
+                    <div class="song-name">اسم آهنگ ۵</div>
+                    <div class="artist">نام خواننده ۵</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="cover6.jpg" alt="آهنگ ۶">
+                <div class="info">
+                    <div class="song-name">اسم آهنگ ۶</div>
+                    <div class="artist">نام خواننده ۶</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="cover7.jpg" alt="آهنگ ۷">
+                <div class="info">
+                    <div class="song-name">اسم آهنگ ۷</div>
+                    <div class="artist">نام خواننده ۷</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="cover8.jpg" alt="آهنگ ۸">
+                <div class="info">
+                    <div class="song-name">اسم آهنگ ۸</div>
+                    <div class="artist">نام خواننده ۸</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<!-- بخش هنرمندان -->
+<div class="section">
+    <h2 class="section-title">هنرمندان</h2>
+    <div class="artists">
+        <div class="artist-card">
+            <a href="#">سیتا</a>
+        </div>
+        <div class="artist-card">
+            <a href="#">خواننده ۲</a>
+        </div>
+        <div class="artist-card">
+            <a href="#">خواننده ۳</a>
+        </div>
     </div>
 </div>
 
@@ -139,10 +270,10 @@ footer{
 </footer>
 
 <div class="bottom-menu">
-    <a href="index.html">خانه</a>
-    <a href="songs/">آهنگ‌ها</a>
-    <a href="contact.html">تماس با ما</a>
-    <a href="about.html">درباره ما</a>
+    <a href="#">خانه</a>
+    <a href="#">آهنگ‌ها</a>
+    <a href="#">تماس با ما</a>
+    <a href="#">درباره ما</a>
 </div>
 
 </body>
