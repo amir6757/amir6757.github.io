@@ -2,171 +2,191 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>موزیکدل</title>
-
 <style>
-body{
-  margin:0;
-  font-family:tahoma;
-  background:#f3f3f3;
-}
-a{text-decoration:none;color:#000}
-
-header{
-  background:#fff;
-  text-align:center;
-  padding:15px;
-}
-header h1{
-  margin:5px 0;
-}
-
-.menu{
-  margin-top:10px;
-}
-.menu a{
-  margin:0 6px;
-  font-size:14px;
-  color:#444;
-}
-
-.container{
-  padding:15px;
-}
-
-/* لیست آهنگ ها */
-.songs{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:12px;
-}
-.song{
-  background:#fff;
-  border-radius:12px;
-  padding:8px;
-  text-align:center;
-}
-.song img{
-  width:100%;
-  border-radius:10px;
-}
-.song p{
-  font-size:13px;
-  margin:8px 0 0;
-}
-
-/* صفحه آهنگ */
-.player{
-  background:#fff;
-  margin-top:20px;
-  padding:15px;
-  border-radius:12px;
-  text-align:center;
-}
-.player img{
-  width:100%;
-  border-radius:15px;
-}
-.player h2{
-  font-size:15px;
-}
-audio{
-  width:100%;
-  margin:10px 0;
-}
-.download{
-  display:block;
-  background:#222;
-  color:#fff;
-  padding:10px;
-  border-radius:20px;
-  font-size:14px;
-}
-
-/* لیست خوانندگان */
-.artists{
-  background:#fff;
-  margin-top:20px;
-  padding:15px;
-  border-radius:12px;
-}
-.artists h3{
-  margin-top:0;
-}
-.artist-list{
-  columns:3;
-}
-.artist-list span{
-  display:block;
-  font-size:13px;
-  margin-bottom:6px;
-}
+body{margin:0;font-family:tahoma;background:#f2f2f2}
+header{background:#fff;text-align:center;padding:12px;border-bottom:1px solid #ddd}
+header h1{margin:0;font-size:18px}
+.menu a{font-size:13px;color:#000;margin:0 4px;text-decoration:none;cursor:pointer}
+.container{padding:10px}
+/* لیست آهنگ */
+.songs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.song{background:#fff;border-radius:10px;padding:6px;text-align:center;cursor:pointer}
+.song img{width:100%;border-radius:8px}
+.song p{font-size:12px;margin:6px 0 0}
+/* باکس آهنگ */
+.player{background:#fff;padding:10px;border-radius:10px;text-align:center;display:none}
+.player img{width:100%;border-radius:10px}
+.player h2{font-size:14px;margin:10px 0}
+audio{width:100%}
+.download{display:block;background:#000;color:#fff;padding:8px;border-radius:18px;font-size:13px;margin-top:8px;text-decoration:none}
+/* لیست خواننده */
+.artists{background:#fff;padding:10px;border-radius:10px;display:none}
+.artists h3{font-size:14px;margin:0 0 8px}
+.artist-list{columns:3}
+.artist-list span{display:block;font-size:12px;margin-bottom:6px}
+/* برگشت */
+.back{font-size:13px;color:#000;cursor:pointer;margin-bottom:8px;display:block}
 </style>
 </head>
 <body>
 
 <header>
-  <h1>موزیکدل ❤️</h1>
+  <h1>موزیکدل</h1>
   <div class="menu">
-    <a href="#">دانلود آهنگ جدید</a>
-    <a href="#">ریمیکس</a>
-    <a href="#">ترکی</a>
-    <a href="#">کردی</a>
-    <a href="#">شاد</a>
-    <a href="#">غمگین</a>
+    <a onclick="showSection('songs')">آهنگ‌ها</a>
+    <a onclick="showSection('artists')">خواننده‌ها</a>
   </div>
 </header>
 
 <div class="container">
 
-  <!-- لیست آهنگ ها -->
-  <div class="songs">
-    <div class="song">
+  <!-- لیست آهنگ‌ها -->
+  <div class="songs" id="songs">
+    <div class="song" onclick="showSection('player')">
       <img src="https://via.placeholder.com/300">
-      <p>شاهین بنان – بغلم کن</p>
+      <p>عرفان پند – دیری نفس‌گیری</p>
     </div>
-    <div class="song">
-      <img src="https://via.placeholder.com/300">
-      <p>کوروش – رفتی از پیشم</p>
-    </div>
-    <div class="song">
+    <div class="song" onclick="showSection('player')">
       <img src="https://via.placeholder.com/300">
       <p>حامد همایون – فرشته</p>
+    </div>
+    <div class="song" onclick="showSection('player')">
+      <img src="https://via.placeholder.com/300">
+      <p>محسن یگانه – بهت قول میدم</p>
     </div>
   </div>
 
   <!-- صفحه آهنگ -->
-  <div class="player">
+  <div class="player" id="player">
+    <span class="back" onclick="showSection('songs')">⬅ برگشت</span>
     <img src="https://via.placeholder.com/500">
-    <h2>دانلود آهنگ دیری نفس‌گیری و شون تو دلم مری – عرفان پند (ریمیکس)</h2>
-
+    <h2>دیری نفس‌گیری – عرفان پند</h2>
     <audio controls>
       <source src="song.mp3" type="audio/mpeg">
     </audio>
-
-    <a class="download" href="#">دانلود آهنگ با کیفیت 320</a>
+    <a class="download" href="#">دانلود آهنگ</a>
   </div>
 
-  <!-- لیست خوانندگان -->
-  <div class="artists">
+  <!-- لیست خواننده‌ها -->
+  <div class="artists" id="artists">
+    <span class="back" onclick="showSection('songs')">⬅ برگشت</span>
     <h3>لیست خوانندگان</h3>
     <div class="artist-list">
-      <span>ابی</span>
-      <span>احسان خواجه‌امیری</span>
-      <span>اشوان</span>
-      <span>امیر عباس گلاب</span>
-      <span>بابک جهانبخش</span>
-      <span>حامد همایون</span>
-      <span>رضا بهرام</span>
       <span>عرفان پند</span>
+      <span>حامد همایون</span>
       <span>محسن یگانه</span>
-      <span>میلاد بابایی</span>
-      <span>مهدی احمدوند</span>
-      <span>یاس</span>
+      <span>رضا بهرام</span>
+      <span>بابک جهانبخش</span>
+      <span>اشوان</span>
     </div>
   </div>
 
 </div>
 
+<script>
+function showSection(section){
+  document.getElementById('songs').style.display = (section=='songs')?'grid':'none';
+  document.getElementById('player').style.display = (section=='player')?'block':'none';
+  document.getElementById('artists').style.display = (section=='artists')?'block':'none';
+}
+</script>
 </body>
-</html>
+</<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>موزیکدل</title>
+<style>
+body{margin:0;font-family:tahoma;background:#f2f2f2}
+header{background:#fff;text-align:center;padding:12px;border-bottom:1px solid #ddd}
+header h1{margin:0;font-size:18px}
+.menu a{font-size:13px;color:#000;margin:0 4px;text-decoration:none;cursor:pointer}
+.container{padding:10px}
+/* لیست آهنگ */
+.songs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.song{background:#fff;border-radius:10px;padding:6px;text-align:center;cursor:pointer}
+.song img{width:100%;border-radius:8px}
+.song p{font-size:12px;margin:6px 0 0}
+/* باکس آهنگ */
+.player{background:#fff;padding:10px;border-radius:10px;text-align:center;display:none}
+.player img{width:100%;border-radius:10px}
+.player h2{font-size:14px;margin:10px 0}
+audio{width:100%}
+.download{display:block;background:#000;color:#fff;padding:8px;border-radius:18px;font-size:13px;margin-top:8px;text-decoration:none}
+/* لیست خواننده */
+.artists{background:#fff;padding:10px;border-radius:10px;display:none}
+.artists h3{font-size:14px;margin:0 0 8px}
+.artist-list{columns:3}
+.artist-list span{display:block;font-size:12px;margin-bottom:6px}
+/* برگشت */
+.back{font-size:13px;color:#000;cursor:pointer;margin-bottom:8px;display:block}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>موزیکدل</h1>
+  <div class="menu">
+    <a onclick="showSection('songs')">آهنگ‌ها</a>
+    <a onclick="showSection('artists')">خواننده‌ها</a>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- لیست آهنگ‌ها -->
+  <div class="songs" id="songs">
+    <div class="song" onclick="showSection('player')">
+      <img src="https://via.placeholder.com/300">
+      <p>عرفان پند – دیری نفس‌گیری</p>
+    </div>
+    <div class="song" onclick="showSection('player')">
+      <img src="https://via.placeholder.com/300">
+      <p>حامد همایون – فرشته</p>
+    </div>
+    <div class="song" onclick="showSection('player')">
+      <img src="https://via.placeholder.com/300">
+      <p>محسن یگانه – بهت قول میدم</p>
+    </div>
+  </div>
+
+  <!-- صفحه آهنگ -->
+  <div class="player" id="player">
+    <span class="back" onclick="showSection('songs')">⬅ برگشت</span>
+    <img src="https://via.placeholder.com/500">
+    <h2>دیری نفس‌گیری – عرفان پند</h2>
+    <audio controls>
+      <source src="song.mp3" type="audio/mpeg">
+    </audio>
+    <a class="download" href="#">دانلود آهنگ</a>
+  </div>
+
+  <!-- لیست خواننده‌ها -->
+  <div class="artists" id="artists">
+    <span class="back" onclick="showSection('songs')">⬅ برگشت</span>
+    <h3>لیست خوانندگان</h3>
+    <div class="artist-list">
+      <span>عرفان پند</span>
+      <span>حامد همایون</span>
+      <span>محسن یگانه</span>
+      <span>رضا بهرام</span>
+      <span>بابک جهانبخش</span>
+      <span>اشوان</span>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function showSection(section){
+  document.getElementById('songs').style.display = (section=='songs')?'grid':'none';
+  document.getElementById('player').style.display = (section=='player')?'block':'none';
+  document.getElementById('artists').style.display = (section=='artists')?'block':'none';
+}
+</script>
+
+</body>
+</html>>
