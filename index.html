@@ -1,180 +1,176 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
-<meta charset="UTF-8">
-<title>MusicKhas | دانلود آهنگ</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>سایت موزیک من</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin:0;
+            font-family:Tahoma, sans-serif;
+            background:#111;
+            color:#fff;
+        }
 
-<style>
-body{
-    margin:0;
-    font-family:tahoma;
-    background:#f5f5f5;
-}
-a{text-decoration:none;color:#2196f3}
+        header{
+            background:#000;
+            padding:20px;
+            text-align:center;
+            border-bottom:1px solid #222;
+        }
 
-.header{
-    background:#fff;
-    text-align:center;
-    padding:20px 10px;
-}
-.header h1{
-    color:red;
-    margin:0;
-    font-size:36px;
-}
-.menu{
-    margin-top:10px;
-    color:#999;
-}
-.menu span{
-    margin:0 10px;
-}
+        header h1{
+            margin:0;
+            font-size:22px;
+        }
 
-.container{
-    max-width:800px;
-    margin:20px auto;
-    padding:0 10px;
-}
+        .banner{
+            background:linear-gradient(135deg, #ff0055, #5500ff);
+            padding:30px 15px;
+            text-align:center;
+        }
 
-.song-box{
-    background:#fff;
-    border:6px solid #1976d2;
-    border-radius:6px;
-    padding:15px;
-    text-align:center;
-}
-.song-box img{
-    max-width:100%;
-    border-radius:10px;
-}
-.song-title{
-    margin:15px 0;
-    font-size:18px;
-}
-audio{
-    width:100%;
-    margin-top:10px;
-}
+        .banner h2{
+            margin:0 0 10px;
+        }
 
-.artists{
-    background:#fff;
-    border:6px solid #1976d2;
-    border-radius:6px;
-    margin-top:30px;
-    padding:20px;
-  }
-.artists h3{
-    text-align:right;
-    margin-top:0;
-}
-.artist-list{
-    columns:3;
-    -webkit-columns:3;
-    -moz-columns:3;
-}
-.artist-list div{
-    margin-bottom:8px;
-    color:#555;
-}
+        .banner a{
+            display:inline-block;
+            margin-top:10px;
+            padding:10px 20px;
+            background:#000;
+            color:#fff;
+            text-decoration:none;
+            border-radius:6px;
+        }
 
-.footer{
-    text-align:center;
-    margin:30px 0;
-    color:#777;
-}
-.footer-links a{
-    margin:0 10px;
-}
-max-width:600px{
-    .artist-list{
-        columns:2;
-    }
-}
-</style>
+        .section{
+            padding:20px;
+        }
+
+        .section h3{
+            margin-bottom:15px;
+            border-bottom:1px solid #333;
+            padding-bottom:5px;
+        }
+
+        .categories{
+            text-align:center;
+            margin-bottom:15px;
+        }
+
+        .categories button{
+            background:#222;
+            color:#fff;
+            border:none;
+            padding:10px 15px;
+            margin:5px;
+            border-radius:6px;
+            cursor:pointer;
+        }
+
+        .songs{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+            gap:15px;
+        }
+
+        .song{
+            background:#1c1c1c;
+            padding:10px;
+            border-radius:8px;
+            text-align:center;
+        }
+
+        .song img{
+            width:100%;
+            border-radius:6px;
+        }
+        .song p{
+            font-size:13px;
+            margin:8px 0;
+        }
+
+        .song a{
+            display:inline-block;
+            padding:6px 12px;
+            background:#ff0055;
+            color:#fff;
+            text-decoration:none;
+            border-radius:5px;
+            font-size:12px;
+        }
+
+        footer{
+            background:#000;
+            text-align:center;
+            padding:15px;
+            font-size:12px;
+            color:#aaa;
+        }
+
+        footer a{
+            color:#ff0055;
+            text-decoration:none;
+            margin:0 5px;
+            font-size:13px;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="header">
-    <h1>MUSICKHAS</h1>
-    <div class="menu">
-        <a href="torki.html" style="text-decoration:none; color:inherit;">
-  <span>ترکی</span>
-</a>
-        <a href="torki.html" style="text-decoration:none; color:inherit;">
-  <span>شاد</span>
-</a>
-        <a href="torki.html" style="text-decoration:none; color:inherit;">
-  <span>غمگین</span>
-</a>
-        <a href="torki.html" style="text-decoration:none; color:inherit;">
-  <span>فانک</span>
-</a>
-    </div>
+<header>
+    <h1>🎵 سایت موزیک من</h1>
+</header>
+
+<div class="banner">
+    <h2>دانلود جدیدترین آهنگ‌ها</h2>
+    <p>با بهترین کیفیت MP3</p>
+    <a href="songs/">مشاهده آهنگ‌ها</a>
 </div>
 
-<a href="blok3-git.html" class="song-link">
-  <div class="song-box">
-    <img src="cover.jpg" alt="Erfan Pand">
-
-    <div class="song-title">
-      دانلود آهنگ عکس یادگاری - عرفان پند
-    </div>
-
-    <audio controls>
-      <source src="music.mp3" type="audio/mpeg">
-      مرورگر شما پشتیبانی نمی‌کند
-    </audio>
-  </div>
-</a>
-
-    <div class="artists">
-        <h3>لیست خوانندگان</h3>
-        <div class="artist-list">
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-            <a href="song.html">اسم خواننده</a>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>تمامی حقوق این سایت محفوظ میباشد</p>
-        <div class="footer-links">
-            <a href="#">تماس با ما</a>
-            <a href="#">تبلیغات</a>
-            <a href="#">کانال‌ها</a>
-        </div>
-    </div>
-
+<div class="section">
+    <h3>دسته‌بندی‌ها</h3>
+    <div class="categories">
+        <button>شاد</button>
+        <button>غمگین</button>
+        <button>ترکی</button>
+        <button>کردی</button>
+        <button>ریمیکس</button>
+    </div>
 </div>
+
+<div class="section">
+    <h3>جدیدترین آهنگ‌ها</h3>
+    <div class="songs">
+        <div class="song">
+            <img src="cover1.jpg" alt="cover">
+            <p>آهنگ شماره ۱</p>
+            <a href="songs/song1.html">دانلود</a>
+        </div>
+
+        <div class="song">
+            <img src="cover2.jpg" alt="cover">
+            <p>آهنگ شماره ۲</p>
+            <a href="songs/song2.html">دانلود</a>
+        </div>
+
+        <div class="song">
+            <img src="cover3.jpg" alt="cover">
+            <p>آهنگ شماره ۳</p>
+            <a href="songs/song3.html">دانلود</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © تمامی حقوق این سایت محفوظ می‌باشد
+    <br>
+    <a href="index.html">خانه</a> |
+    <a href="songs/">آهنگ‌ها</a> |
+    <a href="#">تماس با ما</a> |
+    <a href="#">درباره ما</a>
+</footer>
 
 </body>
 </html>
