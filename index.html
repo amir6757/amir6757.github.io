@@ -14,84 +14,95 @@
 
         header{
             background:#000;
-            padding:20px;
-            text-align:center;
+            padding:15px;
             border-bottom:1px solid #222;
         }
 
-        header h1{
-            margin:0;
+        .top{
+            text-align:center;
+        }
+
+        .top h1{
+            margin:5px 0;
             font-size:22px;
         }
 
-        .banner{
-            background:linear-gradient(135deg, #ff0055, #5500ff);
-            padding:30px 15px;
+        nav{
+            margin-top:8px;
             text-align:center;
         }
 
-        .banner h2{
-            margin:0 0 10px;
-        }
-
-        .banner a{
-            display:inline-block;
-            margin-top:10px;
-            padding:10px 20px;
-            background:#000;
-            color:#fff;
+        nav a{
+            color:#ccc;
             text-decoration:none;
-            border-radius:6px;
+            margin:0 8px;
+            font-size:14px;
         }
 
-        .section{
-            padding:20px;
-        }
-
-        .section h3{
-            margin-bottom:15px;
-            border-bottom:1px solid #333;
-            padding-bottom:5px;
+        nav a:hover{
+            color:#fff;
         }
 
         .categories{
+            margin-top:12px;
             text-align:center;
-            margin-bottom:15px;
         }
 
         .categories button{
             background:#222;
             color:#fff;
             border:none;
-            padding:10px 15px;
-            margin:5px;
+            padding:7px 14px;
+            margin:4px;
             border-radius:6px;
+            font-size:13px;
             cursor:pointer;
         }
 
-        .songs{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-            gap:15px;
+        .section{
+            padding:15px;
         }
 
-        .song{
-            background:#1c1c1c;
-            padding:10px;
-            border-radius:8px;
+        .section-title{
             text-align:center;
+            font-size:18px;
+            margin:10px 0 20px;
+            border-bottom:1px solid #333;
+            padding-bottom:8px;
         }
-
-        .song img{
-            width:100%;
-            border-radius:6px;
-        }
-        .song p{
-            font-size:13px;
-            margin:8px 0;
+        .songs{
+            display:flex;
+            flex-direction:column;
+            gap:15px;
         }
 
-        .song a{
+        .song{
+            background:#1c1c1c;
+            padding:10px;
+            border-radius:8px;
+            display:flex;
+            gap:10px;
+            align-items:center;
+        }
+
+        .song img{
+            width:90px;
+            height:90px;
+            object-fit:cover;
+            border-radius:6px;
+        }
+
+        .song-info{
+            flex:1;
+            text-align:left;
+        }
+
+        .song-info p{
+            margin:0 0 8px;
+            font-size:14px;
+        }
+
+        .song-info a{
             display:inline-block;
             padding:6px 12px;
             background:#ff0055;
@@ -101,75 +112,107 @@
             font-size:12px;
         }
 
+        /* هنرمندان */
+        .artists{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+            gap:10px;
+        }
+
+        .artist{
+            background:#1c1c1c;
+            padding:12px;
+            border-radius:8px;
+            text-align:center;
+        }
+
+        .artist a{
+            color:#fff;
+            text-decoration:none;
+            font-size:14px;
+        }
+
+        .artist:hover{
+            background:#222;
+        }
+
         footer{
+            margin-top:25px;
             background:#000;
             text-align:center;
             padding:15px;
             font-size:12px;
             color:#aaa;
         }
-
-        footer a{
-            color:#ff0055;
-            text-decoration:none;
-            margin:0 5px;
-            font-size:13px;
-        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>🎵 سایت موزیک من</h1>
+    <div class="top">
+        <h1>🎵 سایت موزیک من</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">خانه</a>
+        <a href="songs/">آهنگ‌ها</a>
+        <a href="contact.html">تماس با ما</a>
+        <a href="about.html">درباره ما</a>
+    </nav>
+
+    <div class="categories">
+        <button>ریمیکس</button>
+        <button>کردی</button>
+        <button>ترکی</button>
+        <button>غمگین</button>
+    </div>
 </header>
 
-<div class="banner">
-    <h2>دانلود جدیدترین آهنگ‌ها</h2>
-    <p>با بهترین کیفیت MP3</p>
-    <a href="songs/">مشاهده آهنگ‌ها</a>
-</div>
-
+<!-- جدیدترین آهنگ‌ها -->
 <div class="section">
-    <h3>دسته‌بندی‌ها</h3>
-    <div class="categories">
-        <button>شاد</button>
-        <button>غمگین</button>
-        <button>ترکی</button>
-        <button>کردی</button>
-        <button>ریمیکس</button>
+    <h2 class="section-title">جدیدترین آهنگ‌ها</h2>
+
+    <div class="songs">
+        <div class="song">
+            <img src="cover1.jpg">
+            <div class="song-info">
+                <p>آهنگ شماره ۱</p>
+                <a href="songs/song1.html">مشاهده / دانلود</a>
+            </div>
+        </div>
+
+        <div class="song">
+            <img src="cover2.jpg">
+            <div class="song-info">
+                <p>آهنگ شماره ۲</p>
+                <a href="songs/song2.html">مشاهده / دانلود</a>
+            </div>
+        </div>
+
+        <div class="song">
+            <img src="cover3.jpg">
+            <div class="song-info">
+                <p>آهنگ شماره ۳</p>
+                <a href="songs/song3.html">مشاهده / دانلود</a>
+            </div>
+        </div>
     </div>
 </div>
 
+<!-- هنرمندان -->
 <div class="section">
-    <h3>جدیدترین آهنگ‌ها</h3>
-    <div class="songs">
-        <div class="song">
-            <img src="cover1.jpg" alt="cover">
-            <p>آهنگ شماره ۱</p>
-            <a href="songs/song1.html">دانلود</a>
-        </div>
+    <h2 class="section-title">هنرمندان</h2>
 
-        <div class="song">
-            <img src="cover2.jpg" alt="cover">
-            <p>آهنگ شماره ۲</p>
-            <a href="songs/song2.html">دانلود</a>
-        </div>
-
-        <div class="song">
-            <img src="cover.jpg" alt="cover">
-            <p>آهنگ شماره ۳</p>
-            <a href="blok3-git.html">دانلود</a>
-        </div>
+    <div class="artists">
+        <div class="artist"><a href="artists/erfan-pand.html">عرفان پند</a></div>
+        <div class="artist"><a href="artists/artist2.html">نام خواننده</a></div>
+        <div class="artist"><a href="artists/artist3.html">نام خواننده</a></div>
+        <div class="artist"><a href="artists/artist4.html">نام خواننده</a></div>
     </div>
 </div>
 
 <footer>
     © تمامی حقوق این سایت محفوظ می‌باشد
-    <br>
-    <a href="index.html">خانه</a> |
-    <a href="songs/">آهنگ‌ها</a> |
-    <a href="#">تماس با ما</a> |
-    <a href="#">درباره ما</a>
 </footer>
 
 </body>
