@@ -1,155 +1,172 @@
-body {
-  font-family: sans-serif;
-  background: #f5f5f5;
-  margin: 0;
-}
-
-.header {
-  background: #fff;
-  padding: 15px;
-  text-align: center;
-}
-
-.header nav a {
-  margin: 0 8px;
-  color: #333;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.songs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 15px;
-  padding: 15px;
-}
-
-.song-card {
-  background: #fff;
-  border-radius: 10px;
-  text-align: center;
-  padding: 10px;
-}
-
-.song-card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.player {
-  background: #fff;
-  margin: 15px;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.cover {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 15px;
-}
-
-.download-btn {
-  display: block;
-  background: #111;
-  color: #fff;
-  padding: 10px;
-  margin-top: 10px;
-  text-decoration: none;
-  border-radius: 20px;
-}
-
-.comments {
-  background: #fff;
-  margin: 15px;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.comments input,
-.comments textarea {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 8px;
-}
-
-.comments button {
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 10px;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  color: #777;
-}
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>موزیکدل ❤️ دانلود آهنگ جدید</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>موزیکدل</title>
+
+<style>
+body{
+  margin:0;
+  font-family:tahoma;
+  background:#f3f3f3;
+}
+a{text-decoration:none;color:#000}
+
+header{
+  background:#fff;
+  text-align:center;
+  padding:15px;
+}
+header h1{
+  margin:5px 0;
+}
+
+.menu{
+  margin-top:10px;
+}
+.menu a{
+  margin:0 6px;
+  font-size:14px;
+  color:#444;
+}
+
+.container{
+  padding:15px;
+}
+
+/* لیست آهنگ ها */
+.songs{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+.song{
+  background:#fff;
+  border-radius:12px;
+  padding:8px;
+  text-align:center;
+}
+.song img{
+  width:100%;
+  border-radius:10px;
+}
+.song p{
+  font-size:13px;
+  margin:8px 0 0;
+}
+
+/* صفحه آهنگ */
+.player{
+  background:#fff;
+  margin-top:20px;
+  padding:15px;
+  border-radius:12px;
+  text-align:center;
+}
+.player img{
+  width:100%;
+  border-radius:15px;
+}
+.player h2{
+  font-size:15px;
+}
+audio{
+  width:100%;
+  margin:10px 0;
+}
+.download{
+  display:block;
+  background:#222;
+  color:#fff;
+  padding:10px;
+  border-radius:20px;
+  font-size:14px;
+}
+
+/* لیست خوانندگان */
+.artists{
+  background:#fff;
+  margin-top:20px;
+  padding:15px;
+  border-radius:12px;
+}
+.artists h3{
+  margin-top:0;
+}
+.artist-list{
+  columns:3;
+}
+.artist-list span{
+  display:block;
+  font-size:13px;
+  margin-bottom:6px;
+}
+</style>
 </head>
 <body>
 
-<header class="header">
+<header>
   <h1>موزیکدل ❤️</h1>
-  <nav>
+  <div class="menu">
     <a href="#">دانلود آهنگ جدید</a>
     <a href="#">ریمیکس</a>
     <a href="#">ترکی</a>
     <a href="#">کردی</a>
     <a href="#">شاد</a>
     <a href="#">غمگین</a>
-  </nav>
+  </div>
 </header>
 
-<section class="songs">
-  <div class="song-card">
-    <img src="images/1.jpg" alt="">
-    <h3>شاهین بنان – بغلم کن</h3>
+<div class="container">
+
+  <!-- لیست آهنگ ها -->
+  <div class="songs">
+    <div class="song">
+      <img src="https://via.placeholder.com/300">
+      <p>شاهین بنان – بغلم کن</p>
+    </div>
+    <div class="song">
+      <img src="https://via.placeholder.com/300">
+      <p>کوروش – رفتی از پیشم</p>
+    </div>
+    <div class="song">
+      <img src="https://via.placeholder.com/300">
+      <p>حامد همایون – فرشته</p>
+    </div>
   </div>
 
-  <div class="song-card">
-    <img src="images/2.jpg" alt="">
-    <h3>کوروش – رفتی از پیشم</h3>
+  <!-- صفحه آهنگ -->
+  <div class="player">
+    <img src="https://via.placeholder.com/500">
+    <h2>دانلود آهنگ دیری نفس‌گیری و شون تو دلم مری – عرفان پند (ریمیکس)</h2>
+
+    <audio controls>
+      <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <a class="download" href="#">دانلود آهنگ با کیفیت 320</a>
   </div>
 
-  <div class="song-card">
-    <img src="images/3.jpg" alt="">
-    <h3>حامد همایون – فرشته</h3>
+  <!-- لیست خوانندگان -->
+  <div class="artists">
+    <h3>لیست خوانندگان</h3>
+    <div class="artist-list">
+      <span>ابی</span>
+      <span>احسان خواجه‌امیری</span>
+      <span>اشوان</span>
+      <span>امیر عباس گلاب</span>
+      <span>بابک جهانبخش</span>
+      <span>حامد همایون</span>
+      <span>رضا بهرام</span>
+      <span>عرفان پند</span>
+      <span>محسن یگانه</span>
+      <span>میلاد بابایی</span>
+      <span>مهدی احمدوند</span>
+      <span>یاس</span>
+    </div>
   </div>
-</section>
 
-<section class="player">
-  <img src="images/cover.jpg" class="cover">
-  <h2>دانلود آهنگ دیری نفس‌گیری – عرفان پند (ریمیکس)</h2>
-
-  <audio controls>
-    <source src="music/song.mp3" type="audio/mpeg">
-  </audio>
-
-  <a class="download-btn" href="#">دانلود با کیفیت 320</a>
-</section>
-
-<section class="comments">
-  <h3>ارسال نظر</h3>
-  <input type="text" placeholder="نام شما">
-  <textarea placeholder="پیام شما"></textarea>
-  <button>ثبت نظر</button>
-
-  <div class="comment">
-    <b>علی:</b> عالی بود 🔥
-  </div>
-</section>
-
-<footer>
-  <p>© تمامی حقوق محفوظ است</p>
-</footer>
+</div>
 
 </body>
 </html>
