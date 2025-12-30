@@ -1,117 +1,186 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8">
-  <title>amir6757 | دانلود آهنگ با کیفیت 320</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background: #f7f7f7;
-      color: #222;
-    }
-    .header {
-      background: linear-gradient(90deg, #6a11cb, #2575fc);
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
-    }
-    .header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
-    .header p {
-      margin: 5px 0 0;
-      font-size: 14px;
-    }
-    .album {
-      background: #fff;
-      margin: 15px 10px;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .album img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-    .album h2 {
-      margin: 10px 0 5px;
-      font-size: 18px;
-    }
-    .album p {
-      margin: 0 0 10px;
-      font-size: 14px;
-      color: #555;
-    }
-    .lyrics-btn, .download-btn {
-      display: inline-block;
-      margin: 5px;
-      padding: 10px 15px;
-      border-radius: 8px;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .lyrics-btn {
-      background: #28a745;
-    }
-    .download-btn {
-      background: #007bff;
-    }
-    .lyrics-section {
-      display: none;
-      background: #e9ecef;
-      padding: 15px;
-      margin: 10px;
-      border-radius: 8px;
-      white-space: pre-line;
-      text-align: justify;
-    }
-    .footer {
-      text-align: center;
-      font-size: 12px;
-      color: #999;
-      margin: 20px 0;
-    }
-    audio {width: 100%;
-      margin: 15px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>دانلود آهنگ عکس یادگاری - عرفان پند</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin:0;
+            font-family:Tahoma, sans-serif;
+            background:#111;
+            color:#fff;
+        }
+
+        header{
+            background:#000;
+            padding:15px;
+            text-align:center;
+            border-bottom:1px solid #222;
+        }
+
+        header h2{
+            margin:0;
+            font-size:20px;
+        }
+
+        header a{
+            display:inline-block;
+            margin-top:5px;
+            font-size:13px;
+            color:#ff0055;
+            text-decoration:none;
+        }
+
+        .categories{
+            margin-top:10px;
+        }
+
+        .categories button{
+            background:#222;
+            color:#fff;
+            border:none;
+            padding:8px 12px;
+            margin:5px;
+            border-radius:6px;
+            cursor:pointer;
+            font-size:13px;
+        }
+
+        .container{
+            max-width:600px;
+            margin:auto;
+            padding:20px;
+        }
+
+        h1{
+            font-size:18px;
+            margin-bottom:15px;
+            text-align:center;
+        }
+
+        .cover{
+            width:100%;
+            border-radius:10px;
+            margin-bottom:15px;
+        }
+
+        audio{
+            width:100%;
+            margin:10px 0;
+        }
+
+        .download a{
+            display:block;
+            background:#ff0055;
+            color:#fff;
+            text-decoration:none;
+            text-align:center;
+            padding:10px;
+            border-radius:6px;
+            margin:8px 0;
+            font-size:14px;
+        }
+
+        .info{
+            background:#1c1c1c;
+            padding:12px;
+            border-radius:8px;
+            margin-top:15px;
+            font-size:14px;
+            line-height:1.8;
+        }
+      .lyrics{
+            margin-top:20px;
+        }
+
+        .lyrics h3{
+            margin-bottom:10px;
+            font-size:16px;
+        }
+
+        .lyrics pre{
+            background:#000;
+            padding:12px;
+            border-radius:8px;
+            white-space:pre-wrap;
+            font-size:13px;
+            line-height:1.9;
+        }
+
+        footer{
+            margin-top:30px;
+            padding:15px;
+            text-align:center;
+            font-size:12px;
+            color:#aaa;
+            background:#000;
+        }
+
+        footer a{
+            color:#ff0055;
+            text-decoration:none;
+            margin:0 5px;
+            font-size:13px;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- بالای صفحه: اسم سایت + توضیح کوتاه -->
-  <div class="header">
-    <h1>amir6757</h1>
-    <p>دانلود آهنگ‌های با کیفیت 320 MP3</p>
-  </div>
+<header>
+    <h2>🎵 سایت موزیک من</h2>
+    <a href="../index.html">بازگشت به صفحه اصلی</a>
 
-  <!-- آلبوم آهنگ -->
-  <div class="album">
-    <img src="amir6757.jpg" alt="عکس خواننده">
-    <h2>blok3.git</h2>
-    <p>خواننده: Amir6757</p>
+    <div class="categories">
+        <button>شاد</button>
+        <button>غمگین</button>
+        <button>کردی</button>
+        <button>ترکی</button>
+    </div>
+</header>
 
-    <!-- پلیر -->
-    <audio id="player" controls>
-      <source src="blok3.mp3" type="audio/mpeg">
-      مرورگر شما از پخش موزیک پشتیبانی نمی‌کند
+<div class="container">
+
+    <h1>دانلود آهنگ عکس یادگاری – عرفان پند</h1>
+
+    <img src="cover.jpg" alt="کاور آهنگ" class="cover">
+
+    <audio controls>
+        <source src="music.mp3" type="audio/mpeg">
+        مرورگر شما از پخش آنلاین پشتیبانی نمی‌کند
     </audio>
 
-    <!-- دکمه متن آهنگ -->
-    <div class="lyrics-btn" onclick="toggleLyrics()">مشاهده متن آهنگ</div>
+    <div class="download">
+        <a href="music-320.mp3">دانلود آهنگ با کیفیت 320</a>
+        <a href="music-128.mp3">دانلود آهنگ با کیفیت 128</a>
+    </div>
 
-    <!-- متن آهنگ -->
-    <div class="lyrics-section" id="lyrics">
-GitGit, peşimi bırak  
-Senin aşkın bana bi’ tuzak  
-Git, bi’ kez olsun kendine yakışanı yap  
-Fotoğrafımızı sakla(Git)  
-Beni soran olursa  
-Ona de, “Benim için kendinden vazge
+    <div class="info">
+        🎤 خواننده: عرفان پند <br>
+        🎵 نام آهنگ: عکس یادگاری <br>
+        🎼 ژانر: غمگین <br>
+        📅 سال انتشار: 1403
+    </div>
+
+    <div class="lyrics">
+        <h3>متن آهنگ</h3>
+        <pre>
+اینجا متن آهنگ قرار می‌گیرد
+خط به خط
+مرتب و خوانا
+        </pre>
+    </div>
+
+</div>
+
+<footer>
+    © تمامی حقوق این سایت محفوظ می‌باشد
+    <br>
+    <a href="../index.html">خانه</a> |
+    <a href="../songs/">آهنگ‌ها</a> |
+    <a href="#">تماس با ما</a> |
+    <a href="#">درباره ما</a>
+</footer>
+
+</body>
+</html>
