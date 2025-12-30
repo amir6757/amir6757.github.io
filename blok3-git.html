@@ -1,1 +1,147 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>Amir6757 | دانلود آهنگ blok3.git</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style>
+body{
+  margin:0;
+  font-family:sans-serif;
+  background:#ffffff;
+  color:#000000;
+}
+
+header{
+  text-align:center;
+  padding:30px 15px;
+  border-bottom:1px solid #ddd;
+}
+
+header h1{
+  margin:0;
+  font-size:26px;
+}
+
+header p{
+  margin-top:10px;
+  font-size:14px;
+  color:#333;
+}
+
+/* باکس تبلیغ */
+.ads{
+  margin:20px;
+  padding:20px;
+  border:2px dashed #aaa;
+  text-align:center;
+  color:#777;
+  border-radius:10px;
+}
+
+.box{
+  margin:15px;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  text-align:center;
+}
+
+.song-title{
+  font-size:18px;
+  font-weight:bold;
+}
+
+.artist{
+  font-size:14px;
+  margin-top:5px;
+}
+
+audio{
+  width:100%;
+  margin:15px 0;
+}
+
+.btn-lyrics{
+  background:#800080; /* بنفش پررنگ */
+  color:#fff;
+  border:none;
+  padding:12px 20px;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+  margin:5px;
+}
+
+.btn-download{
+  background:#0047ff; /* آبی پررنگ */
+  color:#fff;
+  padding:12px 20px;
+  border-radius:8px;
+  font-weight:bold;
+  text-decoration:none;
+  display:inline-block;
+  margin:5px;
+}
+
+.lyrics{
+  display:none;
+  background:#0047ff;
+  color:#ffffff;
+  padding:15px;
+  margin-top:15px;
+  border-radius:10px;
+  text-align:justify;
+  white-space:pre-line;
+  max-height:300px;
+  overflow-y:auto;
+}
+
+footer{
+  text-align:center;
+  font-size:12px;
+  color:#555;
+  margin:30px 0;
+}
+</style>
+
+<script>
+function toggleLyrics(){
+  var l = document.getElementById("lyrics");
+  l.style.display = (l.style.display === "none") ? "block" : "none";
+}
+</script>
+  </head>
+<body>
+
+<header>
+  <h1>دانلود آهنگ blok3.git</h1>
+  <p>با کیفیت 320 MP3</p>
+</header>
+
+<!-- جای تبلیغ -->
+<div class="ads">
+  جای کد تبلیغ
+</div>
+
+<!-- بخش آهنگ -->
+<div class="box">
+  <div class="song-title">blok3.git</div>
+  <div class="artist">خواننده: Blok</div>
+
+  <audio controls>
+    <source src="blok3.git" type="audio/mpeg">
+    مرورگر شما پشتیبانی نمی‌کند
+  </audio>
+
+  <button class="btn-lyrics" onclick="toggleLyrics()">متن آهنگ</button>
+  <a href="blok3.git" download class="btn-download">دانلود آهنگ</a>
+
+  <div class="lyrics" id="lyrics">
+GitGit, peşimi bırak
+Senin aşkın bana bi’ tuzak
+Git, bi’ kez olsun kendine yakışanı yap
+Fotoğrafımızı sakla (Git)
+Beni soran olursa
+Ona
