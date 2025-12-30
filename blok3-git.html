@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>موزیکدل ❤️ دانلود آهنگ جدید</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header class="header">
+  <h1>موزیکدل ❤️</h1>
+  <nav>
+    <a href="#">دانلود آهنگ جدید</a>
+    <a href="#">ریمیکس</a>
+    <a href="#">ترکی</a>
+    <a href="#">کردی</a>
+    <a href="#">شاد</a>
+    <a href="#">غمگین</a>
+  </nav>
+</header>
+
+<section class="songs">
+  <div class="song-card">
+    <img src="images/1.jpg" alt="">
+    <h3>شاهین بنان – بغلم کن</h3>
+  </div>
+
+  <div class="song-card">
+    <img src="images/2.jpg" alt="">
+    <h3>کوروش – رفتی از پیشم</h3>
+  </div>
+
+  <div class="song-card">
+    <img src="images/3.jpg" alt="">
+    <h3>حامد همایون – فرشته</h3>
+  </div>
+</section>
+
+<section class="player">
+  <img src="images/cover.jpg" class="cover">
+  <h2>دانلود آهنگ دیری نفس‌گیری – عرفان پند (ریمیکس)</h2>
+
+  <audio controls>
+    <source src="music/song.mp3" type="audio/mpeg">
+  </audio>
+
+  <a class="download-btn" href="#">دانلود با کیفیت 320</a>
+</section>
+
+<section class="comments">
+  <h3>ارسال نظر</h3>
+  <input type="text" placeholder="نام شما">
+  <textarea placeholder="پیام شما"></textarea>
+  <button>ثبت نظر</button>
+
+  <div class="comment">
+    <b>علی:</b> عالی بود 🔥
+  </div>
+</section>
+
+<footer>
+  <p>© تمامی حقوق محفوظ است</p>
+</footer>
+
+</body>
+</html>
+body {
+  font-family: sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+}
+
+.header {
+  background: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.header nav a {
+  margin: 0 8px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.songs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+.song-card {
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.song-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.player {
+  background: #fff;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cover {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+}
+
+.download-btn {
+  display: block;
+  background: #111;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.comments {
+  background: #fff;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.comments input,
+.comments textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.comments button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #777;
+}
