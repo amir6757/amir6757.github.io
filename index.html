@@ -1,18 +1,168 @@
-# 🎵 blok3.git
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>سایت موزیک من</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #111;
+        }
+        header {
+            background: linear-gradient(90deg, #0000ff, #ff0000);
+            color: white;
+            text-align: center;
+            padding: 30px 10px;
+        }
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            display: inline-block;
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: rgba(255,255,255,0.2);
+        }
+        nav a:hover {
+            background-color: rgba(255,255,255,0.5);
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .intro {
+            font-size: 22px;
+            color: black;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .songs {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .song-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .song-card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .song-card h3 {
+            margin: 10px 0;
+        }
+        .song-card audio {
+            width: 90%;
+        }
+        .artists {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 40px;
+            justify-content: center;
+          }
+        .artists a {
+            background-color: #0000ff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .artists a:hover {
+            background-color: #ff0000;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        footer .links a {
+            color: #00ffff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        footer .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
 
-سایت دانلود و پخش آنلاین موزیک  
-با کیفیت 320 و لینک مستقیم
+<header>
+    <h1>سایت موزیک من</h1>
+    <nav>
+        <a href="songs/shad.html">شاد</a>
+        <a href="songs/ghamgin.html">غمگین</a>
+        <a href="songs/torki.html">ترکی</a>
+        <a href="songs/fun.html">فان</a>
+    </nav>
+</header>
 
-## 📌 امکانات سایت
-- پخش آنلاین آهنگ
-- دانلود مستقیم MP3
-- طراحی ساده و سریع
-- مناسب موبایل
+<main>
+    <div class="intro">
+        آهنگ‌های جدید سایت من
+    </div>
 
-## 🔗 آدرس سایت
-https://amir6757.github.io
+    <div class="songs">
+        <!-- مثال ۱۰ کارت آهنگ -->
+        <div class="song-card">
+            <img src="images/song1.jpg" alt="Song 1">
+            <h3>نام آهنگ ۱</h3>
+            <audio controls>
+                <source src="music/song1.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="song-card">
+            <img src="images/song2.jpg" alt="Song 2">
+            <h3>نام آهنگ ۲</h3>
+            <audio controls>
+                <source src="music/song2.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <!-- ادامه کارت‌ها تا ۱۰ -->
+    </div>
 
-## 📞 تماس
-09012483588
-برای همکاری یا تبلیغات پیام بده
-print
+    <div class="artists">
+        <!-- مثال لیست ۳۰ خواننده -->
+        <a href="artists/artist1.html">خواننده ۱</a>
+        <a href="artists/artist2.html">خواننده ۲</a>
+        <a href="artists/artist3.html">خواننده ۳</a>
+        <a href="artists/artist4.html">خواننده ۴</a>
+        <a href="artists/artist5.html">خواننده ۵</a>
+        <!-- ادامه تا ۳۰ -->
+    </div>
+</main>
+
+<footer>
+    <p>تمامی حقوق این سایت محفوظ است © 2025</p>
+    <div class="links">
+        <a href="contact.html">تماس با ما</a>
+        <a href="ads.html">تبلیغات</a>
+        <a href="channels.html">کانال‌ها</a>
+    </div>
+</footer>
+
+</body>
+</html>
