@@ -1,190 +1,220 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <title>دانلود آهنگ بلک</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            color: #111;
-        }
-        header {
-            background: linear-gradient(90deg, #0000ff, #ff0000);
-            color: white;
-            text-align: center;
-            padding: 20px 10px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 40px;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            display: inline-block;
-            margin: 0 5px;
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            padding: 5px 10px;
-            border-radius: 5px;
-            background-color: rgba(255,255,255,0.2);
-        }
-        nav a:hover {
-            background-color: rgba(255,255,255,0.5);
-        }
-        .intro {
-            text-align: center;
-            font-size: 20px;
-            margin: 20px 0;
-        }
-        .song-cover {
-            display: block;
-            margin: 20px auto;
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-        .song-info {
-            text-align: center;
-            margin: 10px 0;
-        }
-        .ad-banner {
-            display: block;
-            margin: 20px auto;
-            width: 80%;
-            height: 100px;
-            background-color: #ccc;
-            line-height: 100px;
-            text-align: center;
-            border-radius: 10px;
-            font-size: 20px;
-        }
-        audio {
-            display: block;
-            margin: 20px auto;
-            width: 80%;
-        }
-        .download-btn {
-            display: inline-block;
-            margin: 10px auto;
-            padding: 10px 20px;
-            background-color: #0000ff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .download-btn:hover {
-            background-color: #ff0000;
-        }
-        .lyrics {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 10px;
-            background: white;
-            border-radius: 10px;
-          }
-        .artists {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin: 30px 0;
-        }
-        .artists a {
-            background-color: #0000ff;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-        .artists a:hover {
-            background-color: #ff0000;
-        }
-        footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 20px 10px;
-        }
-        footer .links a {
-            color: #00ffff;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        footer .links a:hover {
-            text-decoration: underline;
-        }
-        a.back-link {
-            display: block;
-            margin: 20px auto;
-            color: #111;
-            text-decoration: none;
-            text-align: center;
-        }
-        a.back-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دانلود آهنگ بلک</title>
+
+<style>
+body{
+  margin:0;
+  font-family:tahoma;
+  background:#f2f2f2;
+  direction:rtl;
+}
+
+/* هدر */
+header{
+  background:linear-gradient(to left, red, blue);
+  color:white;
+  text-align:center;
+  padding:18px 10px;
+}
+header h1{
+  margin:0;
+  font-size:26px;
+}
+.menu{
+  margin-top:10px;
+}
+.menu a{
+  color:white;
+  text-decoration:none;
+  margin:5px;
+  padding:8px 14px;
+  background:rgba(0,0,0,0.25);
+  border-radius:8px;
+  display:inline-block;
+}
+
+/* محتوا */
+.container{
+  padding:12px;
+}
+
+/* کاور */
+.cover img{
+  width:100%;
+  border-radius:14px;
+}
+
+/* اطلاعات آهنگ */
+.song-info{
+  text-align:center;
+  margin:12px 0;
+}
+.song-info h2,
+.song-info h3{
+  margin:6px 0;
+  font-size:18px;
+  font-weight:normal;
+}
+
+/* تبلیغات */
+.ads{
+  margin:20px 0;
+}
+.ad{
+  background:#ddd;
+  height:80px;
+  border-radius:10px;
+  margin-bottom:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#555;
+}
+
+/* پلیر */
+audio{
+  width:100%;
+  margin:15px 0;
+}
+
+/* دانلود */
+.download{
+  text-align:center;
+  margin:20px 0;
+}
+.download a{
+  background:red;
+  color:white;
+  padding:14px 30px;
+  border-radius:12px;
+  font-size:20px;
+  text-decoration:none;
+  display:inline-block;
+}
+    /* متن آهنگ */
+.lyrics{
+  background:white;
+  padding:15px;
+  border-radius:14px;
+  margin-bottom:20px;
+  line-height:2;
+}
+
+/* خوانندگان (مثل صفحه اصلی) */
+.artists{
+  background:white;
+  padding:15px;
+  border-radius:14px;
+  margin-bottom:20px;
+}
+.artists h2{
+  margin-bottom:10px;
+}
+.artist-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.artist-list a{
+  background:#e5e5e5;
+  padding:10px 16px;
+  border-radius:10px;
+  text-decoration:none;
+  color:black;
+  font-size:16px;
+}
+
+/* فوتر */
+footer{
+  background:#222;
+  color:white;
+  text-align:center;
+  padding:20px 10px;
+}
+footer a{
+  color:#00ccff;
+  text-decoration:none;
+  margin:0 10px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>سایت موزیک من</h1>
-    <nav>
-        <a href="../songs/shad.html">شاد</a>
-        <a href="../songs/ghamgin.html">غمگین</a>
-        <a href="../songs/torki.html">ترکی</a>
-        <a href="../songs/fun.html">فان</a>
-    </nav>
+  <h1>سایت موزیک من</h1>
+  <div class="menu">
+    <a href="#">شاد</a>
+    <a href="#">غمگین</a>
+    <a href="#">ترکی</a>
+    <a href="#">فان</a>
+  </div>
 </header>
 
-<div class="intro">
-    دانلود آهنگ بلک
+<div class="container">
+
+  <!-- کاور -->
+  <div class="cover">
+    <img src="cover.jpg">
+  </div>
+
+  <!-- اسم آهنگ -->
+  <div class="song-info">
+    <h2>دانلود آهنگ بلک</h2>
+    <h3>عرفان</h3>
+  </div>
+
+  <!-- تبلیغات -->
+  <div class="ads">
+    <div class="ad">تبلیغات</div>
+    <div class="ad">تبلیغات</div>
+    <div class="ad">تبلیغات</div>
+  </div>
+
+  <!-- پلیر -->
+  <audio controls>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- دانلود -->
+  <div class="download">
+    <a href="music.mp3" download>دانلود آهنگ</a>
+  </div>
+
+  <!-- متن آهنگ -->
+  <div class="lyrics">
+    متن آهنگ اینجا نوشته می‌شود  
+    <br>
+    خط بعدی متن آهنگ  
+    <br>
+    ادامه متن...
+  </div>
+
+  <!-- خوانندگان -->
+  <div class="artists">
+    <h2>خوانندگان</h2>
+    <div class="artist-list">
+      <a href="#">عرفان</a>
+      <a href="#">یاس</a>
+      <a href="#">هیچکس</a>
+      <a href="#">سورنا</a>
+      <a href="#">پیشرو</a>
+    </div>
+  </div>
+
 </div>
-
-<img src="blok3-git.jpg" alt="Black" class="song-cover">
-
-<div class="song-info">
-    <h2>نام آهنگ: بلک</h2>
-    <h3>خواننده: عرفان</h3>
-</div>
-
-<div class="ad-banner">
-    تبلیغات شما اینجا
-</div>
-
-<audio controls>
-    <source src="blok3-git.mp3" type="audio/mpeg">
-</audio>
-
-<a href="../music/black.mp3" class="download-btn" download>دانلود آهنگ</a>
-
-<div class="lyrics">
-    متن آهنگ بلک اینجا قرار می‌گیرد...
-</div>
-
-<div class="artists">
-    <a href="../artists/artist1.html">خواننده ۱</a>
-    <a href="../artists/artist2.html">خواننده ۲</a>
-    <a href="../artists/artist3.html">خواننده ۳</a>
-    <!-- ادامه تا ۳۰ -->
-</div>
-
-<a href="../index.html" class="back-link">بازگشت به صفحه اصلی</a>
 
 <footer>
-    <p>تمامی حقوق این سایت محفوظ است © 2025</p>
-    <div class="links">
-        <a href="../contact.html">تماس با ما</a>
-        <a href="../ads.html">تبلیغات</a>
-        <a href="../channels.html">کانال‌ها</a>
-    </div>
+  <p>© تمامی حقوق محفوظ است</p>
+  <div>
+    <a href="#">تماس با ما</a>
+    <a href="#">تبلیغات</a>
+    <a href="#">کانال‌ها</a>
+  </div>
 </footer>
 
 </body>
