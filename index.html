@@ -2,177 +2,231 @@
 <html lang="fa">
 <head>
 <meta charset="UTF-8">
+<title>سایت دانلود آهنگ</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>سایت موزیک من</title>
 
 <style>
-*{
-  box-sizing:border-box;
-}
 body{
-  margin:0;
-  font-family:tahoma;
-  background:#f2f2f2;
-  direction:rtl;
+    margin:0;
+    font-family:sans-serif;
+    background:#081a3a;
+    color:white;
 }
-
-/* هدر */
+  /* HEADER */
 header{
-  background:linear-gradient(to left,#ff0000,#0066ff);
-  color:white;
-  text-align:center;
-  padding:18px 10px;
+    background:linear-gradient(90deg,#0d6efd,#003caa);
+    padding:20px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
 }
-header h1{
-  font-size:28px;
-  margin:0 0 12px;
+
+/* SEARCH */
+.search-box{
+    padding:15px;
 }
-  /* منو */
+.search-box input{
+    width:100%;
+    padding:12px;
+    border-radius:12px;
+    border:none;
+    outline:none;
+    font-size:15px;
+}
+
+/* MENU */
 .menu{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:8px;
+    display:flex;
+    overflow-x:auto;
+    gap:10px;
+    padding:10px;
 }
-.menu a{
-  text-decoration:none;
-  color:white;
-  background:rgba(0,0,0,0.25);
-  padding:8px 14px;
-  border-radius:8px;
-  font-size:16px;
+.menu button{
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:20px;
+    cursor:pointer;
+    white-space:nowrap;
 }
 
-/* عنوان */
+/* SLIDER */
+.slider{
+    display:flex;
+    overflow-x:auto;
+    gap:15px;
+    padding:15px;
+}
+.slider img{
+    width:250px;
+    height:140px;
+    border-radius:15px;
+    object-fit:cover;
+}
+
+/* SECTION TITLE */
 .section-title{
-  text-align:center;
-  font-size:20px;
-  margin:18px 0;
+    padding:10px 15px;
+    font-size:20px;
+    color:#7fb3ff;
 }
 
-/* کارت آهنگ */
-.songs{
-  padding:0 10px;
+/* SONG BOX */
+.song-box{
+    background:#102e6a;
+    margin:10px 15px;
+    border-radius:15px;
+    padding:12px;
+    display:flex;
+    gap:12px;
+    align-items:center;
 }
-.song-card{
-  display:block;
-  background:white;
-  border-radius:14px;
-  padding:12px;
-  margin-bottom:20px;
-  text-decoration:none;
-  color:black;
-  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+.song-box img{
+    width:85px;
+    height:85px;
+    border-radius:12px;
 }
-.song-card img{
-  width:100%;
-  border-radius:12px;
+.song-info{
+    flex:1;
 }
-.song-card h3{
-  font-size:20px;
-  margin:12px 0;
+.song-title{
+    font-size:15px;
+}
+.song-artist{
+    font-size:12px;
+    color:#bcd6ff;
+    margin:5px 0;
 }
 audio{
-  width:100%;
+    width:100%;
 }
 
-/* خوانندگان */
-.artists{
-  background:white;
-  margin:15px;
-  padding:15px;
-  border-radius:14px;
-}
-.artists h2{
-  font-size:22px;
-  margin-bottom:12px;
-  text-align:center;
-}
-.artist-list{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:10px;
-}
-.artist-list a{
-  text-decoration:none;
-  color:black;
-  background:#e5e5e5;
-  padding:10px 16px;
-  border-radius:10px;
-  font-size:16px;
-}
-  /* فوتر */
+/* FOOTER */
 footer{
-  background:#222;
-  color:white;
-  text-align:center;
-  padding:20px 10px;
+    background:#04122b;
+    margin-top:25px;
+    padding:25px 15px;
+    text-align:center;
 }
-footer p{
-  margin:0 0 10px;
-  font-size:14px;
+
+/* COPYRIGHT */
+.copyright{
+    font-size:13px;
+    color:#9fbfff;
+    margin-bottom:20px;
+  }
+
+/* FOOTER SECTIONS */
+.footer-section{
+    margin-bottom:20px;
 }
-.footer-links{
-  display:flex;
-  justify-content:center;
-  gap:20px;
+.footer-title{
+    font-size:16px;
+    color:#7fb3ff;
+    margin-bottom:10px;
 }
 .footer-links a{
-  color:#00ccff;
-  text-decoration:none;
-  font-size:16px;
+    display:inline-block;
+    margin:5px 10px;
+    color:#bcd6ff;
+    text-decoration:none;
+    font-size:14px;
 }
+.footer-links a:hover{
+    color:white;
+}
+
+/* ADS */
+.footer-ads{
+    background:#0d6efd;
+    margin:0 auto;
+    padding:15px;
+    border-radius:12px;
+    max-width:350px;
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
-  <h1>سایت موزیک من</h1>
-  <div class="menu">
-    <a href="#">شاد</a>
-    <a href="#">غمگین</a>
-    <a href="#">ترکی</a>
-    <a href="#">فان</a>
-  </div>
-</header>
+<header>🎵 سایت دانلود آهنگ</header>
 
-<h2 class="section-title">آهنگ‌های جدید سایت من</h2>
-
-<div class="songs">
-
-  <a href="song.html" class="song-card">
-    <img src="cover.jpg" alt="کاور آهنگ">
-    <h3>دانلود آهنگ بلک</h3>
-    <audio controls>
-      <source src="music.mp3" type="audio/mpeg">
-    </audio>
-  </a>
-
-  <!-- کارت‌های بیشتر رو کپی کن -->
-
+<div class="search-box">
+<input type="text" placeholder="جستجوی آهنگ یا خواننده...">
 </div>
 
-<div class="artists">
-  <h2>خوانندگان</h2>
-  <div class="artist-list">
-    <a href="#">عرفان</a>
-    <a href="#">یاس</a>
-    <a href="#">هیچکس</a>
-    <a href="#">سورنا</a>
-    <a href="#">تتلو</a>
-    <a href="#">پوتک</a>
-  </div>
+<div class="menu">
+<button>شاد</button>
+<button>غمگین</button>
+<button>رپ</button>
+<button>ترکی</button>
+<button>کردی</button>
+<button>ریمیکس</button>
+</div>
+
+<div class="slider">
+<img src="slide1.jpg">
+<img src="slide2.jpg">
+<img src="slide3.jpg">
+</div>
+
+<div class="section-title">🎧 جدیدترین آهنگ‌ها</div>
+
+<div class="song-box">
+<img src="cover1.jpg">
+<div class="song-info">
+<div class="song-title">دانلود آهنگ عکس یادگاری</div>
+<div class="song-artist">عرفان پند</div>
+<audio controls>
+<source src="music1.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+
+<div class="song-box">
+<img src="cover2.jpg">
+<div class="song-info">
+<div class="song-title">دانلود آهنگ شاد جدید</div>
+<div class="song-artist">خواننده ناشناس</div>
+<audio controls>
+<source src="music2.mp3" type="audio/mpeg">
+</audio>
+</div>
 </div>
 
 <footer>
-  <p>© تمامی حقوق این سایت محفوظ است</p>
-  <div class="footer-links">
-    <a href="#">تماس با ما</a>
-    <a href="#">تبلیغات</a>
-    <a href="#">کانال‌ها</a>
-  </div>
+
+<!-- COPYRIGHT بالای بخش‌ها -->
+<div class="copyright">
+© تمامی حقوق این سایت محفوظ است
+</div>
+
+<div class="footer-section">
+<div class="footer-title">📢 تبلیغات</div>
+<div class="footer-ads">
+جهت تبلیغات با ما تماس بگیرید
+</div>
+</div>
+
+<div class="footer-section">
+<div class="footer-title">📡 کانال‌های ما</div>
+<div class="footer-links">
+<a href="#">تلگرام</a>
+<a href="#">اینستاگرام</a>
+<a href="#">یوتیوب</a>
+</div>
+</div>
+
+<div class="footer-section">
+<div class="footer-title">📞 تماس با ما</div>
+<div class="footer-links">
+<a href="mailto:info@yoursite.ir">info@yoursite.ir</a>
+<a href="#">فرم تماس</a>
+</div>
+</div>
+
 </footer>
 
 </body>
