@@ -6,7 +6,9 @@
 <title>سایت موزیک من</title>
 
 <style>
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+}
 body{
   margin:0;
   font-family:tahoma;
@@ -14,40 +16,41 @@ body{
   direction:rtl;
 }
 
-/* HEADER */
+/* هدر */
 header{
   background:linear-gradient(to left,#ff0000,#0066ff);
-  color:#fff;
+  color:white;
   text-align:center;
   padding:18px 10px;
 }
 header h1{
-  margin:0 0 12px;
   font-size:28px;
+  margin:0 0 12px;
 }
+  /* منو */
 .menu{
   display:flex;
   justify-content:center;
-  gap:8px;
   flex-wrap:wrap;
+  gap:8px;
 }
 .menu a{
   text-decoration:none;
   color:white;
-  font-size:16px;
+  background:rgba(0,0,0,0.25);
   padding:8px 14px;
-  background:rgba(0,0,0,.25);
   border-radius:8px;
+  font-size:16px;
 }
 
-/* TITLE */
+/* عنوان */
 .section-title{
   text-align:center;
   font-size:20px;
   margin:18px 0;
 }
 
-/* SONG CARDS */
+/* کارت آهنگ */
 .songs{
   padding:0 10px;
 }
@@ -59,7 +62,7 @@ header h1{
   margin-bottom:20px;
   text-decoration:none;
   color:black;
-  box-shadow:0 4px 10px rgba(0,0,0,.15);
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
 }
 .song-card img{
   width:100%;
@@ -71,10 +74,9 @@ header h1{
 }
 audio{
   width:100%;
-  margin-top:10px;
 }
 
-/* ARTISTS */
+/* خوانندگان */
 .artists{
   background:white;
   margin:15px;
@@ -84,36 +86,42 @@ audio{
 .artists h2{
   font-size:22px;
   margin-bottom:12px;
-    }
+  text-align:center;
+}
 .artist-list{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
 }
 .artist-list a{
-  font-size:16px;
-  padding:10px 16px;
-  background:#e5e5e5;
-  border-radius:10px;
-  text-decoration:none;
-  color:black;
+  text-decoration:none;
+  color:black;
+  background:#e5e5e5;
+  padding:10px 16px;
+  border-radius:10px;
+  font-size:16px;
 }
-
-/* FOOTER */
+  /* فوتر */
 footer{
   background:#222;
   color:white;
   text-align:center;
-  padding:18px 10px;
+  padding:20px 10px;
+}
+footer p{
+  margin:0 0 10px;
+  font-size:14px;
 }
 .footer-links{
-  margin-top:10px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
 }
 .footer-links a{
   color:#00ccff;
-  font-size:16px;
-  margin:0 10px;
   text-decoration:none;
+  font-size:16px;
 }
 </style>
 </head>
@@ -134,21 +142,15 @@ footer{
 
 <div class="songs">
 
-  <a href="blok3-git.html" class="song-card">
+  <a href="song.html" class="song-card">
     <img src="cover.jpg" alt="کاور آهنگ">
-    <h3>آهنگ بلک</h3>
+    <h3>دانلود آهنگ بلک</h3>
     <audio controls>
       <source src="music.mp3" type="audio/mpeg">
     </audio>
   </a>
 
-  <a href="song.html" class="song-card">
-    <img src="cover.jpg">
-    <h3>آهنگ نمونه ۲</h3>
-    <audio controls>
-      <source src="music.mp3">
-    </audio>
-  </a>
+  <!-- کارت‌های بیشتر رو کپی کن -->
 
 </div>
 
@@ -159,16 +161,13 @@ footer{
     <a href="#">یاس</a>
     <a href="#">هیچکس</a>
     <a href="#">سورنا</a>
-    <a href="#">شایع</a>
-    <a href="#">پیشرو</a>
-    <a href="#">حصین</a>
-    <a href="#">بهرام</a>
-    <!-- تا ۳۰ تا -->
+    <a href="#">تتلو</a>
+    <a href="#">پوتک</a>
   </div>
 </div>
 
 <footer>
-  <p>© تمامی حقوق محفوظ است</p>
+  <p>© تمامی حقوق این سایت محفوظ است</p>
   <div class="footer-links">
     <a href="#">تماس با ما</a>
     <a href="#">تبلیغات</a>
